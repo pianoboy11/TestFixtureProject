@@ -110,7 +110,9 @@ namespace TestFixtureProject.Common
 
         public static string GetTestSequenceFromJson()
         {
-            string filePath = Path.Combine(Environment.CurrentDirectory, _testexecutionseq);
+            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            string filePath = Path.Combine(info.Parent.FullName, _testexecutionseq);
+            //string filePath = Path.Combine(Environment.CurrentDirectory, _testexecutionseq);
             if (!Directory.Exists(filePath))
             {
                 if (!File.Exists(filePath))

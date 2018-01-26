@@ -4417,7 +4417,7 @@ namespace TestFixtureProject.ViewModel
                 switch (testseq)
                 {
                     case "1": // execute all test starting from daq till led
-                        MaxTestSteps = 7;
+                        MaxTestSteps = 14;
 
                         frmTestFixture.Instance.SetProgressStatusBarMax(MaxTestSteps);
 
