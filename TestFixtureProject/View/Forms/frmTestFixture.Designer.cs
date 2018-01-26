@@ -30,19 +30,41 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTestFixture));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("MODEL NO");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("SERIAL NO");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("POWER");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("PAIRING");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("BANDWIDTH");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("EOL Test Sequence", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("MODEL NO");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("SERIAL NO");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("POWER");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("PAIRING");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("BANDWIDTH");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("EOL Test Sequence", new System.Windows.Forms.TreeNode[] {
+            treeNode24,
+            treeNode25,
+            treeNode26,
+            treeNode27,
+            treeNode28,
+            treeNode29,
+            treeNode30,
+            treeNode31,
+            treeNode32,
+            treeNode33,
+            treeNode34,
+            treeNode35});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("SERIAL NO");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("POWER");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("LIGHT ENGINE Test Sequence", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
             treeNode3,
@@ -51,29 +73,7 @@
             treeNode6,
             treeNode7,
             treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12});
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("SERIAL NO");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("POWER");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("LIGHT ENGINE Test Sequence", new System.Windows.Forms.TreeNode[] {
-            treeNode14,
-            treeNode15,
-            treeNode16,
-            treeNode17,
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22});
+            treeNode9});
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -166,7 +166,6 @@
             this.rb120VAC = new System.Windows.Forms.RadioButton();
             this.rb15VAC = new System.Windows.Forms.RadioButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.btnMatLabDllTest = new System.Windows.Forms.Button();
             this.btnFixedMagenda = new System.Windows.Forms.Button();
             this.btnFixedBlendedWhite = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -442,6 +441,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bgwFTPDataThroughput = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnMatLabDllTest = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -860,38 +860,38 @@
             this.tvEol.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvEol.Location = new System.Drawing.Point(3, 3);
             this.tvEol.Name = "tvEol";
-            treeNode1.Name = "nodeModelNumber";
-            treeNode1.Text = "MODEL NO";
-            treeNode2.Name = "nodeSerialNumber";
-            treeNode2.Text = "SERIAL NO";
-            treeNode3.Name = "nodePowerSequence";
-            treeNode3.Text = "POWER";
-            treeNode4.ImageKey = "icons8-Administrative Tools-50.png";
-            treeNode4.Name = "nodePairingSequence";
-            treeNode4.SelectedImageKey = "icons8-Administrative Tools-50.png";
-            treeNode4.Text = "PAIRING";
-            treeNode5.Name = "nodePentairServer";
-            treeNode5.Text = "PENTAIR SERVER";
-            treeNode6.Name = "nodeFirmwareVersion";
-            treeNode6.Text = "FIRMWARE VERSION";
-            treeNode7.Name = "nodeMirrorCheck";
-            treeNode7.Text = "PROJECTOR MIRROR CHECK";
-            treeNode8.Name = "nodeBrightnessColor";
-            treeNode8.Text = "LED BRIGHTNESS / COLOR";
-            treeNode9.Name = "nodeBandwidthSequence";
-            treeNode9.Text = "BANDWIDTH";
-            treeNode10.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode10.Name = "nodeProjectorFocus";
-            treeNode10.Text = "PROJECTOR FOCUS";
-            treeNode11.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode11.Name = "nodeProjectorBrightness";
-            treeNode11.Text = "PROJECTOR BRIGHTNESS";
-            treeNode12.Name = "nodeTestCompletion";
-            treeNode12.Text = "TEST COMPLETION";
-            treeNode13.Name = "nodeEolTestSequence";
-            treeNode13.Text = "EOL Test Sequence";
+            treeNode24.Name = "nodeModelNumber";
+            treeNode24.Text = "MODEL NO";
+            treeNode25.Name = "nodeSerialNumber";
+            treeNode25.Text = "SERIAL NO";
+            treeNode26.Name = "nodePowerSequence";
+            treeNode26.Text = "POWER";
+            treeNode27.ImageKey = "icons8-Administrative Tools-50.png";
+            treeNode27.Name = "nodePairingSequence";
+            treeNode27.SelectedImageKey = "icons8-Administrative Tools-50.png";
+            treeNode27.Text = "PAIRING";
+            treeNode28.Name = "nodePentairServer";
+            treeNode28.Text = "PENTAIR SERVER";
+            treeNode29.Name = "nodeFirmwareVersion";
+            treeNode29.Text = "FIRMWARE VERSION";
+            treeNode30.Name = "nodeMirrorCheck";
+            treeNode30.Text = "PROJECTOR MIRROR CHECK";
+            treeNode31.Name = "nodeBrightnessColor";
+            treeNode31.Text = "LED BRIGHTNESS / COLOR";
+            treeNode32.Name = "nodeBandwidthSequence";
+            treeNode32.Text = "BANDWIDTH";
+            treeNode33.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode33.Name = "nodeProjectorFocus";
+            treeNode33.Text = "PROJECTOR FOCUS";
+            treeNode34.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode34.Name = "nodeProjectorBrightness";
+            treeNode34.Text = "PROJECTOR BRIGHTNESS";
+            treeNode35.Name = "nodeTestCompletion";
+            treeNode35.Text = "TEST COMPLETION";
+            treeNode36.Name = "nodeEolTestSequence";
+            treeNode36.Text = "EOL Test Sequence";
             this.tvEol.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode13});
+            treeNode36});
             this.tvEol.Size = new System.Drawing.Size(266, 490);
             this.tvEol.TabIndex = 0;
             this.tvEol.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.tvEol_AfterCheck);
@@ -929,30 +929,30 @@
             this.tvLightEngine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvLightEngine.Location = new System.Drawing.Point(3, 3);
             this.tvLightEngine.Name = "tvLightEngine";
-            treeNode14.Name = "nodeSerialNumber";
-            treeNode14.Text = "SERIAL NO";
-            treeNode15.Name = "nodePowerSequence";
-            treeNode15.Text = "POWER";
-            treeNode16.Name = "nodePentairServer";
-            treeNode16.Text = "PENTAIR SERVER";
-            treeNode17.Name = "nodeFirmwareVersion";
-            treeNode17.Text = "FIRMWARE VERSION";
-            treeNode18.Name = "nodeMirrorCheck";
-            treeNode18.Text = "PROJECTOR MIRROR CHECK";
-            treeNode19.Name = "nodeBrightnessColor";
-            treeNode19.Text = "LED BRIGHTNESS / COLOR";
-            treeNode20.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode20.Name = "nodeProjectorFocus";
-            treeNode20.Text = "PROJECTOR FOCUS";
-            treeNode21.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode21.Name = "nodeProjectorBrightness";
-            treeNode21.Text = "PROJECTOR BRIGHTNESS";
-            treeNode22.Name = "nodeTestCompletion";
-            treeNode22.Text = "TEST COMPLETION";
-            treeNode23.Name = "nodeLightEngineTestSequence";
-            treeNode23.Text = "LIGHT ENGINE Test Sequence";
+            treeNode1.Name = "nodeSerialNumber";
+            treeNode1.Text = "SERIAL NO";
+            treeNode2.Name = "nodePowerSequence";
+            treeNode2.Text = "POWER";
+            treeNode3.Name = "nodePentairServer";
+            treeNode3.Text = "PENTAIR SERVER";
+            treeNode4.Name = "nodeFirmwareVersion";
+            treeNode4.Text = "FIRMWARE VERSION";
+            treeNode5.Name = "nodeMirrorCheck";
+            treeNode5.Text = "PROJECTOR MIRROR CHECK";
+            treeNode6.Name = "nodeBrightnessColor";
+            treeNode6.Text = "LED BRIGHTNESS / COLOR";
+            treeNode7.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode7.Name = "nodeProjectorFocus";
+            treeNode7.Text = "PROJECTOR FOCUS";
+            treeNode8.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode8.Name = "nodeProjectorBrightness";
+            treeNode8.Text = "PROJECTOR BRIGHTNESS";
+            treeNode9.Name = "nodeTestCompletion";
+            treeNode9.Text = "TEST COMPLETION";
+            treeNode10.Name = "nodeLightEngineTestSequence";
+            treeNode10.Text = "LIGHT ENGINE Test Sequence";
             this.tvLightEngine.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode23});
+            treeNode10});
             this.tvLightEngine.Size = new System.Drawing.Size(266, 490);
             this.tvLightEngine.TabIndex = 1;
             // 
@@ -1574,15 +1574,6 @@
             this.groupBox7.TabIndex = 24;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Color Module";
-            // 
-            // btnMatLabDllTest
-            // 
-            this.btnMatLabDllTest.Location = new System.Drawing.Point(6, 149);
-            this.btnMatLabDllTest.Name = "btnMatLabDllTest";
-            this.btnMatLabDllTest.Size = new System.Drawing.Size(215, 30);
-            this.btnMatLabDllTest.TabIndex = 25;
-            this.btnMatLabDllTest.Text = "MATLAB TEST FUNCTION";
-            this.btnMatLabDllTest.UseVisualStyleBackColor = true;
             // 
             // btnFixedMagenda
             // 
@@ -4437,6 +4428,15 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnMatLabDllTest
+            // 
+            this.btnMatLabDllTest.Location = new System.Drawing.Point(6, 149);
+            this.btnMatLabDllTest.Name = "btnMatLabDllTest";
+            this.btnMatLabDllTest.Size = new System.Drawing.Size(215, 30);
+            this.btnMatLabDllTest.TabIndex = 25;
+            this.btnMatLabDllTest.Text = "MATLAB TEST FUNCTION";
+            this.btnMatLabDllTest.UseVisualStyleBackColor = true;
+            // 
             // frmTestFixture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4932,10 +4932,10 @@
         private System.Windows.Forms.SplitContainer splitContainer6;
         private System.Windows.Forms.Button btnSaveLineTester;
         internal System.Windows.Forms.Label lblLineTester;
-        private System.Windows.Forms.Button btnMatLabDllTest;
         private System.Windows.Forms.TabControl tcLineTester;
         private System.Windows.Forms.TabPage tpEol;
         private System.Windows.Forms.TabPage tpLightEngine;
         internal System.Windows.Forms.TreeView tvLightEngine;
+        private System.Windows.Forms.Button btnMatLabDllTest;
     }
 }
