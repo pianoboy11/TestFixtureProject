@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2E61279-D1A7-4DCB-AFFD-C7B82E479C7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TestFixtureProject</RootNamespace>
+    <AssemblyName>TestFixtureProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Genetic, Version=2.2.4.0, Culture=neutral, PublicKeyToken=4336634eeb41b69b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Genetic.2.2.5\lib\AForge.Genetic.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Imaging.2.2.5\lib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Vision, Version=2.2.5.0, Culture=neutral, PublicKeyToken=b612fa915eefaa06, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Vision.2.2.5\lib\AForge.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Eneter.JsonNet.Serializer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Eneter.JsonNet.Serializer.1.0.1\lib\net45\Eneter.JsonNet.Serializer.dll</HintPath>
+    </Reference>
+    <Reference Include="Eneter.Messaging.Framework, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b85852a6d7b5cd07, processorArchitecture=MSIL">
+      <HintPath>..\packages\Eneter.Messaging.Framework.7.0.0\lib\net45\Eneter.Messaging.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Core, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.1.8.6\lib\net45\Glimpse.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MccDaq, Version=2.9.0.0, Culture=neutral, PublicKeyToken=a37eefcf5c6ca10a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Measurement Computing\DAQ\MccDaq.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray, Version=2.17.1.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\MATLAB\MATLAB Runtime\v93\toolbox\dotnetbuilder\bin\win64\v4.0\MWArray.dll</HintPath>
+    </Reference>
+    <Reference Include="NETOmniDriver-NET40">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Ocean Optics\OmniDriverSPAM\OOI_HOME\NETOmniDriver-NET40.dll</HintPath>
+    </Reference>
+    <Reference Include="NETSpam-NET40">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Ocean Optics\OmniDriverSPAM\OOI_HOME\NETSpam-NET40.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Glimpse, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Glimpse.1.0.2\lib\net35\Newtonsoft.Json.Glimpse.dll</HintPath>
+    </Reference>
+    <Reference Include="OmniDriverCSharpDemo, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.exe</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\packages\Expression.Blend.Sdk.1.0.2\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomExceptions\FTPSpeedOutOfRangeException.cs" />
+    <Compile Include="CustomExceptions\IllumiVisionFileNotFoundException.cs" />
+    <Compile Include="CustomExceptions\IpAddressNotFoundException.cs" />
+    <Compile Include="CustomExceptions\SpectrumReadingOutOfRangeException.cs" />
+    <Compile Include="DataAccess\Common\ApplicationConstants.cs" />
+    <Compile Include="DataAccess\Common\BooleanToVisibilityConverter.cs" />
+    <Compile Include="DataAccess\Common\DataValidation.cs" />
+    <Compile Include="DataAccess\Common\RelayCommand.cs" />
+    <Compile Include="DataAccess\Common\TestFixtureConstants.cs" />
+    <Compile Include="DataAccess\Common\TestFixtureObserverBase.cs" />
+    <Compile Include="DataAccess\Common\TestFixtureSetCamProperties.cs" />
+    <Compile Include="DataAccess\TestFixtureDAQ.cs" />
+    <Compile Include="DataAccess\TestFixtureFileOperation.cs" />
+    <Compile Include="DataAccess\TestFixtureReadSpectrometer.cs" />
+    <Compile Include="DataAccess\TestFixtureSerialPortComm.cs" />
+    <Compile Include="DataAccess\TestFixtureSocketComm.cs" />
+    <Compile Include="DataAccess\TestFixtureSpectrometer.cs" />
+    <Compile Include="DataAccess\TestFxitureUpdateExcelFile.cs" />
+    <Compile Include="Helpers\ExtendedWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\SecureStringExtensions.cs" />
+    <Compile Include="Model\TestFixtureLineTesterConfigModel.cs" />
+    <Compile Include="Model\TestFixtureEolTestSequenceModel.cs" />
+    <Compile Include="Model\TestFixtureLightEngineTestSequenceModel.cs" />
+    <Compile Include="View\Forms\frmTestFixture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\frmTestFixture.Designer.cs">
+      <DependentUpon>frmTestFixture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\frmTestFixtureLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\frmTestFixtureLogin.Designer.cs">
+      <DependentUpon>frmTestFixtureLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\LogStructureNew.cs" />
+    <Compile Include="Helpers\TestFixtureCommands.cs" />
+    <Compile Include="Helpers\TestFixtureDataStores.cs" />
+    <Compile Include="Helpers\TestFixtureEventLogger.cs" />
+    <Compile Include="Helpers\TestFixtureExecutionSequence.cs" />
+    <Compile Include="Helpers\TestFixturePassworboxHelper.cs" />
+    <Compile Include="Helpers\TestFixtureReadLoginInfo.cs" />
+    <Compile Include="Helpers\TestFixtureTimer.cs" />
+    <Compile Include="Model\TestFixtureDLUValueSetModel.cs" />
+    <Compile Include="Model\TestFixtureErrorMessage.cs" />
+    <Compile Include="Model\TestFixtureLoginModel.cs" />
+    <Compile Include="Model\TestFixtureMainModel.cs" />
+    <Compile Include="Model\TestFixtureModelBase.cs" />
+    <Compile Include="Model\TestFixtureProjectorImageModel.cs" />
+    <Compile Include="Model\TestFixtureProjectorModel.cs" />
+    <Compile Include="Model\TestFixtureSettingModel.cs" />
+    <Compile Include="Model\TestFixtureTestMainModel.cs" />
+    <Compile Include="NavigationServiceImp\INavigationService.cs" />
+    <Compile Include="NavigationServiceImp\NavigatoinService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\TestFixtureButtonViewModel.cs" />
+    <Compile Include="ViewModel\TestFixtureLoginBaseVM.cs" />
+    <Compile Include="ViewModel\TestFixtureLoginViewModel.cs" />
+    <Compile Include="ViewModel\TestFixtureMainWindowVM.cs" />
+    <Compile Include="ViewModel\TestFixtureViewModel.cs" />
+    <Compile Include="View\Forms\frmTestFixtureMetroUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\frmTestFixtureMetroUI.Designer.cs">
+      <DependentUpon>frmTestFixtureMetroUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\ucLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\ucLogin.Designer.cs">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Forms\frmTestFixture.resx">
+      <DependentUpon>frmTestFixture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\frmTestFixtureLogin.resx">
+      <DependentUpon>frmTestFixtureLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\frmTestFixtureMetroUI.resx">
+      <DependentUpon>frmTestFixtureMetroUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\ucLogin.resx">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="IllumaVision\Config\LineTester_Config.json" />
+    <None Include="LineTester_Config.json" />
+    <None Include="EOL_Test_Sequence_Config.json" />
+    <None Include="IllumaVision\Config\EOL_Test_Sequence_Config.json" />
+    <None Include="IllumaVision\Config\lamplamp.csv" />
+    <None Include="IllumaVision\Config\LightEngine_Test_Sequence_Config.json" />
+    <None Include="IllumaVision\Config\setting_details_JSon.json" />
+    <None Include="IllumaVision\Config\Spectrometer-Calibration_S07382.csv" />
+    <None Include="IllumaVision\Config\TestFixtureExecutionSequence.json" />
+    <None Include="IllumaVision\Config\TestFixtureImageSettings.json" />
+    <None Include="IllumaVision\Config\TestFixtureLogin.json" />
+    <None Include="lamplamp.csv" />
+    <None Include="LightEngine_Test_Sequence_Config.json" />
+    <None Include="setting_details_JSon.json" />
+    <None Include="Spectrometer-Calibration_S07382.csv" />
+    <None Include="TestFixtureExecutionSequence.json" />
+    <None Include="TestFixtureImageSettings.json" />
+    <None Include="TestFixtureLogin.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BusinessLayer\" />
+    <Folder Include="IllumaVision\Logger\" />
+    <Folder Include="Images\bandwidth\" />
+    <Folder Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-Home-50.png" />
+    <None Include="Images\icons8-Administrative Tools-50.png" />
+    <None Include="illumavision.bmp" />
+    <Content Include="IllumaVision\Config\illumavision.bmp" />
+    <Content Include="Images\icons8-Live Folder-50.png" />
+    <Content Include="Images\icons8-Lock Filled-26 - B.png" />
+    <Content Include="Images\icons8-Lock Filled-26.png" />
+    <None Include="Images\icons8-Stack of Photos-50.png" />
+    <None Include="Images\icons8-Services-50.png" />
+    <Content Include="Images\icons8-User Credentials Filled-50.png" />
+    <Content Include="Images\icons8-User Group Man Man Filled-50 - B.png" />
+    <Content Include="Images\icons8-User Group Man Man Filled-50.png" />
+    <None Include="Images\PentairLogo.png" />
+    <None Include="Images\icons8-Web Design-50.png" />
+    <Content Include="Images\ImageShow\White--Dot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLLs\Ribbon.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

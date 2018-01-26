@@ -1,0 +1,108 @@
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\EOL\illumavision.bmp
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Images\ImageShow\White--Dot.png
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\EOL\lamplamp.csv
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\EOL\setting_details_JSon.json
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\EOL\Spectrometer-Calibration_S07382.csv
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\EOL\TestFixtureExecutionSequence.json
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\EOL\TestFixtureImageSettings.json
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\EOL\TestFixtureLogin.json
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.exe.config
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.exe
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.pdb
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Genetic.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Imaging.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Math.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Video.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Vision.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\CircularProgressBar.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.JsonNet.Serializer.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.Messaging.Framework.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Glimpse.Core.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\MccDaq.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\MetroFramework.Design.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\MetroFramework.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\NETOmniDriver-NET40.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\NETSpam-NET40.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Newtonsoft.Json.Glimpse.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\WinFormAnimation.dll
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Genetic.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Imaging.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Math.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Video.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Vision.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\CircularProgressBar.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.JsonNet.Serializer.pdb
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.JsonNet.Serializer.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.Messaging.Framework.pdb
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.Messaging.Framework.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\MccDaq.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\Newtonsoft.Json.Glimpse.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\bin\Debug\WinFormAnimation.xml
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.Properties.Resources.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixture.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixtureLogin.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixtureMetroUI.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.ucLogin.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.csproj.GenerateResource.Cache
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.exe
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.pdb
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Images\ImageShow\White--Dot.png
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.exe.config
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.exe
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.pdb
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Genetic.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Imaging.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Math.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Video.DirectShow.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Video.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Vision.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\CircularProgressBar.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.JsonNet.Serializer.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.Messaging.Framework.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Glimpse.Core.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\MccDaq.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\MetroFramework.Design.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\MetroFramework.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\MetroFramework.Fonts.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\MWArray.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\NETOmniDriver-NET40.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\NETSpam-NET40.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Newtonsoft.Json.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Newtonsoft.Json.Glimpse.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\System.Windows.Interactivity.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\WinFormAnimation.dll
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Genetic.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Imaging.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Math.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Video.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Video.DirectShow.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\AForge.Vision.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\CircularProgressBar.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.JsonNet.Serializer.pdb
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.JsonNet.Serializer.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.Messaging.Framework.pdb
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Eneter.Messaging.Framework.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\MccDaq.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\MWArray.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Newtonsoft.Json.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Newtonsoft.Json.Glimpse.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\WinFormAnimation.xml
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.Properties.Resources.resources
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixture.resources
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixtureLogin.resources
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixtureMetroUI.resources
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.ucLogin.resources
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.csproj.GenerateResource.Cache
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.csproj.CoreCompileInputs.cache
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.exe
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.pdb

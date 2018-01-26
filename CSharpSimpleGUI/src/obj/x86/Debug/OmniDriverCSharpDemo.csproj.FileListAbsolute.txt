@@ -1,0 +1,7 @@
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\bin\Debug\OmniDriverCSharpDemo.pdb
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x86\Debug\OmniDriverCSharpDemo.Form1.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x86\Debug\OmniDriverCSharpDemo.Properties.Resources.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x86\Debug\OmniDriverCSharpDemo.csproj.GenerateResource.Cache
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x86\Debug\OmniDriverCSharpDemo.pdb
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\bin\Debug\OmniDriverCSharpDemo.exe
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x86\Debug\OmniDriverCSharpDemo.exe

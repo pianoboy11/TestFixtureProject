@@ -1,0 +1,104 @@
+﻿1>------ Build started: Project: TestFixtureProject, Configuration: Debug Any CPU ------
+2>------ Build started: Project: OmniDriverCSharpDemo, Configuration: Debug x64 ------
+2>  OmniDriverCSharpDemo -> C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.exe
+1>C:\Program Files (x86)\Microsoft Visual Studio\2017\SQL\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(2041,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "OmniDriverCSharpDemo". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\Common\TestFixtureConstants.cs(139,31,139,34): warning CS0168: The variable 'exp' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\UserControls\ucLogin.Designer.cs(143,13,143,40): warning CS0618: 'MetroTextBox.PromptText' is obsolete: 'Use watermark'
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\UserControls\ucLogin.Designer.cs(178,13,178,40): warning CS0618: 'MetroTextBox.PromptText' is obsolete: 'Use watermark'
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureSocketComm.cs(314,34,314,35): warning CS0168: The variable 'e' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureSocketComm.cs(291,32,291,39): warning CS0168: The variable 'request' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Helpers\TestFixtureEventLogger.cs(235,30,235,33): warning CS0168: The variable 'exp' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Helpers\TestFixtureEventLogger.cs(258,30,258,33): warning CS0168: The variable 'exp' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Helpers\TestFixtureEventLogger.cs(283,32,283,35): warning CS0168: The variable 'exp' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Helpers\TestFixtureEventLogger.cs(301,32,301,35): warning CS0168: The variable 'exp' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureSocketComm.cs(710,25,710,30): warning CS0219: The variable 'delay' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureSocketComm.cs(933,42,933,45): warning CS0168: The variable 'err' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureSocketComm.cs(917,32,917,38): warning CS0219: The variable 'client' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureSocketComm.cs(962,42,962,45): warning CS0168: The variable 'err' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureSocketComm.cs(901,22,901,28): warning CS0219: The variable 'allDir' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureSettingModel.cs(1504,42,1504,43): warning CS0168: The variable 'e' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureReadSpectrometer.cs(432,30,432,33): warning CS0219: The variable 'lvi' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorModel.cs(86,20,86,30): warning CS0219: The variable 'pathString' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(1575,20,1575,25): warning CS0168: The variable 'rtmsg' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorImageModel.cs(100,20,100,30): warning CS0219: The variable 'pathString' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorImageModel.cs(192,20,192,30): warning CS0219: The variable 'pathString' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorImageModel.cs(835,13,835,19): warning CS0162: Unreachable code detected
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixtureLogin.Designer.cs(78,13,78,40): warning CS0618: 'MetroTextBox.PromptText' is obsolete: 'Use watermark'
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixtureLogin.Designer.cs(113,13,113,40): warning CS0618: 'MetroTextBox.PromptText' is obsolete: 'Use watermark'
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(2321,18,2321,22): warning CS0219: The variable 'flag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(2357,18,2357,22): warning CS0219: The variable 'flag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureLoginViewModel.cs(157,21,157,28): warning CS0168: The variable 'passobj' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(2910,20,2910,27): warning CS0219: The variable 'myspeed' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(2913,20,2913,33): warning CS0219: The variable 'tempTickCount' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(2922,17,2922,27): warning CS0219: The variable 'timerloops' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(2923,20,2923,32): warning CS0219: The variable 'elapsedtotal' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(2924,20,2924,28): warning CS0219: The variable 'myspeed1' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(3176,20,3176,27): warning CS0219: The variable 'myspeed' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(3179,20,3179,33): warning CS0219: The variable 'tempTickCount' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(3188,17,3188,27): warning CS0219: The variable 'timerloops' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(3189,20,3189,32): warning CS0219: The variable 'elapsedtotal' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(3190,20,3190,28): warning CS0219: The variable 'myspeed1' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(3577,27,3577,38): warning CS0168: The variable 'stemvoltage' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(4046,28,4046,33): warning CS0219: The variable 'input' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(4048,23,4048,29): warning CS0219: The variable 'result' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(5170,20,5170,27): warning CS0219: The variable 'myspeed' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(5173,20,5173,33): warning CS0219: The variable 'tempTickCount' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(5182,17,5182,27): warning CS0219: The variable 'timerloops' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(5183,20,5183,32): warning CS0219: The variable 'elapsedtotal' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(5184,20,5184,28): warning CS0219: The variable 'myspeed1' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(5478,13,5478,27): warning CS0162: Unreachable code detected
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(7790,13,7790,19): warning CS0162: Unreachable code detected
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(8079,18,8079,22): warning CS0219: The variable 'flag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(8758,32,8758,42): warning CS0168: The variable 'captdevice' is declared but never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9212,17,9212,23): warning CS0162: Unreachable code detected
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9156,21,9156,26): warning CS0219: The variable 'delay' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9225,21,9225,26): warning CS0219: The variable 'delay' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9221,18,9221,22): warning CS0219: The variable 'flag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9286,21,9286,26): warning CS0219: The variable 'delay' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9282,18,9282,22): warning CS0219: The variable 'flag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9695,21,9695,26): warning CS0219: The variable 'delay' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9691,18,9691,22): warning CS0219: The variable 'flag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(9757,21,9757,26): warning CS0219: The variable 'delay' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorModel.cs(40,22,40,47): warning CS0169: The field 'TestFixtureProjectorModel._mcollapsesettingstabitem' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureSettingModel.cs(1374,24,1374,38): warning CS0169: The field 'TestFixtureSettingModel._5wwlredlvalue' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureSettingModel.cs(1375,24,1375,38): warning CS0169: The field 'TestFixtureSettingModel._5wwlreduvalue' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixtureMetroUI.cs(22,30,22,36): warning CS0169: The field 'frmTestFixtureMetroUI.pagevm' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixtureMetroUI.cs(21,33,21,35): warning CS0169: The field 'frmTestFixtureMetroUI.vm' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureSettingModel.cs(1378,24,1378,39): warning CS0169: The field 'TestFixtureSettingModel._5wwlbluelvalue' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureSettingModel.cs(1376,24,1376,40): warning CS0169: The field 'TestFixtureSettingModel._5wwlgreenlvalue' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureSettingModel.cs(1379,24,1379,39): warning CS0169: The field 'TestFixtureSettingModel._5wwlblueuvalue' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureSettingModel.cs(1377,24,1377,40): warning CS0169: The field 'TestFixtureSettingModel._5wwlgreenuvalue' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorImageModel.cs(36,22,36,47): warning CS0169: The field 'TestFixtureProjectorImageModel._mcollapsesettingstabitem' is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorModel.cs(25,32,25,42): warning CS0414: The field 'TestFixtureProjectorModel._moedgeimg' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureSocketComm.cs(33,29,33,44): warning CS0414: The field 'TestFixtureSocketComm.serverconnected' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(91,22,91,33): warning CS0414: The field 'TestFixtureViewModel._mGreenFlag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorModel.cs(32,16,32,29): warning CS0414: The field 'TestFixtureProjectorModel._mOriginalImg' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(45,13,45,22): warning CS0414: The field 'frmTestFixture.mycounter' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureDAQ.cs(22,24,22,42): warning CS0414: The field 'TestFixtureDAQ._mexceptionMessage' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorImageModel.cs(24,24,24,37): warning CS0414: The field 'TestFixtureProjectorImageModel.destgrayimage' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(92,22,92,32): warning CS0414: The field 'TestFixtureViewModel._mBlueFlag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureReadSpectrometer.cs(43,17,43,26): warning CS0414: The field 'TestFixtureReadSpectrometer.lineCount' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(71,13,71,20): warning CS0414: The field 'frmTestFixture.counter' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureReadSpectrometer.cs(22,17,22,38): warning CS0414: The field 'TestFixtureReadSpectrometer.numberOfSpectrometers' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(70,14,70,23): warning CS0414: The field 'frmTestFixture.showspeed' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(48,13,48,23): warning CS0414: The field 'frmTestFixture.turnoffled' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(75,16,75,22): warning CS0414: The field 'frmTestFixture.images' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(90,22,90,31): warning CS0414: The field 'TestFixtureViewModel._mRedFlag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Helpers\TestFixtureEventLogger.cs(13,27,13,29): warning CS0414: The field 'TestFixtureEventLogger.fs' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(50,33,50,42): warning CS0414: The field 'frmTestFixture.ftpthread' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureReadSpectrometer.cs(41,18,41,35): warning CS0414: The field 'TestFixtureReadSpectrometer.spectrometerfound' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Helpers\TestFixtureTimer.cs(12,21,12,27): warning CS0414: The field 'TestFixtureTimer.status' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorModel.cs(29,20,29,30): warning CS0414: The field 'TestFixtureProjectorModel._moimgdata' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureReadSpectrometer.cs(34,17,34,25): warning CS0414: The field 'TestFixtureReadSpectrometer.baseline' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(93,22,93,33): warning CS0414: The field 'TestFixtureViewModel._mWhiteFlag' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureReadSpectrometer.cs(44,19,44,37): warning CS0414: The field 'TestFixtureReadSpectrometer.calintegrationtime' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(597,24,597,36): warning CS0414: The field 'TestFixtureViewModel._comportnumb' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\View\Forms\frmTestFixture.cs(76,13,76,14): warning CS0414: The field 'frmTestFixture.i' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureReadSpectrometer.cs(42,18,42,31): warning CS0414: The field 'TestFixtureReadSpectrometer.calfileloaded' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureDAQ.cs(16,13,16,20): warning CS0414: The field 'TestFixtureDAQ.counter' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\DataAccess\TestFixtureReadSpectrometer.cs(40,18,40,39): warning CS0414: The field 'TestFixtureReadSpectrometer.SpectrometerReadError' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(94,22,94,33): warning CS0414: The field 'TestFixtureViewModel.spectroFile' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\Model\TestFixtureProjectorModel.cs(26,24,26,37): warning CS0414: The field 'TestFixtureProjectorModel.destgrayimage' is assigned but its value is never used
+1>C:\Builds\TestFixtureProject\TestFixtureProject\ViewModel\TestFixtureViewModel.cs(111,21,111,28): warning CS0414: The field 'TestFixtureViewModel.counter' is assigned but its value is never used
+1>  TestFixtureProject -> C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.exe
+========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

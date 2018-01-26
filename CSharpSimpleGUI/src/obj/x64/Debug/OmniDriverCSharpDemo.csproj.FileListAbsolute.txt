@@ -1,0 +1,23 @@
+C:\Builds\Ocean optics\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.exe
+C:\Builds\Ocean optics\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.pdb
+C:\Builds\Ocean optics\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.Form1.resources
+C:\Builds\Ocean optics\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.Properties.Resources.resources
+C:\Builds\Ocean optics\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.csproj.GenerateResource.Cache
+C:\Builds\Ocean optics\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.exe
+C:\Builds\Ocean optics\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.pdb
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.exe
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.pdb
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.Form1.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.Properties.Resources.resources
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.csproj.GenerateResource.Cache
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.exe
+C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.pdb
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.exe
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.pdb
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.csprojResolveAssemblyReference.cache
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.Form1.resources
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.Properties.Resources.resources
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.csproj.GenerateResource.Cache
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.csproj.CoreCompileInputs.cache
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.exe
+C:\Builds\TestFixtureProject\CSharpSimpleGUI\src\obj\x64\Debug\OmniDriverCSharpDemo.pdb

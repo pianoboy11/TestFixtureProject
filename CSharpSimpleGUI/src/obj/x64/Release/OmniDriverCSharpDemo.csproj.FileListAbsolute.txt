@@ -1,0 +1,8 @@
+C:\Builds\testfixture\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\bin\x64\Release\OmniDriverCSharpDemo.exe
+C:\Builds\testfixture\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\bin\x64\Release\OmniDriverCSharpDemo.pdb
+C:\Builds\testfixture\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Release\OmniDriverCSharpDemo.csprojResolveAssemblyReference.cache
+C:\Builds\testfixture\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Release\OmniDriverCSharpDemo.Form1.resources
+C:\Builds\testfixture\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Release\OmniDriverCSharpDemo.Properties.Resources.resources
+C:\Builds\testfixture\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Release\OmniDriverCSharpDemo.csproj.GenerateResource.Cache
+C:\Builds\testfixture\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Release\OmniDriverCSharpDemo.exe
+C:\Builds\testfixture\Ocean Optics\win32\win32\csharp\CSharpSimpleGUI\src\obj\x64\Release\OmniDriverCSharpDemo.pdb

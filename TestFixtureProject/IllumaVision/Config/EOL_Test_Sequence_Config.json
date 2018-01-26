@@ -1,0 +1,14 @@
+{
+  "_modelNumber": true,
+  "_serialNumber": true,
+  "_powerOn": true,
+  "_pairing": true,
+  "_pentairServer": true,
+  "_firmwareVersion": true,
+  "_projectorMirrorCheck": true,
+  "_ledBrightnessColor": true,
+  "_bandwidth": true,
+  "_projectorFocus": true,
+  "_projectorBrightness": true,
+  "_testCompletion": true
+}
