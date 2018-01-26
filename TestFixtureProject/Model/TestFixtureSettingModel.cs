@@ -60,7 +60,6 @@ namespace TestFixtureProject.Model
         private string _wlrymaxvalues; //White Limits RGB Green Upper Value
 
         [JsonProperty("_wlrxminlvalue")]
-        [JsonIgnore]
         public string WLRGBXMINVALUE    //White Limits RGB Red Lower Value
         {
             get { return _wlrxminlvalue; }
@@ -86,7 +85,6 @@ namespace TestFixtureProject.Model
         }
 
         [JsonProperty("_wlrxmaxvalues")]
-        [JsonIgnore]
         public string WLRGBXMAXVALUE  // white limits RGB Red Upper Values
         {
             get { return _wlrxmaxvalues; }
@@ -113,7 +111,6 @@ namespace TestFixtureProject.Model
 
         ////wlrgbgreenlowertextbox
         [JsonProperty("_wlryminvalues")]
-        [JsonIgnore]
         public string WLRYMINVALUE  //White Limits RGB Green Lower Value
         {
             get { return _wlryminvalues; }
@@ -139,7 +136,6 @@ namespace TestFixtureProject.Model
         }
 
         [JsonProperty("_wlrgbgreenuvalues")]
-        [JsonIgnore]
         public string WLRYMAXVALUE       //White Limits RGB Green Upper Value
         {
             get { return _wlrymaxvalues; }
@@ -166,7 +162,6 @@ namespace TestFixtureProject.Model
         private string _wlrgbfluxUvalues = null;
 
         [JsonProperty("_wlrgbfluxUvalues")]
-        [JsonIgnore]
         public string WLRGBBLUELValue //white limits RGB Blue Lower Values
         {
             get { return _wlrgbfluxUvalues; }
@@ -193,7 +188,6 @@ namespace TestFixtureProject.Model
 
         private string _mWhiteMicroWattValue = null;
         [JsonProperty("_mWhiteMicroWattValue")]
-        [JsonIgnore]
         public string WhiteMicroWattValue
         {
             get { return _mWhiteMicroWattValue; }
@@ -220,7 +214,6 @@ namespace TestFixtureProject.Model
 
         private string _mWhiteMicroWattValueUpper = null;
         [JsonProperty("_mWhiteMicroWattValueUpper")]
-        [JsonIgnore]
         public string WhiteMicroWattValueUpper
         {
             get { return _mWhiteMicroWattValueUpper; }
@@ -252,7 +245,6 @@ namespace TestFixtureProject.Model
         private string _glrgbgreenuvalue; // Green Limits RGB Green Upper Value
 
         [JsonProperty("_glrgbgreenlvalue")]
-        [JsonIgnore]
         public string GLRGBGREENLValue  // Green Limits RGB Green Lower Value
         {
             get { return _glrgbgreenlvalue; }
@@ -279,7 +271,6 @@ namespace TestFixtureProject.Model
         }
 
         [JsonProperty("_glrgbgreenuvalue")]
-        [JsonIgnore]
         public string GLRGBGREENUValue  // Green Limits RGB Green Upper Value
         {
             get { return _glrgbgreenuvalue; }
@@ -308,7 +299,6 @@ namespace TestFixtureProject.Model
         private string _greenyminvalue;
 
         [JsonProperty("_greenyminvalue")]
-        [JsonIgnore]
         public string GreenYMinValues  // Green Limits RGB Green Upper Value
         {
             get { return _greenyminvalue; }
@@ -337,7 +327,6 @@ namespace TestFixtureProject.Model
         private string _greenymaxvalue;
 
         [JsonProperty("_greenymaxvalue")]
-        [JsonIgnore]
         public string GreenYMaxValue  // Green Limits RGB Green Upper Value
         {
             get { return _greenymaxvalue; }
@@ -365,7 +354,6 @@ namespace TestFixtureProject.Model
 
         private string _mGreenMicroWatValue = null;
         [JsonProperty("_mGreenMicroWatValue")]
-        [JsonIgnore]
         public string GreenMicroWattValue
         {
             get { return _mGreenMicroWatValue; }
@@ -394,7 +382,6 @@ namespace TestFixtureProject.Model
 
         private string _mGreenMicroWatValueUpper = null;
         [JsonProperty("_mGreenMicroWatValueUpper")]
-        [JsonIgnore]
         public string GreenMicroWattValueUpper
         {
             get { return _mGreenMicroWatValueUpper; }
@@ -432,7 +419,6 @@ namespace TestFixtureProject.Model
 
         //Blended White Limits Red Lower Value
         [JsonProperty("_mblendedredlvalue")]
-        [JsonIgnore]
         public string BlendedWhiteRedLimits
         {
             get { return _mblendedredlvalue; }
@@ -459,7 +445,6 @@ namespace TestFixtureProject.Model
 
         //Blended White Red Upper Value
         [JsonProperty("_mblendedreduvalue")]
-        [JsonIgnore]
         public string BlendedWhiteRedULimits
         {
             get { return _mblendedreduvalue; }
@@ -486,7 +471,6 @@ namespace TestFixtureProject.Model
 
         //Blended White Limits Green Lower Value
         [JsonProperty("_mblendedgreenlvalue")]
-        [JsonIgnore]
         public string BlendedWhiteGreenLLimits
         {
             get { return _mblendedgreenlvalue; }
@@ -513,7 +497,6 @@ namespace TestFixtureProject.Model
 
         //Blended White Limits Green Upper Value
         [JsonProperty("_mblendedgreenuvalue")]
-        [JsonIgnore]
         public string BlendedWhiteGreenULimits
         {
             get { return _mblendedgreenuvalue; }
@@ -540,7 +523,6 @@ namespace TestFixtureProject.Model
 
         //Blended White Limits Blue Lower Value
         [JsonProperty("_mblendedbluelvalue")]
-        [JsonIgnore]
         public string BlendedWhiteBlueLLimits
         {
             get { return _mblendedbluelvalue; }
@@ -567,7 +549,6 @@ namespace TestFixtureProject.Model
 
         //Blended White Limits Blue Upper Value
         [JsonProperty("_mblendedblueuvalue")]
-        [JsonIgnore]
         public string BlendedWhiteBlueULimits
         {
             get { return _mblendedblueuvalue; }
@@ -600,7 +581,6 @@ namespace TestFixtureProject.Model
 
         //Blue Limits RGB Blue Lower Value
         [JsonProperty("_blrgbbluelvalue")]
-        [JsonIgnore]
         public string BLRGBBLUELValue
         {
             get { return _blrgbbluelvalue; }
@@ -627,7 +607,6 @@ namespace TestFixtureProject.Model
 
         private string _blueyminvalue = null;
         [JsonProperty("_blueyminvalue")]
-        [JsonIgnore]
         public string BlueYMinValue
         {
             get { return _blueyminvalue; }
@@ -654,7 +633,6 @@ namespace TestFixtureProject.Model
 
         private string _blueymaxvalue = null;
         [JsonProperty("_blueymaxvalue")]
-        [JsonIgnore]
         public string BlueYMaxValue
         {
             get { return _blueymaxvalue; }
@@ -681,7 +659,6 @@ namespace TestFixtureProject.Model
 
         //Blue Limits RGB Blue Upper Value
         [JsonProperty("_bllrgbblueuvalue")]
-        [JsonIgnore]
         public string BLRGBBLUEUValue
         {
 
@@ -709,7 +686,6 @@ namespace TestFixtureProject.Model
 
         private string _mBlueMicroWattValue = null;
         [JsonProperty("_mBlueMicroWattValue")]
-        [JsonIgnore]
         public string BlueMicroWattValue
         {
             //get { return _rlrgbredlvalue; }
@@ -738,7 +714,6 @@ namespace TestFixtureProject.Model
 
         private string _mBlueMicroWattValueUpper = null;
         [JsonProperty("_mBlueMicroWattValueUpper")]
-        [JsonIgnore]
         public string BlueMicroWattValueUpper
         {
             //get { return _rlrgbreduvalue; } //Todo: Keith 
@@ -772,7 +747,6 @@ namespace TestFixtureProject.Model
 
         // Red Limit RGB Red Lower Value
         [JsonProperty("_rlrgbredlvalue")]
-        [JsonIgnore]
         public string RLRGBREDLValue
         {
             get { return _rlrgbredlvalue; }
@@ -799,7 +773,6 @@ namespace TestFixtureProject.Model
         private string _redminyvalues;
 
         [JsonProperty("_redminyvalues")]
-        [JsonIgnore]
         public string RedYMinValues
         {
             get { return _redminyvalues; }
@@ -827,7 +800,6 @@ namespace TestFixtureProject.Model
         private string _redmaxyvalues;
 
         [JsonProperty("_redmaxyvalues")]
-        [JsonIgnore]
         public string RedYMaxValue
         {
             get { return _redmaxyvalues; }
@@ -854,7 +826,6 @@ namespace TestFixtureProject.Model
 
         //Red Limit RGB red Upper Value
         [JsonProperty("_rlrgbreduvalue")]
-        [JsonIgnore]
         public string RLRGBREDUValue
         {
             get { return _rlrgbreduvalue; }
@@ -881,7 +852,6 @@ namespace TestFixtureProject.Model
 
         private string _mRedMicroWattValue = null;
         [JsonProperty("_mRedMicroWattValue")]
-        [JsonIgnore]
         public string RedMicroWattValue
         {
             get { return _mRedMicroWattValue; }
@@ -908,7 +878,6 @@ namespace TestFixtureProject.Model
 
         private string _mRedMicroWattValueUpper = null;
         [JsonProperty("_mRedMicroWattValueUpper")]
-        [JsonIgnore]
         public string RedMicroWattValueUpper
 
         {
@@ -947,7 +916,6 @@ namespace TestFixtureProject.Model
         private string _mMagenteMicroWattValueUpper;
         // Magenta Limits Red Lower value
         [JsonProperty("mMagentaxmaxLValue")]
-        [JsonIgnore]
         public string MAGENTAMAXVALUE
         {
             get { return mMagentaxmaxLValue; }
@@ -974,7 +942,6 @@ namespace TestFixtureProject.Model
 
         //Magenta Limits Red Upper Value
         [JsonProperty("_mMagentaxminUValue")]
-        [JsonIgnore]
         public string MagentaXValue1
         {
             get { return _mMagentaxminUValue; }
@@ -1001,7 +968,6 @@ namespace TestFixtureProject.Model
 
         // Magenta Limits Green Lower Value
         [JsonProperty("_mMagentayminValue")]
-        [JsonIgnore]
         public string MAGENTAYMINVALUE
         {
             get { return _mMagentayminValue; }
@@ -1028,7 +994,6 @@ namespace TestFixtureProject.Model
 
         // Magenta Limits Green Upper Value
         [JsonProperty("_mMagentaymaxValue")]
-        [JsonIgnore]
         public string MAGENTAYMAXVALUE
         {
 
@@ -1057,7 +1022,6 @@ namespace TestFixtureProject.Model
 
         // Magenta Limits Blue Lower Value
         [JsonProperty("_mMagentaLimitsBlueLValue")]
-        [JsonIgnore]
         public string MAGENTALBLUELValue
         {
             get { return _mMagentaLimitsBlueLValue; }
@@ -1084,7 +1048,6 @@ namespace TestFixtureProject.Model
 
         // Magenta Limits Blue Upper Value
         [JsonProperty("_mMagentaLimitsBlueUValue")]
-        [JsonIgnore]
         public string MAGENTALBLUEUValue
         {
             get { return _mMagentaLimitsBlueUValue; }
@@ -1110,7 +1073,6 @@ namespace TestFixtureProject.Model
         }
 
         [JsonProperty("_mMagenteMicroWattValue")]
-        [JsonIgnore]
         public string MagentaMicroWattValue
         {
             get { return _mMagenteMicroWattValue; }
@@ -1137,7 +1099,6 @@ namespace TestFixtureProject.Model
         }
 
         [JsonProperty("_mMagenteMicroWattValueUpper")]
-        [JsonIgnore]
         public string MagentaMicroWattValueUpper
         {
             get { return _mMagenteMicroWattValueUpper; }
@@ -1173,7 +1134,6 @@ namespace TestFixtureProject.Model
 
         // Sensor Gain Red Value
         [JsonProperty("_sensorgainredvalue")]
-        [JsonIgnore]
         public string SensorGainREDValue
         {
             get { return _sensorgainredvalue; }
@@ -1200,7 +1160,6 @@ namespace TestFixtureProject.Model
 
         // Sensor Gain Green Value
         [JsonProperty("_sensorgaingreenvalue")]
-        [JsonIgnore]
         public string SensorGainGREENValue
         {
             get { return _sensorgaingreenvalue; }
@@ -1228,7 +1187,6 @@ namespace TestFixtureProject.Model
 
         //_sensorgainbluevalue
         [JsonProperty("_sensorgainbluevalue")]
-        [JsonIgnore]
         public string SensorGainBLUEValue
         {
             get { return _sensorgainbluevalue; }
@@ -1263,7 +1221,6 @@ namespace TestFixtureProject.Model
 
         // LED Temperature Derating White Value
         [JsonProperty("_ledtemderatingwhitevalue")]
-        [JsonIgnore]
         public string LedTempDeratingWhiteValue
         {
             get { return _ledtemderatingwhitevalue; }
@@ -1290,7 +1247,6 @@ namespace TestFixtureProject.Model
 
         // LED Temperature Derating Red Value
         [JsonProperty("_ledtempderatingredvalue")]
-        [JsonIgnore]
         public string LedTempDeratingRedValue
         {
             get { return _ledtempderatingredvalue; }
@@ -1317,7 +1273,6 @@ namespace TestFixtureProject.Model
 
         // LED Temperature Derating Green Value
         [JsonProperty("_ledtempderatinggreenvalue")]
-        [JsonIgnore]
         public string LedTempDeratingGreenValue
         {
             get { return _ledtempderatinggreenvalue; }
@@ -1344,7 +1299,6 @@ namespace TestFixtureProject.Model
 
         // LED Temperature Derating Blue Value
         [JsonProperty("_ledtempderatingbluevalue")]
-        [JsonIgnore]
         public string LedTempDeratingBlueValue
         {
             get { return _ledtempderatingbluevalue; }
@@ -1387,7 +1341,6 @@ namespace TestFixtureProject.Model
         #region public method to set/get properties of Fixture Id section
         //Fixture Id
         [JsonProperty("_fixtureid")]
-        [JsonIgnore]
         public string FixtureId
         {
             get { return _fixtureid; }
@@ -1439,7 +1392,6 @@ namespace TestFixtureProject.Model
             }
         }
         [JsonProperty("_isimagetestchecked")]
-        [JsonIgnore]
         public bool IsImageTestingChecked
         {
             get { return _isimagetestchecked; }
@@ -1509,7 +1461,6 @@ namespace TestFixtureProject.Model
         }
         [JsonProperty("_comportnumb")]
         private string _comportnumb = null;
-        [JsonIgnore]
         public string CommPortNUmber
         {
             get { return _comportnumb; }
@@ -1526,7 +1477,6 @@ namespace TestFixtureProject.Model
         // 120V - 50Ft
         [JsonProperty("_model_120V_50Ft")]
         private string _model_120V_50Ft = null;
-        [JsonIgnore]
         public string ModelNumber120V50Ft
         {
             get { return _model_120V_50Ft; }
@@ -1542,7 +1492,6 @@ namespace TestFixtureProject.Model
         // 120V - 150Ft
         [JsonProperty("_model_120V_150Ft")]
         private string _model_120V_150Ft = null;
-        [JsonIgnore]
         public string ModelNumber120V150Ft
         {
             get { return _model_120V_150Ft; }
@@ -1558,7 +1507,6 @@ namespace TestFixtureProject.Model
         // 12V - 50Ft
         [JsonProperty("_model_12V_50Ft")]
         private string _model_12V_50Ft = null;
-        [JsonIgnore]
         public string ModelNumber12V50Ft
         {
             get { return _model_12V_50Ft; }
@@ -1574,7 +1522,6 @@ namespace TestFixtureProject.Model
         // 12V - 150Ft
         [JsonProperty("_model_12V_150Ft")]
         private string _model_12V_150Ft = null;
-        [JsonIgnore]
         public string ModelNumber12V150Ft
         {
             get { return _model_12V_150Ft; }
@@ -1588,7 +1535,6 @@ namespace TestFixtureProject.Model
 
         [JsonProperty("_bandwidth_tolerance_second")]
         private double _bandwidth_tolerance_second = 0;
-        [JsonIgnore]
         public double BWidthToleranceSecond
         {
             get { return _bandwidth_tolerance_second; }
@@ -1603,7 +1549,6 @@ namespace TestFixtureProject.Model
         #region IP Address Range, Boot Sequence Time, IsProduction
         private bool _mIsProduction = false;
         [JsonProperty("_mIsProduction")]
-        [JsonIgnore]
         public bool IsProduction
         {
             get { return _mIsProduction; }
@@ -1616,7 +1561,6 @@ namespace TestFixtureProject.Model
 
         private string _mBootSequenceTime = null;
         [JsonProperty("_mBootSequenceTime")]
-        [JsonIgnore]
         public string BootSequenceTime
         {
             get { return _mBootSequenceTime; }
@@ -1629,7 +1573,6 @@ namespace TestFixtureProject.Model
 
         private string _mIpAddressRange = null;
         [JsonProperty("_mIpAddressRange")]
-        [JsonIgnore]
         public string IpAddressRange
         {
             get { return _mIpAddressRange; }
@@ -1644,7 +1587,6 @@ namespace TestFixtureProject.Model
         #region Integration time
         private string _mIntegrationTime = null;
         [JsonProperty("_mIntegrationTime")]
-        [JsonIgnore]
         public string IntegrationTime
         {
             get { return _mIntegrationTime; }
@@ -1657,7 +1599,6 @@ namespace TestFixtureProject.Model
 
         private string _mBlueIntegrationTime = null;
         [JsonProperty("_mBlueIntegrationTime")]
-        [JsonIgnore]
         public string BlueIntegrationTime
         {
             get { return _mBlueIntegrationTime; }
@@ -1671,7 +1612,6 @@ namespace TestFixtureProject.Model
 
         private string _mRedIntegrationTime = null;
         [JsonProperty("_mRedIntegrationTime")]
-        [JsonIgnore]
         public string RedIntegrationTime
         {
             get { return _mRedIntegrationTime; }
@@ -1685,7 +1625,6 @@ namespace TestFixtureProject.Model
 
         private string _mGreenIntegrationTime = null;
         [JsonProperty("_mGreenIntegrationTime")]
-        [JsonIgnore]
         public string GreenIntegrationTime
         {
             get { return _mGreenIntegrationTime; }
@@ -1699,7 +1638,6 @@ namespace TestFixtureProject.Model
 
         private string _mWhiteIntegrationTime = null;
         [JsonProperty("_mWhiteIntegrationTime")]
-        [JsonIgnore]
         public string WhiteIntegrationTime
         {
             get { return _mWhiteIntegrationTime; }
@@ -1713,7 +1651,6 @@ namespace TestFixtureProject.Model
 
         private string _mBlendedWhiteIntegrationTime = null;
         [JsonProperty("_mBlendedWhiteIntegrationTime")]
-        [JsonIgnore]
         public string BlendedWhiteIntegrationTime
         {
             get { return _mBlendedWhiteIntegrationTime; }
@@ -1727,7 +1664,6 @@ namespace TestFixtureProject.Model
 
         private string _mMagendaIntegrationTime = null;
         [JsonProperty("_mMagendaIntegrationTime")]
-        [JsonIgnore]
         public string MagendaIntegrationTime
         {
             get { return _mMagendaIntegrationTime; }
@@ -1742,7 +1678,6 @@ namespace TestFixtureProject.Model
         #region FTP Limits
         [JsonProperty("_FTP_ON_MIN")]
         private string _FTP_ON_MIN = null;
-        [JsonIgnore]
         public string FtpOnMin
         {
             get { return _FTP_ON_MIN; }
@@ -1755,7 +1690,6 @@ namespace TestFixtureProject.Model
 
         [JsonProperty("_FTP_ON_MAX")]
         private string _FTP_ON_MAX = null;
-        [JsonIgnore]
         public string FtpOnMax
         {
             get { return _FTP_ON_MAX; }
@@ -1768,7 +1702,6 @@ namespace TestFixtureProject.Model
 
         [JsonProperty("_FTP_OFF_MIN")]
         private string _FTP_OFF_MIN = null;
-        [JsonIgnore]
         public string FtpOffMin
         {
             get { return _FTP_OFF_MIN; }
@@ -1781,7 +1714,6 @@ namespace TestFixtureProject.Model
 
         [JsonProperty("_FTP_OFF_MAX")]
         private string _FTP_OFF_MAX = null;
-        [JsonIgnore]
         public string FtpOffMax
         {
             get { return _FTP_OFF_MAX; }
