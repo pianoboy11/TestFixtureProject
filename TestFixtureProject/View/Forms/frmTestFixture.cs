@@ -287,81 +287,65 @@ namespace TestFixtureProject
         #region Event Handlers
         private void frmTestFixture_Load(object sender, EventArgs e)
         {
-            //pagelvm = new TestFixtureLoginViewModel();
-
-            //ShowEngineeringPortal();
-            SetStatusIndicatorVisibleProperty(false);
-            //TestList();
-
-            timer1.Start();
-
-            tsTime.Text = DateTime.Now.ToString("F");
-
-            RemoveEngineeringPortal();
-
-            SetErrorMessageDisplayTextBox("Press Green Button to Start...");
-
-            //SetUpdatePassFailResultTextBox("Press Green Button to Start...");
-
-            if (FindSpectrometers())
-                FindCalibrationFile();
-
-            progressBar1.Value = 0;
-            this.tabControl1.SelectedIndex = 0;
-
-            //Keith Dudley Add Fixed Led controls
-            //tFixedRed.Enabled = TestFixtureSocketComm._IsIpAddressFound;
-            //tFixedGreen.Enabled = TestFixtureSocketComm._IsIpAddressFound;
-            //tFixedBlue.Enabled = TestFixtureSocketComm._IsIpAddressFound;
-            //tFixedWhite.Enabled = TestFixtureSocketComm._IsIpAddressFound;
-
-            //btnTurnLedsOff.Enabled = TestFixtureSocketComm._IsIpAddressFound;
-            //btnPairingSequence.Enabled = TestFixtureSocketComm._IsIpAddressFound;
-
-            GetConfigurationSettings();
-
-            GetMirrorSettings();
-
-            //TestFixtureSocketComm.DiscoverPentairServer(false);
-
-            //if (!backgroundWorker1.IsBusy)
-            //    backgroundWorker1.RunWorkerAsync(BW_OPERATIONS.OPERATION_FIND_IP_ADDRESS);
-
-            // ValidateTestInTestSequenceTreeView("nodeModelNumber", false);
-            // ValidateTestInTestSequenceTreeView("MODEL NO", true);
-            // ValidateTestInTestSequenceTreeView("KeithTest", true);
-
-            //_frmTestFixtureLogin = new frmTestFixtureLogin();
-            //_frmTestFixtureLogin.ShowDialog();
-
-            CreateTestSequenceDataset();
-
-            dgvEol.AllowUserToAddRows = false;
-            dgvLightEngine.AllowUserToAddRows = false;
-
-            if (pagevm._lineTestermodel.EOL)
+            if (TestFixtureConstants.CreateIllumaVisionRootDirectories())
             {
-                cbLineTesterType.SelectedIndex = 0;
-                lblLineTester.Text = "EOL LINE TESTER";
-                WriteToLog("EOL Line Tester selected...", ApplicationConstants.TraceLogType.Information);
+                SetStatusIndicatorVisibleProperty(false);
 
-                tvEol.ExpandAll();
-                tvEol.CheckBoxes = true;
+                timer1.Start();
+
+                tsTime.Text = DateTime.Now.ToString("F");
+
+                RemoveEngineeringPortal();
+
+                SetErrorMessageDisplayTextBox("Press Green Button to Start...");
+
+                if (FindSpectrometers())
+                    FindCalibrationFile();
+
+                progressBar1.Value = 0;
+                this.tabControl1.SelectedIndex = 0;
+
+                GetConfigurationSettings();
+
+                GetMirrorSettings();
+
+                CreateTestSequenceDataset();
+
+                dgvEol.AllowUserToAddRows = false;
+                dgvLightEngine.AllowUserToAddRows = false;
+
+                if (pagevm._lineTestermodel.EOL)
+                {
+                    cbLineTesterType.SelectedIndex = 0;
+                    lblLineTester.Text = "EOL LINE TESTER";
+                    WriteToLog("EOL Line Tester selected...", ApplicationConstants.TraceLogType.Information);
+
+                    tvEol.ExpandAll();
+                    tvEol.CheckBoxes = true;
+                }
+                else if (pagevm._lineTestermodel.LightEngine)
+                {
+                    cbLineTesterType.SelectedIndex = 1;
+                    lblLineTester.Text = "LIGHT ENGINE LINE TESTER";
+                    WriteToLog("LIGHT ENGINE Line Tester selected...", ApplicationConstants.TraceLogType.Information);
+
+                    tvLightEngine.ExpandAll();
+                    tvLightEngine.CheckBoxes = true;
+                }
+
+                SetLineTesterTabPages();
+
+                ResetEolTreeView();
+                ResetLightEngineTreeView();
             }
-            else if (pagevm._lineTestermodel.LightEngine)
+            else
             {
-                cbLineTesterType.SelectedIndex = 1;
-                lblLineTester.Text = "LIGHT ENGINE LINE TESTER";
-                WriteToLog("LIGHT ENGINE Line Tester selected...", ApplicationConstants.TraceLogType.Information);
-
-                tvLightEngine.ExpandAll();
-                tvLightEngine.CheckBoxes = true;
+                MessageBox.Show("Error occured creating IllumaVision config files. " + Environment.NewLine + 
+                                "Please contact illumaVision support team. ", 
+                                "IllumaVision CONFIG FILES", 
+                                MessageBoxButtons.OK, 
+                                MessageBoxIcon.Error);
             }
-
-            SetLineTesterTabPages();
-
-            ResetEolTreeView();
-            ResetLightEngineTreeView();
         }
 
         private void CreateTestSequenceDataset()

@@ -1,0 +1,10 @@
+{
+//1 - To Execute All test cases
+//2 - To Execute Daq Test cases
+//3 - To Execute Mirror Commands
+//4 - To Execute Image Processing
+//5 - To Execute Led Test Cases
+//6 - To Find Server IP and Handshake
+//other than these number...rest are invalid
+"ExecutionEvents":"1"
+}

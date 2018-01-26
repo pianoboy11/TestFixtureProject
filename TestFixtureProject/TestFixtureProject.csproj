@@ -213,17 +213,41 @@
     <EmbeddedResource Include="View\UserControls\ucLogin.resx">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="IllumaVision\Config\LineTester_Config.json" />
+    <Content Include="IllumaVision\Config\LineTester_Config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\illumaVisionConfig.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\Spectrometer-Calibration_S07450.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="LineTester_Config.json" />
     <None Include="EOL_Test_Sequence_Config.json" />
-    <None Include="IllumaVision\Config\EOL_Test_Sequence_Config.json" />
-    <None Include="IllumaVision\Config\lamplamp.csv" />
-    <None Include="IllumaVision\Config\LightEngine_Test_Sequence_Config.json" />
-    <None Include="IllumaVision\Config\setting_details_JSon.json" />
-    <None Include="IllumaVision\Config\Spectrometer-Calibration_S07382.csv" />
-    <None Include="IllumaVision\Config\TestFixtureExecutionSequence.json" />
-    <None Include="IllumaVision\Config\TestFixtureImageSettings.json" />
-    <None Include="IllumaVision\Config\TestFixtureLogin.json" />
+    <Content Include="IllumaVision\Config\EOL_Test_Sequence_Config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\lamplamp.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\LightEngine_Test_Sequence_Config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\setting_details_JSon.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\Spectrometer-Calibration_S07382.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\TestFixtureExecutionSequence.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\TestFixtureImageSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IllumaVision\Config\TestFixtureLogin.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="lamplamp.csv" />
     <None Include="LightEngine_Test_Sequence_Config.json" />
     <None Include="setting_details_JSon.json" />
@@ -255,7 +279,9 @@
     <None Include="Images\icons8-Home-50.png" />
     <None Include="Images\icons8-Administrative Tools-50.png" />
     <None Include="illumavision.bmp" />
-    <Content Include="IllumaVision\Config\illumavision.bmp" />
+    <Content Include="IllumaVision\Config\illumavision.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\icons8-Live Folder-50.png" />
     <Content Include="Images\icons8-Lock Filled-26 - B.png" />
     <Content Include="Images\icons8-Lock Filled-26.png" />
@@ -274,4 +300,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+</PreBuildEvent>
+  </PropertyGroup>
 </Project>

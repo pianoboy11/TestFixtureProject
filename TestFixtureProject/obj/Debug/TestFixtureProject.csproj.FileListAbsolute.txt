@@ -54,6 +54,18 @@ C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestF
 C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.csproj.GenerateResource.Cache
 C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.exe
 C:\Users\e1224569\Documents\Visual Studio 2017\Projects\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.pdb
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\LineTester_Config.json
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\illumaVisionConfig.bat
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\Spectrometer-Calibration_S07450.csv
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\EOL_Test_Sequence_Config.json
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\lamplamp.csv
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\LightEngine_Test_Sequence_Config.json
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\setting_details_JSon.json
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\Spectrometer-Calibration_S07382.csv
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\TestFixtureExecutionSequence.json
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\TestFixtureImageSettings.json
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\TestFixtureLogin.json
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\IllumaVision\Config\illumavision.bmp
 C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Images\ImageShow\White--Dot.png
 C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.exe.config
 C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\TestFixtureProject.exe
@@ -100,9 +112,11 @@ C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\WinFormAnimation.xml
 C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.Properties.Resources.resources
 C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixture.resources
 C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixtureLogin.resources
-C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.frmTestFixtureMetroUI.resources
 C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.ucLogin.resources
 C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.csproj.GenerateResource.Cache
 C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.csproj.CoreCompileInputs.cache
 C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.exe
 C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.pdb
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\OmniDriverCSharpDemo.exe
+C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\OmniDriverCSharpDemo.pdb
+C:\Builds\TestFixtureProject\TestFixtureProject\obj\Debug\TestFixtureProject.csprojResolveAssemblyReference.cache
