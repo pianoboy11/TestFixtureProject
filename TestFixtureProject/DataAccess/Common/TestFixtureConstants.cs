@@ -222,14 +222,14 @@ namespace TestFixtureProject.Common
                 }
                 else
                 {
-                    frmTestFixture.Instance.WriteToLog("CreateIllumaVisionRootDirectories Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
+                    frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
                     return;
                 }
 
             }
             catch (Exception e)
             {
-                frmTestFixture.Instance.WriteToLog("CreateIllumaVisionRootDirectories Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
+                frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
                 return;
             }
         }
