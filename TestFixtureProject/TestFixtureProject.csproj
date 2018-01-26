@@ -269,7 +269,6 @@
     <Content Include="Images\ImageShow\White--Dot.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ThirdPartyDLLs\Ribbon.dll" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
