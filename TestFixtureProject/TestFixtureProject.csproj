@@ -188,12 +188,6 @@
     <Compile Include="ViewModel\TestFixtureLoginViewModel.cs" />
     <Compile Include="ViewModel\TestFixtureMainWindowVM.cs" />
     <Compile Include="ViewModel\TestFixtureViewModel.cs" />
-    <Compile Include="View\Forms\frmTestFixtureMetroUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Forms\frmTestFixtureMetroUI.Designer.cs">
-      <DependentUpon>frmTestFixtureMetroUI.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\UserControls\ucLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -215,9 +209,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\frmTestFixtureLogin.resx">
       <DependentUpon>frmTestFixtureLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Forms\frmTestFixtureMetroUI.resx">
-      <DependentUpon>frmTestFixtureMetroUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserControls\ucLogin.resx">
       <DependentUpon>ucLogin.cs</DependentUpon>
