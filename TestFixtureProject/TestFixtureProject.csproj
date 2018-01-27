@@ -216,14 +216,9 @@
     <Content Include="IllumaVision\Config\LineTester_Config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="IllumaVision\Config\illumaVisionConfig.bat">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="IllumaVision\Config\Spectrometer-Calibration_S07450.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="LineTester_Config.json" />
-    <None Include="EOL_Test_Sequence_Config.json" />
     <Content Include="IllumaVision\Config\EOL_Test_Sequence_Config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -248,13 +243,6 @@
     <Content Include="IllumaVision\Config\TestFixtureLogin.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="lamplamp.csv" />
-    <None Include="LightEngine_Test_Sequence_Config.json" />
-    <None Include="setting_details_JSon.json" />
-    <None Include="Spectrometer-Calibration_S07382.csv" />
-    <None Include="TestFixtureExecutionSequence.json" />
-    <None Include="TestFixtureImageSettings.json" />
-    <None Include="TestFixtureLogin.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -278,7 +266,6 @@
   <ItemGroup>
     <None Include="Images\icons8-Home-50.png" />
     <None Include="Images\icons8-Administrative Tools-50.png" />
-    <None Include="illumavision.bmp" />
     <Content Include="IllumaVision\Config\illumavision.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -302,6 +289,6 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
-</PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
 </Project>

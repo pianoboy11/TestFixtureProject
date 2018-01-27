@@ -28,69 +28,94 @@ namespace TestFixtureProject.Common
         const string _EOLDirectory = "\\IllumaVision\\Config\\EOL_Test_Sequence_Config.json";
         const string _LineTesterDirectory = "\\IllumaVision\\Config\\LineTester_Config.json";
         const string _ConfigDirectory = "C:\\IllumaVision\\Config\\";
-        const string _Logger = "C:\\IllumaVision\\Logger\\";
+        internal const string _Logger = "C:\\IllumaVision\\Logger\\";
         const string _IllumaVisionRootDirectory = "C:\\IllumaVision\\";
 
         public static string GetLineTesterSettingsFilePath()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            return Path.Combine(info.Parent.FullName, _lineTesterDirectory);
-            // return Path.Combine(Environment.CurrentDirectory, _eolDirectory);  //Commented line out for integration purpose. 
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _lineTesterDirectory);
+            return filePath;
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //return Path.Combine(info.Parent.FullName, _lineTesterDirectory);
+            //// return Path.Combine(Environment.CurrentDirectory, _lineTesterDirectory);  //Commented line out for integration purpose. 
         }
 
         public static string GetEolSequenceFilePath()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            return Path.Combine(info.Parent.FullName, _eolDirectory);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _eolDirectory);
+            return filePath;
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //return Path.Combine(info.Parent.FullName, _eolDirectory);
             // return Path.Combine(Environment.CurrentDirectory, _eolDirectory);  //Commented line out for integration purpose. 
         }
 
         public static string GetLightEngineSequenceFilePath()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            return Path.Combine(info.Parent.FullName, _lightEngineDirectory);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _lightEngineDirectory);
+            return filePath;
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //return Path.Combine(info.Parent.FullName, _lightEngineDirectory);
             // return Path.Combine(Environment.CurrentDirectory, _lightEngineDirectory);  //Commented line out for integration purpose. 
         }
 
         public static string GetSettingsInfoFilePath()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            return Path.Combine(info.Parent.FullName, _fileName);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _fileName);
+            return filePath;
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //return Path.Combine(info.Parent.FullName, _fileName);
            // return Path.Combine(Environment.CurrentDirectory, _fileName);  //Commented line out for integration purpose. 
         }
 
         public static string GetCalibratedFile()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            return Path.Combine(info.Parent.FullName, _textfixturecalfile);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _textfixturecalfile);
+            return filePath;
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //return Path.Combine(info.Parent.FullName, _textfixturecalfile);
             //return Path.Combine(Environment.CurrentDirectory, _textfixturecalfile); //Commented line out for integration purpose. 
         }
 
         public static string GetSpectrometerCalibratedFile()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            return Path.Combine(info.Parent.FullName, _textspectrometercalfile);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _textspectrometercalfile);
+            return filePath;
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //return Path.Combine(info.Parent.FullName, _textspectrometercalfile);
             //return Path.Combine(Environment.CurrentDirectory, _textspectrometercalfile); //Commented line out for integration purpose. 
         }
 
         public static string ReadSaveImageSettingDetails()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            return Path.Combine(info.Parent.FullName, _textfixtureImgeSettings);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _textfixtureImgeSettings);
+            return filePath;
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //return Path.Combine(info.Parent.FullName, _textfixtureImgeSettings);
             // return Path.Combine(Environment.CurrentDirectory, _textfixtureImgeSettings); //Commented line out for integration purpose. 
         }
 
         public static string GetIllumaVisionFile()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            return Path.Combine(info.Parent.FullName, _illumaVisionFile);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _illumaVisionFile);
+            return filePath;
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //return Path.Combine(info.Parent.FullName, _illumaVisionFile);
             //return Path.Combine(Environment.CurrentDirectory, _illumaVisionFile); //Commented line out for integration purpose. 
         }
 
         public static string GetLoginInfoFilePath()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            string filePath = Path.Combine(info.Parent.FullName, _loginfileName);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _loginfileName);
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //string filePath = Path.Combine(info.Parent.FullName, _loginfileName);
             //string filePath =  Path.Combine(Environment.CurrentDirectory, _loginfileName);
             if (!Directory.Exists(filePath))
             {
@@ -110,8 +135,10 @@ namespace TestFixtureProject.Common
 
         public static string GetTestSequenceFromJson()
         {
-            DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            string filePath = Path.Combine(info.Parent.FullName, _testexecutionseq);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _testexecutionseq);
+
+            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
+            //string filePath = Path.Combine(info.Parent.FullName, _testexecutionseq);
             //string filePath = Path.Combine(Environment.CurrentDirectory, _testexecutionseq);
             if (!Directory.Exists(filePath))
             {
@@ -142,13 +169,14 @@ namespace TestFixtureProject.Common
             }
             catch(IOException exp)
             {
-
+                MessageBox.Show("CreateDirectoryIfNotExists Error: " + exp.Message, "CreateDirectoryIfNotExists", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
             return new_path;
         }
 
         public static string getImageUploadDirPath()
-        {
+        { 
             return Path.Combine(Environment.CurrentDirectory, _testFixtureImageUpload);
         }
 

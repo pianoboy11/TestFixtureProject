@@ -5,6 +5,8 @@ using System.IO;
 
 namespace TestFixtureProject.Helpers
 {
+    using TestFixtureProject.Common;
+
     public static class TestFixtureEventLogger
     {
         private static string _folderPath = null;
@@ -50,7 +52,7 @@ namespace TestFixtureProject.Helpers
         public static void createLogFile()
         {
 
-            _newFolderPath = CreateDirectoryIfNotExistsInC("Logger");
+            _newFolderPath = CreateDirectoryIfNotExistsInC(TestFixtureConstants._Logger);
 
             int lineCount = GetFileLineCount();
 
