@@ -874,8 +874,10 @@ namespace TestFixtureProject.DataAccess
                 {
                     //create WebClient object
                     WebClient client = new WebClient();
+                    client.Proxy = null;
                     client.Credentials = CredentialCache.DefaultCredentials;
-                    client.UploadFile(ipaddr, "POST", fileArray[i]);
+                    //client.UploadFile(ipaddr, "POST", fileArray[i]);
+                    client.UploadFile(ipaddr, "POST", @"C:\Builds\TestFixtureProject\TestFixtureProject\bin\Debug\Images\ImageShow\White--Dot.png" );
                     client.Dispose();
                 }
             }

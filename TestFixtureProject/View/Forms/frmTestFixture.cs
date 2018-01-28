@@ -488,9 +488,9 @@ namespace TestFixtureProject
         private void showEngineeringPortalToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            //ShowEngineeringPortal();
+            ShowEngineeringPortal();
 
-            ShowLoginForm();
+            //ShowLoginForm();
         }
 
         private void removeEngineeringPortalToolStripMenuItem_Click(object sender, EventArgs e)
