@@ -665,7 +665,7 @@ namespace TestFixtureProject.DataAccess
                                     frmTestFixture.Instance.WriteToLog(msg, ApplicationConstants.TraceLogType.Warning);
                                     serverStatus = serverUnavailable;
                                     //throw new IpAddressNotFoundException(msg);
-                                    //break;
+                                    break;
                                     //throw new IpAddressNotFoundException(msg);
                                 }
                             }
