@@ -324,7 +324,7 @@ namespace TestFixtureProject.DataAccess
         }
 
         #endregion
-
+          
         #region reset number of retries
         public static void ResetRetryCount()
         {

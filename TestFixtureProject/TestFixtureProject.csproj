@@ -269,7 +269,6 @@
     <Content Include="IllumaVision\Config\illumavision.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\icons8-Live Folder-50.png" />
     <Content Include="Images\icons8-Lock Filled-26 - B.png" />
     <Content Include="Images\icons8-Lock Filled-26.png" />
     <None Include="Images\icons8-Stack of Photos-50.png" />

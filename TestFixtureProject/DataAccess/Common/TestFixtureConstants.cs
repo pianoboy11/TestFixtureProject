@@ -29,6 +29,8 @@ namespace TestFixtureProject.Common
         const string _LineTesterDirectory = "\\IllumaVision\\Config\\LineTester_Config.json";
         const string _ConfigDirectory = "C:\\IllumaVision\\Config\\";
         internal const string _Logger = "C:\\IllumaVision\\Logger\\";
+        const string _LoginfileName = "\\IllumaVision\\Config\\TestFixtureLogin.json";
+        const string _TestFixtureImageUpload = "C:\\IllumaVision\\Images\\ImageShow\\";
         const string _IllumaVisionRootDirectory = "C:\\IllumaVision\\";
 
         public static string GetLineTesterSettingsFilePath()
@@ -112,7 +114,7 @@ namespace TestFixtureProject.Common
 
         public static string GetLoginInfoFilePath()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _loginfileName);
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _LoginfileName);
 
             //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
             //string filePath = Path.Combine(info.Parent.FullName, _loginfileName);
@@ -161,7 +163,10 @@ namespace TestFixtureProject.Common
             string new_path = null;
             try
             {
-                new_path = Environment.CurrentDirectory + "\\" + folderName;
+                //new_path = Environment.CurrentDirectory + "\\" + folderName;
+
+                new_path = string.Format("{0}", _TestFixtureImageUpload);
+
                 if (!Directory.Exists(new_path))
                 {
                     Directory.CreateDirectory(new_path);
@@ -176,8 +181,9 @@ namespace TestFixtureProject.Common
         }
 
         public static string getImageUploadDirPath()
-        { 
-            return Path.Combine(Environment.CurrentDirectory, _testFixtureImageUpload);
+        {
+            return Path.Combine(Environment.CurrentDirectory, _TestFixtureImageUpload);
+           // return Path.Combine(Environment.CurrentDirectory, _testFixtureImageUpload);
         }
 
         public static string getBandwidthUploadDirPath()
@@ -206,7 +212,14 @@ namespace TestFixtureProject.Common
                     Directory.CreateDirectory(_Logger);
                 }
 
+                if (!Directory.Exists(_TestFixtureImageUpload))
+                {
+                    Directory.CreateDirectory(_TestFixtureImageUpload);
+                }
+
                 CopyIllumaVisionConfigFilesToConfigDirectory();
+
+                CopyIllumaVisionImageShowFilesToImageDirectory();
 
                 isCreated = true;
             }
@@ -258,6 +271,56 @@ namespace TestFixtureProject.Common
             catch (Exception e)
             {
                 frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
+                return;
+            }
+        }
+
+        private static void CopyIllumaVisionImageShowFilesToImageDirectory()
+        {
+            try
+            {
+
+                string fileName = string.Empty;
+                string destFile = string.Empty;
+
+                string filePath = string.Format("{0}{1}", Environment.CurrentDirectory, "\\Images\\ImageShow");
+
+                try
+                {
+
+                    //To copy all the files in one directory to another directory.
+                    // Get the files in the source folder. (To recursively iterate through
+                    // all subfolders under the current directory, see
+                    // "How to: Iterate Through a Directory Tree.")
+                    // Note: Check for target path was performed previously 
+                    //       in this code example.
+                    if (System.IO.Directory.Exists(filePath))
+                    {
+                        string[] files = System.IO.Directory.GetFiles(filePath);
+
+                        // Copy the files and overwrite destination files if they already exist. 
+                        foreach (string s in files)
+                        {
+                            // Use static Path methods to extract only the file name from the path.
+                            fileName = System.IO.Path.GetFileName(s);
+                            destFile = System.IO.Path.Combine(_TestFixtureImageUpload, fileName);
+                            System.IO.File.Copy(s, destFile, true);
+                        }
+                    }
+                    else
+                    {
+                        frmTestFixture.Instance.WriteToLog("CopyIllumaVisionImageShowFilesToImageDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("FILEPATH ERROR: '" + filePath + "'" + Environment.NewLine + ex.Message, "FILEPATH");
+                }
+            }
+            catch (Exception e)
+            {
+                frmTestFixture.Instance.WriteToLog("CopyIllumaVisionImageShowFilesToImageDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
                 return;
             }
         }
