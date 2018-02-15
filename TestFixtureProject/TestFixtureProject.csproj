@@ -64,11 +64,7 @@
     <Reference Include="Eneter.Messaging.Framework, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b85852a6d7b5cd07, processorArchitecture=MSIL">
       <HintPath>..\packages\Eneter.Messaging.Framework.7.0.0\lib\net45\Eneter.Messaging.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Glimpse.Core, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Glimpse.1.8.6\lib\net45\Glimpse.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="MccDaq, Version=2.9.0.0, Culture=neutral, PublicKeyToken=a37eefcf5c6ca10a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="MccDaq">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Measurement Computing\DAQ\MccDaq.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
@@ -79,10 +75,6 @@
     </Reference>
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
-    </Reference>
-    <Reference Include="MWArray, Version=2.17.1.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files\MATLAB\MATLAB Runtime\v93\toolbox\dotnetbuilder\bin\win64\v4.0\MWArray.dll</HintPath>
     </Reference>
     <Reference Include="NETOmniDriver-NET40">
       <HintPath>..\..\..\..\..\..\..\Program Files\Ocean Optics\OmniDriverSPAM\OOI_HOME\NETOmniDriver-NET40.dll</HintPath>
@@ -95,10 +87,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json.Glimpse, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.Glimpse.1.0.2\lib\net35\Newtonsoft.Json.Glimpse.dll</HintPath>
-    </Reference>
-    <Reference Include="OmniDriverCSharpDemo, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\CSharpSimpleGUI\src\bin\x64\Debug\OmniDriverCSharpDemo.exe</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -167,7 +155,6 @@
     <Compile Include="Helpers\TestFixtureDataStores.cs" />
     <Compile Include="Helpers\TestFixtureEventLogger.cs" />
     <Compile Include="Helpers\TestFixtureExecutionSequence.cs" />
-    <Compile Include="Helpers\TestFixturePassworboxHelper.cs" />
     <Compile Include="Helpers\TestFixtureReadLoginInfo.cs" />
     <Compile Include="Helpers\TestFixtureTimer.cs" />
     <Compile Include="Model\TestFixtureDLUValueSetModel.cs" />
@@ -194,6 +181,7 @@
     <Compile Include="View\UserControls\ucLogin.Designer.cs">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </Compile>
+    <Content Include="Images\LineTester.ico" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

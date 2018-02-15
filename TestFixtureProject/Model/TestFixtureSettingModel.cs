@@ -1725,6 +1725,21 @@ namespace TestFixtureProject.Model
         }
         #endregion
 
+        #region Firmware Version
+        [JsonProperty("_mFirmwareVersion")]
+        private string _mFirmwareVersion = null;
+        public string FirmwareVersion
+        {
+            get { return _mFirmwareVersion; }
+            set
+            {
+                _mFirmwareVersion = value;
+                OnPropertyChanged("FirmwareVersion");
+            }
+
+        }
+        #endregion
+
         //though me not happy with this function but Deserialize some how not working... need to find better solution
         //deserialize is some how getting into loop and resulting into stack over loop
         //but this needs to be revisited to find the optimum solution
@@ -1863,7 +1878,10 @@ namespace TestFixtureProject.Model
             else if ("_mIpAddressRange" == file.Name)
             { IpAddressRange = file.Value; }
             else if ("_mIsProduction" == file.Name)
-            { IsProduction = file.Value; } 
+            { IsProduction = file.Value; }
+            else if ("_mFirmwareVersion" == file.Name)
+            {
+                FirmwareVersion = file.Value; }
         }
         #endregion
 

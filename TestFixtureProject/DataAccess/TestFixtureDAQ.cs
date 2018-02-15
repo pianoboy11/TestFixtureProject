@@ -672,11 +672,13 @@ namespace TestFixtureProject.DataAccess
             }
             else if (ULStat.Value.Equals(MccDaq.ErrorInfo.ErrorCode.BadRange))
             {
-                MessageBox.Show("Change the Range argument to one supported by this board.", ULStat.Message.ToString());
+                //MessageBox.Show("Change the Range argument to one supported by this board.", ULStat.Message.ToString());
+                frmTestFixture.Instance.WriteToLog("Change the Range argument to one supported by this board." + Environment.NewLine + ULStat.Message.ToString(), ApplicationConstants.TraceLogType.Error);
             }
             else
             {
-                MessageBox.Show("Some Problem has occured with the board", ULStat.Message.ToString());
+                //MessageBox.Show("Some Problem has occured with the board", ULStat.Message.ToString());
+                frmTestFixture.Instance.WriteToLog("Some Problem has occured with the board." + Environment.NewLine + ULStat.Message.ToString(), ApplicationConstants.TraceLogType.Error);
             }
             ULStat = DaqBoard.DConfigPort(MccDaq.DigitalPortType.FirstPortA, MccDaq.DigitalPortDirection.DigitalIn);
             ULStat = DaqBoard.AInputMode(MccDaq.AInputMode.SingleEnded);

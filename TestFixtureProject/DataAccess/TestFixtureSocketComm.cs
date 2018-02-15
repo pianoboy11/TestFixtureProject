@@ -234,10 +234,13 @@ namespace TestFixtureProject.DataAccess
                                         {
                                             firmwareVersion = array[7].ToString();
 
+                                            //frmTestFixture.Instance.pagevm._model.FirmwareVersion = firmwareVersion;
+
                                             if (firmwareVersion != "success")
                                             {
                                                 if (firmwareVersion == "1.1.106")
                                                 {
+
                                                     LogStructureNew.FirmwareVersion = firmwareVersion;
                                                     frmTestFixture.Instance.SetVersionNumberTextbox(firmwareVersion);
                                                 }

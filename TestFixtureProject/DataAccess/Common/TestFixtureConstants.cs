@@ -31,94 +31,73 @@ namespace TestFixtureProject.Common
         internal const string _Logger = "C:\\IllumaVision\\Logger\\";
         const string _LoginfileName = "\\IllumaVision\\Config\\TestFixtureLogin.json";
         const string _TestFixtureImageUpload = "C:\\IllumaVision\\Images\\ImageShow\\";
+        const string _ThirdPartyDrivers = "C:\\IllumaVision\\ThirdPartyDrivers\\";
+        const string _DotNetFramework = "C:\\IllumaVision\\DotNetFramework\\";
         const string _IllumaVisionRootDirectory = "C:\\IllumaVision\\";
+
+        public static string GetDotNetFrameworkFilePath()
+        {
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\DotNetFramework\\", _DotNetFramework);
+            return filePath;
+        }
+
+        public static string GetThirdPartyDriversFilePath()
+        {
+            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\ThirdPartyDrivers\\", _ThirdPartyDrivers);
+            return filePath;
+        }
 
         public static string GetLineTesterSettingsFilePath()
         {
             string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _lineTesterDirectory);
             return filePath;
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //return Path.Combine(info.Parent.FullName, _lineTesterDirectory);
-            //// return Path.Combine(Environment.CurrentDirectory, _lineTesterDirectory);  //Commented line out for integration purpose. 
         }
 
         public static string GetEolSequenceFilePath()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _eolDirectory);
+            string filePath = string.Format("C:{0}{1}", "\\IllumaVision\\Config\\", _eolDirectory);
             return filePath;
-
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //return Path.Combine(info.Parent.FullName, _eolDirectory);
-            // return Path.Combine(Environment.CurrentDirectory, _eolDirectory);  //Commented line out for integration purpose. 
         }
 
         public static string GetLightEngineSequenceFilePath()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _lightEngineDirectory);
+            string filePath = string.Format("C:{0}{1}", "\\IllumaVision\\Config\\", _lightEngineDirectory);
             return filePath;
-
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //return Path.Combine(info.Parent.FullName, _lightEngineDirectory);
-            // return Path.Combine(Environment.CurrentDirectory, _lightEngineDirectory);  //Commented line out for integration purpose. 
         }
 
         public static string GetSettingsInfoFilePath()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _fileName);
+            string filePath = string.Format("C:{0}{1}", "\\IllumaVision\\Config\\", _fileName);
             return filePath;
-
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //return Path.Combine(info.Parent.FullName, _fileName);
-           // return Path.Combine(Environment.CurrentDirectory, _fileName);  //Commented line out for integration purpose. 
         }
 
         public static string GetCalibratedFile()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _textfixturecalfile);
+            string filePath = string.Format("C:{0}{1}", "\\IllumaVision\\Config\\", _textfixturecalfile);
             return filePath;
-
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //return Path.Combine(info.Parent.FullName, _textfixturecalfile);
-            //return Path.Combine(Environment.CurrentDirectory, _textfixturecalfile); //Commented line out for integration purpose. 
         }
 
         public static string GetSpectrometerCalibratedFile()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _textspectrometercalfile);
+            string filePath = string.Format("C:{0}{1}", "\\IllumaVision\\Config\\", _textspectrometercalfile);
             return filePath;
-
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //return Path.Combine(info.Parent.FullName, _textspectrometercalfile);
-            //return Path.Combine(Environment.CurrentDirectory, _textspectrometercalfile); //Commented line out for integration purpose. 
         }
 
         public static string ReadSaveImageSettingDetails()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _textfixtureImgeSettings);
+            string filePath = string.Format("C:{0}{1}", "\\IllumaVision\\Config\\", _textfixtureImgeSettings);
             return filePath;
-
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //return Path.Combine(info.Parent.FullName, _textfixtureImgeSettings);
-            // return Path.Combine(Environment.CurrentDirectory, _textfixtureImgeSettings); //Commented line out for integration purpose. 
         }
 
         public static string GetIllumaVisionFile()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _illumaVisionFile);
+            string filePath = string.Format("C:{0}{1}", "\\IllumaVision\\Config\\", _illumaVisionFile);
             return filePath;
-
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //return Path.Combine(info.Parent.FullName, _illumaVisionFile);
-            //return Path.Combine(Environment.CurrentDirectory, _illumaVisionFile); //Commented line out for integration purpose. 
         }
 
         public static string GetLoginInfoFilePath()
         {
-            string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _LoginfileName);
-
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //string filePath = Path.Combine(info.Parent.FullName, _loginfileName);
-            //string filePath =  Path.Combine(Environment.CurrentDirectory, _loginfileName);
+            string filePath = string.Format("C:{0}{1}", "\\IllumaVision\\Config\\", _LoginfileName);
             if (!Directory.Exists(filePath))
             {
                 if (!File.Exists(filePath))
@@ -139,15 +118,12 @@ namespace TestFixtureProject.Common
         {
             string filePath = string.Format("C:\\{0}{1}", "\\IllumaVision\\Config\\", _testexecutionseq);
 
-            //DirectoryInfo info = new DirectoryInfo(Environment.CurrentDirectory);
-            //string filePath = Path.Combine(info.Parent.FullName, _testexecutionseq);
-            //string filePath = Path.Combine(Environment.CurrentDirectory, _testexecutionseq);
             if (!Directory.Exists(filePath))
             {
                 if (!File.Exists(filePath))
                 {
-                    JObject loginInfo = new JObject(new JProperty("ExecutionEvents","1"));
-                    
+                    JObject loginInfo = new JObject(new JProperty("ExecutionEvents", "1"));
+
                     using (StreamWriter file = File.CreateText(filePath))
                     using (JsonTextWriter writer = new JsonTextWriter(file))
                     {
@@ -163,7 +139,6 @@ namespace TestFixtureProject.Common
             string new_path = null;
             try
             {
-                //new_path = Environment.CurrentDirectory + "\\" + folderName;
 
                 new_path = string.Format("{0}", _TestFixtureImageUpload);
 
@@ -172,7 +147,7 @@ namespace TestFixtureProject.Common
                     Directory.CreateDirectory(new_path);
                 }
             }
-            catch(IOException exp)
+            catch (IOException exp)
             {
                 MessageBox.Show("CreateDirectoryIfNotExists Error: " + exp.Message, "CreateDirectoryIfNotExists", MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -183,7 +158,7 @@ namespace TestFixtureProject.Common
         public static string getImageUploadDirPath()
         {
             return Path.Combine(Environment.CurrentDirectory, _TestFixtureImageUpload);
-           // return Path.Combine(Environment.CurrentDirectory, _testFixtureImageUpload);
+            // return Path.Combine(Environment.CurrentDirectory, _testFixtureImageUpload);
         }
 
         public static string getBandwidthUploadDirPath()
@@ -217,15 +192,22 @@ namespace TestFixtureProject.Common
                     Directory.CreateDirectory(_TestFixtureImageUpload);
                 }
 
+                //if (!Directory.Exists(_ThirdPartyDrivers))
+                //{
+                //    Directory.CreateDirectory(_ThirdPartyDrivers);
+                //}
+
                 CopyIllumaVisionConfigFilesToConfigDirectory();
 
                 CopyIllumaVisionImageShowFilesToImageDirectory();
+
+                //CopyDllsToThirdPartyDriversDirectory();
 
                 isCreated = true;
             }
             catch (Exception e)
             {
-                frmTestFixture.Instance.WriteToLog("CreateIllumaVisionRootDirectories Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
+                MessageBox.Show("CreateIllumaVisionRootDirectories Error: " + e.Message, "ROOT DIRECTORIES", MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
             }
 
@@ -263,14 +245,18 @@ namespace TestFixtureProject.Common
                 }
                 else
                 {
-                    frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
+                    MessageBox.Show(filePath, "CopyIllumaVisionConfigFilesToConfigDirectory");
+
+                    //frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
                     return;
                 }
 
             }
             catch (Exception e)
             {
-                frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
+                MessageBox.Show("CopyIllumaVisionConfigFilesToConfigDirectory Error: " + e.Message, "CONFIG DIRECTORIES", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                //frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
                 return;
             }
         }
@@ -285,46 +271,79 @@ namespace TestFixtureProject.Common
 
                 string filePath = string.Format("{0}{1}", Environment.CurrentDirectory, "\\Images\\ImageShow");
 
-                try
+                //To copy all the files in one directory to another directory.
+                // Get the files in the source folder. (To recursively iterate through
+                // all subfolders under the current directory, see
+                // "How to: Iterate Through a Directory Tree.")
+                // Note: Check for target path was performed previously 
+                //       in this code example.
+                if (System.IO.Directory.Exists(filePath))
                 {
+                    string[] files = System.IO.Directory.GetFiles(filePath);
 
-                    //To copy all the files in one directory to another directory.
-                    // Get the files in the source folder. (To recursively iterate through
-                    // all subfolders under the current directory, see
-                    // "How to: Iterate Through a Directory Tree.")
-                    // Note: Check for target path was performed previously 
-                    //       in this code example.
-                    if (System.IO.Directory.Exists(filePath))
+                    // Copy the files and overwrite destination files if they already exist. 
+                    foreach (string s in files)
                     {
-                        string[] files = System.IO.Directory.GetFiles(filePath);
-
-                        // Copy the files and overwrite destination files if they already exist. 
-                        foreach (string s in files)
-                        {
-                            // Use static Path methods to extract only the file name from the path.
-                            fileName = System.IO.Path.GetFileName(s);
-                            destFile = System.IO.Path.Combine(_TestFixtureImageUpload, fileName);
-                            System.IO.File.Copy(s, destFile, true);
-                        }
+                        // Use static Path methods to extract only the file name from the path.
+                        fileName = System.IO.Path.GetFileName(s);
+                        destFile = System.IO.Path.Combine(_TestFixtureImageUpload, fileName);
+                        System.IO.File.Copy(s, destFile, true);
                     }
-                    else
-                    {
-                        frmTestFixture.Instance.WriteToLog("CopyIllumaVisionImageShowFilesToImageDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
-                        return;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("FILEPATH ERROR: '" + filePath + "'" + Environment.NewLine + ex.Message, "FILEPATH");
                 }
             }
+
             catch (Exception e)
             {
-                frmTestFixture.Instance.WriteToLog("CopyIllumaVisionImageShowFilesToImageDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
+                MessageBox.Show("CopyIllumaVisionImageShowFilesToImageDirectory Error: " + e.Message, "CONFIG DIRECTORIES", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                //frmTestFixture.Instance.WriteToLog("CopyIllumaVisionImageShowFilesToImageDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
                 return;
             }
         }
 
+        internal static void CopyDllsToThirdPartyDriversDirectory()
+        {
+            try
+            {
+
+                string fileName = string.Empty;
+                string destFile = string.Empty;
+
+                string filePath = string.Format("{0}{1}", Environment.CurrentDirectory, "\\ThirdPartyDrivers\\");
+
+                //To copy all the files in one directory to another directory.
+                // Get the files in the source folder. (To recursively iterate through
+                // all subfolders under the current directory, see
+                // "How to: Iterate Through a Directory Tree.")
+                // Note: Check for target path was performed previously 
+                //       in this code example.
+                if (System.IO.Directory.Exists(filePath))
+                {
+                    string[] files = System.IO.Directory.GetFiles(filePath);
+
+                    // Copy the files and overwrite destination files if they already exist. 
+                    foreach (string s in files)
+                    {
+                        // Use static Path methods to extract only the file name from the path.
+                        fileName = System.IO.Path.GetFileName(s);
+                        destFile = System.IO.Path.Combine(_ThirdPartyDrivers, fileName);
+                        System.IO.File.Copy(s, destFile, true);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(filePath,"CopyDllsToThirdPartyDriversDirectory");
+
+                    //frmTestFixture.Instance.WriteToLog("CopyDllsToThirdPartyDriversDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                frmTestFixture.Instance.WriteToLog("CopyDllsToThirdPartyDriversDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
+                return;
+            }
+        }
         #endregion
     }
 }

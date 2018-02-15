@@ -25,6 +25,7 @@ using System.Reflection;
 using System.Net;
 using System.Diagnostics;
 
+
 namespace TestFixtureProject.ViewModel
 {
     public delegate void ExternalStartEvent();
@@ -133,30 +134,40 @@ namespace TestFixtureProject.ViewModel
 
                 string[] portNames = System.IO.Ports.SerialPort.GetPortNames();
                 commPortNumber = portNames[0];
-                // commPortNumber
-                DaqBoard = new MccDaq.MccBoard();
+
+               // commPortNumber
+               DaqBoard = new MccDaq.MccBoard();
+
                 //We have now tied the Model to the ViewModel.
                 _mainmodel = new TestFixtureMainModel();
+
                 _dluvaluesetmodel = new TestFixtureDLUValueSetModel(_mgrantAccess);
+
                 _model = new TestFixtureSettingModel(_mgrantAccess);
-                //_mtestfixturesocketcomm = new TestFixtureSocketComm(); // Made class as static
+
                 _mtestfixturedaq = new TestFixtureDAQ(ref DaqBoard);
+
                 _mTestProjectImgModel = new TestFixtureProjectorImageModel();
                 //_mlogger = new TestFixtureEventLogger();
 
                 _mtestfixtureProjector = new TestFixtureProjectorModel(_mgrantAccess);
 
                 _lineTestermodel = new TestFixtureLineTesterConfigModel();
+
                 _eolmodel = new TestFixtureEolTestSequenceModel();
+
                 _lightenginemodel = new TestFixtureLightEngineTestSequenceModel();
 
                 _mTestFixtureTestMainModel = new TestFixtureTestMainModel();
+
                 _errmessage = new TestFixtureErrorMessage();
 
                 //Startthread = new Thread(this.ListenToStartEvent); 
                 Startthread = new Thread(this.PushButton);
                 Startthread.Name = "StartButtonThread";
+
                 _mTestFixtureSpectrum = new TestFixtureSpectrometer();
+
                 _mCaptdevice = new VideoCaptureDevice();
                 stopthread = new Thread(this.ListenToStopEvent);
                 stopthread.Name = "StopButtonThread";
@@ -176,6 +187,8 @@ namespace TestFixtureProject.ViewModel
             }
             catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show("VIEW MODEL: " + e.Message, "NETOmniDriver", MessageBoxButtons.OK, MessageBoxIcon.Error);
+  
                 if (e.Source == "NETOmniDriver-NET40")
                 {
                     // Here we are not handling Accessviolation Exception 
@@ -198,6 +211,8 @@ namespace TestFixtureProject.ViewModel
 
                 //UpdateTestResultPassFailStatus(true, "/*Press Green Button to Start*/");
                 // Startthread.Start();
+
+                System.Windows.Forms.Application.Exit();
             }
         }
         #endregion
@@ -4448,12 +4463,15 @@ namespace TestFixtureProject.ViewModel
                 {
                     frmTestFixture.Instance.SetStatusIndicatorTextBoxBackColor(System.Drawing.Color.Green);
                     frmTestFixture.Instance.SetStatusIndicatorVisibleProperty(true);
+                    isTestExecutionFailure = true;
                 }
                 else
                 {
                     frmTestFixture.Instance.SetStatusIndicatorTextBoxBackColor(System.Drawing.Color.Red);
                     frmTestFixture.Instance.SetStatusIndicatorVisibleProperty(true);
+                    isTestExecutionFailure = false;
                 }
+
             }
             catch (Exception e)
             {
@@ -5664,7 +5682,7 @@ namespace TestFixtureProject.ViewModel
                 frmTestFixture.Instance.SetEolTreeViewTestSequenceCheckProperty("MODEL NO", true);
 
                 isTestExecutionFailure = true;
-                UpdateTestResultPassFailStatus(false, "Model Number Scanning Failed...");
+                OverallTestResultPassFailStatus(false, "Model Number Scanning Failed...");
                 ErrorMsgDisplay = _mTestFixtureSerialComm.GetExceptionMessagesIfAny();
                 return flag;
             }
@@ -5685,8 +5703,9 @@ namespace TestFixtureProject.ViewModel
                     // WriteTestResultLog();
                     frmTestFixture.Instance.SetEolTreeViewTestSequenceCheckProperty("MODEL NO", false);
                     isTestExecutionFailure = true;
-                    UpdateTestResultPassFailStatus(false, "Mapping Model Number and Voltage Failed...");
-                    TestFixtureEventLogger.CreateStringAToWrite("Mapping of Model and Serial Number Failed");
+                    OverallTestResultPassFailStatus(false, "Mapping Model Number and Voltage Failed...");
+                    frmTestFixture.Instance.WriteToLog("Mapping Model Number and Voltage Failed...", ApplicationConstants.TraceLogType.Error);
+                    TestFixtureEventLogger.CreateStringAToWrite("Mapping Model Number and Voltage Failed...");
                     return flag;
                 }
 
@@ -5707,7 +5726,8 @@ namespace TestFixtureProject.ViewModel
                     frmTestFixture.Instance.SetEolTreeViewTestSequenceCheckProperty("SERIAL NO", false);
 
                     isTestExecutionFailure = true;
-                    UpdateTestResultPassFailStatus(false, "Serial Number Scanning Failed...");
+                    OverallTestResultPassFailStatus(false, "Serial Number Scanning Failed...");
+                    frmTestFixture.Instance.WriteToLog("Serial Number Scanning Failed...", ApplicationConstants.TraceLogType.Error);
                     ErrorMsgDisplay = _mTestFixtureSerialComm.GetExceptionMessagesIfAny();
                     return flag;
                 }
@@ -5727,8 +5747,9 @@ namespace TestFixtureProject.ViewModel
             {
                 frmTestFixture.Instance.SetEolTreeViewTestSequenceCheckProperty("MODEL NO", false);
                 isTestExecutionFailure = true;
-                UpdateTestResultPassFailStatus(false, "Error reading model number...");
+                OverallTestResultPassFailStatus(false, "Error reading model number...");
                 ErrorMsgDisplay = "Error reading model number...";
+                frmTestFixture.Instance.WriteToLog(ErrorMsgDisplay, ApplicationConstants.TraceLogType.Error);
                 return false;
             }
             Increment();
@@ -5744,9 +5765,10 @@ namespace TestFixtureProject.ViewModel
 
                 frmTestFixture.Instance.SetEolTreeViewTestSequenceCheckProperty("POWER", false);
                 isTestExecutionFailure = true;
-                UpdateTestResultPassFailStatus(false, "Failed to Turn on 120VAC Relay");
+                OverallTestResultPassFailStatus(false, "Failed to Turn on 120VAC Relay");
                 ErrorMsgDisplay = _mErrMsg;
                 TestFixtureEventLogger.CreateStringAToWrite("Failed to turned on 120VAC Relay");
+                frmTestFixture.Instance.WriteToLog("Failed to turned on 120VAC Relay", ApplicationConstants.TraceLogType.Error);
                 return flag;
             }
 
@@ -8122,6 +8144,7 @@ namespace TestFixtureProject.ViewModel
             try
             {
                 string getImageCommand = GetImageCommand();
+
                 //before call getProductType command to complete pairing process
                 serverStatus = TestFixtureSocketComm.SendCommandToServerToProcess2(getImageCommand);
             }
@@ -8237,7 +8260,7 @@ namespace TestFixtureProject.ViewModel
         public void PushButton()
         {
             firstTime = 1;
-            MccDaq.ErrorInfo ULStat;
+            MccDaq.ErrorInfo ULStat = null;
             string return_value = MccDaq.ErrorInfo.ErrorCode.NoErrors.ToString();
             MccDaq.DigitalLogicState DataValue;
 
@@ -8258,7 +8281,7 @@ namespace TestFixtureProject.ViewModel
 
                             frmTestFixture.Instance.tabControl2.Invoke((MethodInvoker)delegate
                             {
-                                if(frmTestFixture.Instance.tabControl2.SelectedTab.Text == "Main")
+                                if (frmTestFixture.Instance.tabControl2.SelectedTab.Text == "Main")
                                 {
                                     mainTabSelected = true;
                                 }
@@ -8270,54 +8293,65 @@ namespace TestFixtureProject.ViewModel
                             });
 
                             if (!isTestExecutionFailure && mainTabSelected)
-                               {
+                            {
 
-                                   ULStat = DaqBoard.DBitIn(MccDaq.DigitalPortType.FirstPortA, 0, out DataValue);
+                                ULStat = DaqBoard.DBitIn(MccDaq.DigitalPortType.FirstPortA, 0, out DataValue);
 
-                                   if (ULStat.Value.Equals(MccDaq.ErrorInfo.ErrorCode.NoErrors))
-                                   {
-                                       if (DataValue == MccDaq.DigitalLogicState.Low)
-                                       {
-                                       //ResetStatusIndicator();
+                                if (ULStat.Value.Equals(MccDaq.ErrorInfo.ErrorCode.NoErrors))
+                                {
+                                    if (DataValue == MccDaq.DigitalLogicState.Low)
+                                    {
+                                        //ResetStatusIndicator();
 
-                                       isStartPressed = true;
-                                       //isStopbtnPressed = false;
+                                        isStartPressed = true;
+                                        //isStopbtnPressed = false;
 
-                                       frmTestFixture.Instance.tabControl2.Invoke((MethodInvoker)delegate
+                                        frmTestFixture.Instance.tabControl2.Invoke((MethodInvoker)delegate
 
-                                       {
+                                        {
 
-                                           frmTestFixture.Instance.pagevm.ResetStatusIndicator();
+                                            frmTestFixture.Instance.pagevm.ResetStatusIndicator();
 
-                                           frmTestFixture.Instance.Refresh();
+                                            frmTestFixture.Instance.Refresh();
 
-                                           //ucHostContainer.Instance.txtModelNumber.Text = message;
-                                           if (!isTestExecutionFailure && frmTestFixture.Instance.tabControl2.SelectedTab.Text == "Main")
-                                                {
-                                                   if (!frmTestFixture.Instance.backgroundWorker1.IsBusy)
-                                                      frmTestFixture.Instance.backgroundWorker1.RunWorkerAsync(frmTestFixture.BW_OPERATIONS.OPERATION_START_TEST_SEQUENCE);
+                                            //ucHostContainer.Instance.txtModelNumber.Text = message;
+                                            if (!isTestExecutionFailure && frmTestFixture.Instance.tabControl2.SelectedTab.Text == "Main")
+                                            {
+                                                if (!frmTestFixture.Instance.backgroundWorker1.IsBusy)
+                                                    frmTestFixture.Instance.backgroundWorker1.RunWorkerAsync(frmTestFixture.BW_OPERATIONS.OPERATION_START_TEST_SEQUENCE);
 
-                                                    //OnChangeExternalTrigger();
-                                                }
-                                            });
+                                                //OnChangeExternalTrigger();
+                                            }
+                                        });
 
-                                           return;
+                                        return;
 
-                                       }
-                                       else
-                                       {
-                                           isStartPressed = false;
+                                    }
+                                    else
+                                    {
+                                        isStartPressed = false;
 
-                                           //if (frmTestFixture.Instance.backgroundWorker1.CancellationPending)
-                                           //    break;
+                                        //if (frmTestFixture.Instance.backgroundWorker1.CancellationPending)
+                                        //    break;
 
-                                          
-                                       }
-                                   }
-                            //       return;
-                               }
 
-                           //});
+                                    }
+                                }
+                                //       return;
+                            }
+                            else
+                            {
+                                if (ULStat.Value.Equals(MccDaq.ErrorInfo.ErrorCode.NoErrors))
+                                {
+                                }
+                                else
+                                {
+                                    frmTestFixture.Instance.WriteToLog("PushButton: " + ULStat.Value.ToString(), ApplicationConstants.TraceLogType.Error);
+                                    return;
+
+                                }
+                            }
+                            //});
                         }
                     }
                 }

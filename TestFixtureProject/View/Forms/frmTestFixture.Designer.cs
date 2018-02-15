@@ -101,7 +101,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tcTestExecutiveSuite = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
@@ -446,7 +446,7 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.tabControl3.SuspendLayout();
+            this.tcTestExecutiveSuite.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -753,7 +753,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.tabControl3);
+            this.splitContainer1.Panel1.Controls.Add(this.tcTestExecutiveSuite);
             // 
             // splitContainer1.Panel2
             // 
@@ -763,15 +763,15 @@
             this.splitContainer1.SplitterDistance = 599;
             this.splitContainer1.TabIndex = 1;
             // 
-            // tabControl3
+            // tcTestExecutiveSuite
             // 
-            this.tabControl3.Controls.Add(this.tabPage1);
-            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl3.Location = new System.Drawing.Point(0, 0);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1103, 599);
-            this.tabControl3.TabIndex = 1;
+            this.tcTestExecutiveSuite.Controls.Add(this.tabPage1);
+            this.tcTestExecutiveSuite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcTestExecutiveSuite.Location = new System.Drawing.Point(0, 0);
+            this.tcTestExecutiveSuite.Name = "tcTestExecutiveSuite";
+            this.tcTestExecutiveSuite.SelectedIndex = 0;
+            this.tcTestExecutiveSuite.Size = new System.Drawing.Size(1103, 599);
+            this.tcTestExecutiveSuite.TabIndex = 1;
             // 
             // tabPage1
             // 
@@ -4449,7 +4449,7 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
+            this.tcTestExecutiveSuite.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
@@ -4600,7 +4600,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel tsApplicationUserMode;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabControl tcTestExecutiveSuite;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.GroupBox groupBox3;

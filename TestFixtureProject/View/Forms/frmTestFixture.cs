@@ -14,10 +14,6 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Media.Imaging;
 
-
-//using MagicSquareComp;
-using MathWorks.MATLAB.NET.Arrays;
-
 namespace TestFixtureProject
 {
     using AForge.Video;
@@ -114,12 +110,12 @@ namespace TestFixtureProject
             //}
 
             // Load 
-            vm = new TestFixtureMainWindowVM();
+            //vm = new TestFixtureMainWindowVM();
 
-            if (pagevm == null)
-                pagevm = new TestFixtureViewModel();
+            //if (pagevm == null)
+            //    pagevm = new TestFixtureViewModel();
 
-            pagevm.ResetDaqBoardPort();
+            //pagevm.ResetDaqBoardPort();
 
             _instance = this;
         }
@@ -287,64 +283,87 @@ namespace TestFixtureProject
         #region Event Handlers
         private void frmTestFixture_Load(object sender, EventArgs e)
         {
-            if (TestFixtureConstants.CreateIllumaVisionRootDirectories())
+            try
             {
-                SetStatusIndicatorVisibleProperty(false);
-
-                timer1.Start();
-
-                tsTime.Text = DateTime.Now.ToString("F");
-
-                RemoveEngineeringPortal();
-
-                SetErrorMessageDisplayTextBox("Press Green Button to Start...");
-
-                if (FindSpectrometers())
-                    FindCalibrationFile();
-
-                progressBar1.Value = 0;
-                this.tabControl1.SelectedIndex = 0;
-
-                GetConfigurationSettings();
-
-                GetMirrorSettings();
-
-                CreateTestSequenceDataset();
-
-                dgvEol.AllowUserToAddRows = false;
-                dgvLightEngine.AllowUserToAddRows = false;
-
-                if (pagevm._lineTestermodel.EOL)
+                if (TestFixtureConstants.CreateIllumaVisionRootDirectories())
                 {
-                    cbLineTesterType.SelectedIndex = 0;
-                    lblLineTester.Text = "EOL LINE TESTER";
-                    WriteToLog("EOL Line Tester selected...", ApplicationConstants.TraceLogType.Information);
+                    vm = new TestFixtureMainWindowVM();
 
-                    tvEol.ExpandAll();
-                    tvEol.CheckBoxes = true;
+                    if (pagevm == null)
+                        pagevm = new TestFixtureViewModel();
+
+                    txtVersionNumber.Text = pagevm._model.FirmwareVersion;
+
+                    if(string.IsNullOrEmpty(txtVersionNumber.Text))
+                        pagevm._model.FirmwareVersion = "1.0.0.0";
+
+                    pagevm.ResetDaqBoardPort();
+
+                    SetStatusIndicatorVisibleProperty(false);
+
+                    timer1.Start();
+
+                    tsTime.Text = DateTime.Now.ToString("F");
+
+                    RemoveEngineeringPortal();
+
+                    if (FindSpectrometers())
+                        FindCalibrationFile();
+
+                    progressBar1.Value = 0;
+                    this.tabControl1.SelectedIndex = 0;
+
+                    GetConfigurationSettings();
+
+                    GetMirrorSettings();
+
+                    CreateTestSequenceDataset();
+
+                    dgvEol.AllowUserToAddRows = false;
+                    dgvLightEngine.AllowUserToAddRows = false;
+
+                    if (pagevm._lineTestermodel.EOL)
+                    {
+                        cbLineTesterType.SelectedIndex = 0;
+                        lblLineTester.Text = "EOL LINE TESTER";
+                        WriteToLog("EOL Line Tester selected...", ApplicationConstants.TraceLogType.Information);
+
+                        tvEol.ExpandAll();
+                        tvEol.CheckBoxes = true;
+                    }
+                    else if (pagevm._lineTestermodel.LightEngine)
+                    {
+                        cbLineTesterType.SelectedIndex = 1;
+                        lblLineTester.Text = "LIGHT ENGINE LINE TESTER";
+                        WriteToLog("LIGHT ENGINE Line Tester selected...", ApplicationConstants.TraceLogType.Information);
+
+                        tvLightEngine.ExpandAll();
+                        tvLightEngine.CheckBoxes = true;
+                    }
+
+                    SetLineTesterTabPages();
+
+                    ResetEolTreeView();
+                    ResetLightEngineTreeView();
                 }
-                else if (pagevm._lineTestermodel.LightEngine)
+                else
                 {
-                    cbLineTesterType.SelectedIndex = 1;
-                    lblLineTester.Text = "LIGHT ENGINE LINE TESTER";
-                    WriteToLog("LIGHT ENGINE Line Tester selected...", ApplicationConstants.TraceLogType.Information);
-
-                    tvLightEngine.ExpandAll();
-                    tvLightEngine.CheckBoxes = true;
+                    MessageBox.Show("Error occured creating IllumaVision config files. " + Environment.NewLine +
+                                    "Please contact illumaVision support team. ",
+                                    "IllumaVision CONFIG FILES",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
                 }
-
-                SetLineTesterTabPages();
-
-                ResetEolTreeView();
-                ResetLightEngineTreeView();
             }
-            else
+            catch(Exception ex)
             {
-                MessageBox.Show("Error occured creating IllumaVision config files. " + Environment.NewLine + 
-                                "Please contact illumaVision support team. ", 
-                                "IllumaVision CONFIG FILES", 
-                                MessageBoxButtons.OK, 
-                                MessageBoxIcon.Error);
+                MessageBox.Show("Error during Form Load. Please contact IllumaVision support team to resolve issue." + Environment.NewLine +
+                                    ex.Message,
+                                    "FORM LOAD",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+
+                tcTestExecutiveSuite.Enabled = false;
             }
         }
 
@@ -1837,14 +1856,25 @@ namespace TestFixtureProject
 
             SetStatusIndicatorVisibleProperty(false);
 
-            //if (!pagevm.Startthread.IsAlive)
-            //     pagevm.Startthread.Start();
-            //if (!backgroundWorker1.IsBusy)
-            //    backgroundWorker1.RunWorkerAsync(BW_OPERATIONS.OPERATION_START_TEST_SEQUENCE);
-
-            if (!pagevm.Startthread.IsAlive)
+     
+            if (pagevm.Startthread.IsAlive)
             {
-                pagevm = new TestFixtureViewModel();
+                if (frmTestFixture.Instance.tabControl2.SelectedTab.Text == "Main")
+                {
+                    if (!frmTestFixture.Instance.backgroundWorker1.IsBusy)
+                        frmTestFixture.Instance.backgroundWorker1.RunWorkerAsync(frmTestFixture.BW_OPERATIONS.OPERATION_START_TEST_SEQUENCE);
+
+                    //OnChangeExternalTrigger();
+                }
+
+                //if (!TestFixtureViewModel.isTestExecutionFailure && frmTestFixture.Instance.tabControl2.SelectedTab.Text == "Main")
+                //{
+                //    if (!frmTestFixture.Instance.backgroundWorker1.IsBusy)
+                //        frmTestFixture.Instance.backgroundWorker1.RunWorkerAsync(frmTestFixture.BW_OPERATIONS.OPERATION_START_TEST_SEQUENCE);
+
+                //    //OnChangeExternalTrigger();
+                //}
+                //pagevm = new TestFixtureViewModel();
 
                 //SetErrorMessageDisplayTextBox("Press Green Button to Start...");
             }
@@ -4130,61 +4160,82 @@ namespace TestFixtureProject
 
             try
             {
-                if (cbLineTesterType.SelectedItem != null)
+
+                if (pagevm == null)
                 {
-                    if (pagevm._lineTestermodel.EOL)
-                    {
-                        cbLineTesterType.SelectedIndex = 0;
-                        lblLineTester.Text = "EOL LINE TESTER";
-                        WriteToLog("EOL Line Tester selected...", ApplicationConstants.TraceLogType.Information);
-
-                        ShowLineTesterTabPages(tpEol);
-
-                        tvEol.ExpandAll();
-                        tvEol.CheckBoxes = true;
-
-                        //Since we are testing EOL Test Sequence, remove / hide EMLINQ tab control
-                        tpLightEngine.Hide();
-                        tcLineTester.TabPages.Remove(tpLightEngine);
-
-                        ResetEolTreeView();
-
-                    }
-                    else if (pagevm._lineTestermodel.LightEngine)
-                    {
-                        cbLineTesterType.SelectedIndex = 1;
-                        lblLineTester.Text = "LIGHT ENGINE TESTER";
-                        WriteToLog("LIGHT ENGINE Line Tester selected...", ApplicationConstants.TraceLogType.Information);
-
-                        ShowLineTesterTabPages(tpLightEngine);
-
-                        tvLightEngine.ExpandAll();
-                        tvLightEngine.CheckBoxes = true;
-
-                        //Since we are testing EOL Test Sequence, remove / hide EMLINQ tab control
-                        tpEol.Hide();
-                        tcLineTester.TabPages.Remove(tpEol);
-
-                        ResetLightEngineTreeView();
-                    }
-
-                    TestFixtureViewModel.Instance.SaveLineTesterDetailsToFile();
-
-                    WriteToLog("Save 'LINE TESTER' settings successfully...", ApplicationConstants.TraceLogType.Information);
-
-                    TestFixtureViewModel.Instance.SaveEolDetailsToFile();
-
-                    WriteToLog("Save 'EOL' test sequence successfully...", ApplicationConstants.TraceLogType.Information);
-
-                    TestFixtureViewModel.Instance.SaveLightEngineDetailsToFile();
-
-                    WriteToLog("Save 'LINE ENGINE' test sequence successfully...", ApplicationConstants.TraceLogType.Information);
+                    TestFixtureViewModel.isTestExecutionFailure = true;
+                    tcTestExecutiveSuite.Enabled = false;
+                    string ErrorMsgDisplay = "TestFixtureViewModel is null. Please contact EOL support team to resolve issue...";
+                    System.Windows.Forms.MessageBox.Show(ErrorMsgDisplay, "SetLineTesterTabPages", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    WriteToLog(ErrorMsgDisplay, ApplicationConstants.TraceLogType.Error);
+                    return;
                 }
-                else
+
+                if (pagevm._lineTestermodel == null)
                 {
-                    WriteToLog("Please select line tester from drop down menu...", ApplicationConstants.TraceLogType.Warning);
-                    MessageBox.Show("Please select line tester from drop down menu...", "LINE TESTER", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TestFixtureViewModel.isTestExecutionFailure = true;
+                    tcTestExecutiveSuite.Enabled = false;
+                    string ErrorMsgDisplay = "LineTestermodel is null. Please contact EOL support team to resolve issue...";
+                    System.Windows.Forms.MessageBox.Show(ErrorMsgDisplay, "SetLineTesterTabPages", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    WriteToLog(ErrorMsgDisplay, ApplicationConstants.TraceLogType.Error);
+                    return;
                 }
+
+                //if (cbLineTesterType.SelectedItem != null)
+                //{
+                if (pagevm._lineTestermodel.EOL)
+                {
+                    cbLineTesterType.SelectedIndex = 0;
+                    lblLineTester.Text = "EOL LINE TESTER";
+                    WriteToLog("EOL Line Tester selected...", ApplicationConstants.TraceLogType.Information);
+
+                    ShowLineTesterTabPages(tpEol);
+
+                    tvEol.ExpandAll();
+                    tvEol.CheckBoxes = true;
+
+                    //Since we are testing EOL Test Sequence, remove / hide EMLINQ tab control
+                    tpLightEngine.Hide();
+                    tcLineTester.TabPages.Remove(tpLightEngine);
+
+                    ResetEolTreeView();
+
+                }
+                else if (pagevm._lineTestermodel.LightEngine)
+                {
+                    cbLineTesterType.SelectedIndex = 1;
+                    lblLineTester.Text = "LIGHT ENGINE TESTER";
+                    WriteToLog("LIGHT ENGINE Line Tester selected...", ApplicationConstants.TraceLogType.Information);
+
+                    ShowLineTesterTabPages(tpLightEngine);
+
+                    tvLightEngine.ExpandAll();
+                    tvLightEngine.CheckBoxes = true;
+
+                    //Since we are testing EOL Test Sequence, remove / hide EMLINQ tab control
+                    tpEol.Hide();
+                    tcLineTester.TabPages.Remove(tpEol);
+
+                    ResetLightEngineTreeView();
+                }
+
+                TestFixtureViewModel.Instance.SaveLineTesterDetailsToFile();
+
+                WriteToLog("Save 'LINE TESTER' settings successfully...", ApplicationConstants.TraceLogType.Information);
+
+                TestFixtureViewModel.Instance.SaveEolDetailsToFile();
+
+                WriteToLog("Save 'EOL' test sequence successfully...", ApplicationConstants.TraceLogType.Information);
+
+                TestFixtureViewModel.Instance.SaveLightEngineDetailsToFile();
+
+                WriteToLog("Save 'LINE ENGINE' test sequence successfully...", ApplicationConstants.TraceLogType.Information);
+                //}
+                //else
+                //{
+                //    WriteToLog("Please select line tester from drop down menu...", ApplicationConstants.TraceLogType.Warning);
+                //    MessageBox.Show("Please select line tester from drop down menu...", "LINE TESTER", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //}
 
             }
             catch (Exception ex)

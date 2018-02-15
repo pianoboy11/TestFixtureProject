@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFixtureProject", "TestFixtureProject\TestFixtureProject.csproj", "{E2E61279-D1A7-4DCB-AFFD-C7B82E479C7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmniDriverCSharpDemo", "CSharpSimpleGUI\src\OmniDriverCSharpDemo.csproj", "{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "IllumaVisionEOLTesterSetup", "Installer\IllumaVisionEOLTesterSetup\IllumaVisionEOLTesterSetup.vdproj", "{984E0EA2-2B28-44DC-A002-181F46090D6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,18 +29,17 @@ Global
 		{E2E61279-D1A7-4DCB-AFFD-C7B82E479C7E}.Release|x64.Build.0 = Release|Any CPU
 		{E2E61279-D1A7-4DCB-AFFD-C7B82E479C7E}.Release|x86.ActiveCfg = Release|Any CPU
 		{E2E61279-D1A7-4DCB-AFFD-C7B82E479C7E}.Release|x86.Build.0 = Release|Any CPU
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Debug|x64.ActiveCfg = Debug|x64
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Debug|x64.Build.0 = Debug|x64
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Debug|x86.ActiveCfg = Debug|x86
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Debug|x86.Build.0 = Debug|x86
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Release|Any CPU.ActiveCfg = Release|x86
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Release|x64.ActiveCfg = Release|x64
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Release|x64.Build.0 = Release|x64
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Release|x86.ActiveCfg = Release|x86
-		{4E145DB5-54A9-4803-93BC-F1E47B9C7E4B}.Release|x86.Build.0 = Release|x86
+		{984E0EA2-2B28-44DC-A002-181F46090D6C}.Debug|Any CPU.ActiveCfg = Debug
+		{984E0EA2-2B28-44DC-A002-181F46090D6C}.Debug|x64.ActiveCfg = Debug
+		{984E0EA2-2B28-44DC-A002-181F46090D6C}.Debug|x86.ActiveCfg = Debug
+		{984E0EA2-2B28-44DC-A002-181F46090D6C}.Release|Any CPU.ActiveCfg = Release
+		{984E0EA2-2B28-44DC-A002-181F46090D6C}.Release|x64.ActiveCfg = Release
+		{984E0EA2-2B28-44DC-A002-181F46090D6C}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E09B18B-ED03-4FA6-B90C-45D76ED08D51}
 	EndGlobalSection
 EndGlobal
