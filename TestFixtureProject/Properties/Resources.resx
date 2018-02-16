@@ -118,40 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8_Lock_Filled_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-Lock Filled-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_Lock_Filled_26___B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-Lock Filled-26 - B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_User_Credentials_Filled_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-User Credentials Filled-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_User_Group_Man_Man_Filled_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-User Group Man Man Filled-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_User_Group_Man_Man_Filled_50___B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-User Group Man Man Filled-50 - B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PentairLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\PentairLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FolderLive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IllumaVision\Images\FolderLive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Administrative_Tools_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-Administrative Tools-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\IllumaVision\Images\icons8-Administrative Tools-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Home_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-Home-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\IllumaVision\Images\icons8-Home-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Lock_Filled_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IllumaVision\Images\icons8-Lock Filled-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Lock_Filled_26___B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IllumaVision\Images\icons8-Lock Filled-26 - B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Services_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-Services-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\IllumaVision\Images\icons8-Services-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Stack_of_Photos_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-Stack of Photos-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\IllumaVision\Images\icons8-Stack of Photos-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_User_Credentials_Filled_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IllumaVision\Images\icons8-User Credentials Filled-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_User_Group_Man_Man_Filled_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IllumaVision\Images\icons8-User Group Man Man Filled-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_User_Group_Man_Man_Filled_50___B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IllumaVision\Images\icons8-User Group Man Man Filled-50 - B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Web_Design_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-Web Design-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\IllumaVision\Images\icons8-Web Design-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LineTester" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\LineTester.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PentairLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IllumaVision\Images\PentairLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White__Dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IllumaVision\Images\ImageShow\White--Dot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

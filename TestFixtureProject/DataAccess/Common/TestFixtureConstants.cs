@@ -241,13 +241,15 @@ namespace TestFixtureProject.Common
                         fileName = System.IO.Path.GetFileName(s);
                         destFile = System.IO.Path.Combine(_ConfigDirectory, fileName);
                         System.IO.File.Copy(s, destFile, true);
+
+                        frmTestFixture.Instance.WriteToLog("Config Files Installed: " + s, ApplicationConstants.TraceLogType.Information);
+
                     }
                 }
                 else
                 {
-                    MessageBox.Show(filePath, "CopyIllumaVisionConfigFilesToConfigDirectory");
-
-                    //frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
+                    MessageBox.Show("CopyIllumaVisionConfigFilesToConfigDirectory is missing. Please install the IllumaVision Configuration folder..." + Environment.NewLine + filePath, "CONFIG DIRECTORIES",  MessageBoxButton.OK, MessageBoxImage.Error);
+                    frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory is missing. Please install the IllumaVision Configuration folder..." + Environment.NewLine + filePath, ApplicationConstants.TraceLogType.Error);
                     return;
                 }
 
@@ -256,7 +258,7 @@ namespace TestFixtureProject.Common
             {
                 MessageBox.Show("CopyIllumaVisionConfigFilesToConfigDirectory Error: " + e.Message, "CONFIG DIRECTORIES", MessageBoxButton.OK, MessageBoxImage.Error);
 
-                //frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
+                frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Error);
                 return;
             }
         }
@@ -269,7 +271,7 @@ namespace TestFixtureProject.Common
                 string fileName = string.Empty;
                 string destFile = string.Empty;
 
-                string filePath = string.Format("{0}{1}", Environment.CurrentDirectory, "\\Images\\ImageShow");
+                string filePath = string.Format("{0}{1}", Environment.CurrentDirectory, "\\IllumaVision\\Images\\ImageShow\\");
 
                 //To copy all the files in one directory to another directory.
                 // Get the files in the source folder. (To recursively iterate through
@@ -284,19 +286,29 @@ namespace TestFixtureProject.Common
                     // Copy the files and overwrite destination files if they already exist. 
                     foreach (string s in files)
                     {
-                        // Use static Path methods to extract only the file name from the path.
+                         // Use static Path methods to extract only the file name from the path.
                         fileName = System.IO.Path.GetFileName(s);
                         destFile = System.IO.Path.Combine(_TestFixtureImageUpload, fileName);
                         System.IO.File.Copy(s, destFile, true);
+
+                        frmTestFixture.Instance.WriteToLog("Image Show Files Installed: " + s, ApplicationConstants.TraceLogType.Information);
+
                     }
                 }
+                else
+                {
+                    MessageBox.Show("CopyIllumaVisionImageShowFilesToImageDirectory is missing. Please install the IllumaVision Image Show folder..." + Environment.NewLine + filePath, "CONFIG DIRECTORIES", MessageBoxButton.OK, MessageBoxImage.Error);
+                    frmTestFixture.Instance.WriteToLog("CopyIllumaVisionImageShowFilesToImageDirectory is missing. Please install the IllumaVision Image Show folder...", ApplicationConstants.TraceLogType.Error);
+                    return;
+                }
+
             }
 
             catch (Exception e)
             {
                 MessageBox.Show("CopyIllumaVisionImageShowFilesToImageDirectory Error: " + e.Message, "CONFIG DIRECTORIES", MessageBoxButton.OK, MessageBoxImage.Error);
 
-                //frmTestFixture.Instance.WriteToLog("CopyIllumaVisionImageShowFilesToImageDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Information);
+                frmTestFixture.Instance.WriteToLog("CopyIllumaVisionImageShowFilesToImageDirectory Error: " + e.Message, ApplicationConstants.TraceLogType.Error);
                 return;
             }
         }
@@ -332,11 +344,11 @@ namespace TestFixtureProject.Common
                 }
                 else
                 {
-                    MessageBox.Show(filePath,"CopyDllsToThirdPartyDriversDirectory");
-
-                    //frmTestFixture.Instance.WriteToLog("CopyDllsToThirdPartyDriversDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
+                    MessageBox.Show("CopyDllsToThirdPartyDriversDirectory is missing. Please install the ThirdPartyDriver folder..." + Environment.NewLine + filePath, "CONFIG DIRECTORIES", MessageBoxButton.OK, MessageBoxImage.Error);
+                    //frmTestFixture.Instance.WriteToLog("CopyIllumaVisionConfigFilesToConfigDirectory Error: Source path does not exist!", ApplicationConstants.TraceLogType.Warning);
                     return;
                 }
+
             }
             catch (Exception e)
             {

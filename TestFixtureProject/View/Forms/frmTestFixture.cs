@@ -49,6 +49,8 @@ namespace TestFixtureProject
         internal int warningMessageCounter = 0;
         internal int informationMessageCounter = 0;
 
+        internal string _FirmwareVersion { get; set; }
+
         //singleton design pattern
         private static frmTestFixture _instance;
 
@@ -285,17 +287,16 @@ namespace TestFixtureProject
         {
             try
             {
+
+             
+
+
                 if (TestFixtureConstants.CreateIllumaVisionRootDirectories())
                 {
                     vm = new TestFixtureMainWindowVM();
 
                     if (pagevm == null)
                         pagevm = new TestFixtureViewModel();
-
-                    txtVersionNumber.Text = pagevm._model.FirmwareVersion;
-
-                    if(string.IsNullOrEmpty(txtVersionNumber.Text))
-                        pagevm._model.FirmwareVersion = "1.0.0.0";
 
                     pagevm.ResetDaqBoardPort();
 
@@ -314,6 +315,8 @@ namespace TestFixtureProject
                     this.tabControl1.SelectedIndex = 0;
 
                     GetConfigurationSettings();
+
+                    tsFirmwareVersion.Text = pagevm.FirmwareVersion;
 
                     GetMirrorSettings();
 
@@ -1189,6 +1192,9 @@ namespace TestFixtureProject
 
                 //BootSequenceTime
                 txtBootSequenceTime.Text = pagevm.BootSequenceTime;
+
+                //Firmware Version
+                txtFirmware.Text = pagevm.FirmwareVersion;
             }
             catch (Exception e)
             {
@@ -1315,6 +1321,9 @@ namespace TestFixtureProject
 
                     //BootSequenceTime
                     TestFixtureViewModel.Instance.Model.BootSequenceTime = txtBootSequenceTime.Text;
+
+                    //Firmware Version
+                    TestFixtureViewModel.Instance.Model.FirmwareVersion = tsFirmwareVersion.Text =  txtFirmware.Text;
                 }
                 else
                 {

@@ -30,19 +30,41 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTestFixture));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("MODEL NO");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("SERIAL NO");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("POWER");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("PAIRING");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("BANDWIDTH");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("EOL Test Sequence", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("MODEL NO");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("SERIAL NO");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("POWER");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("PAIRING");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("BANDWIDTH");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("EOL Test Sequence", new System.Windows.Forms.TreeNode[] {
+            treeNode24,
+            treeNode25,
+            treeNode26,
+            treeNode27,
+            treeNode28,
+            treeNode29,
+            treeNode30,
+            treeNode31,
+            treeNode32,
+            treeNode33,
+            treeNode34,
+            treeNode35});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("SERIAL NO");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("POWER");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("LIGHT ENGINE Test Sequence", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
             treeNode3,
@@ -51,29 +73,7 @@
             treeNode6,
             treeNode7,
             treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12});
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("SERIAL NO");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("POWER");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("LIGHT ENGINE Test Sequence", new System.Windows.Forms.TreeNode[] {
-            treeNode14,
-            treeNode15,
-            treeNode16,
-            treeNode17,
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22});
+            treeNode9});
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -217,6 +217,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tpSettings = new System.Windows.Forms.TabPage();
             this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.txtFirmware = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.txtBootSequenceTime = new System.Windows.Forms.TextBox();
             this.label79 = new System.Windows.Forms.Label();
@@ -426,6 +428,9 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsApplicationUserMode = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsSpace2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsFirmwareLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsFirmwareVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsSpace = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -441,6 +446,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bgwFTPDataThroughput = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -534,7 +540,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1103, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1235, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -759,8 +765,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.statusStrip1);
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(1103, 864);
-            this.splitContainer1.SplitterDistance = 599;
+            this.splitContainer1.Size = new System.Drawing.Size(1235, 864);
+            this.splitContainer1.SplitterDistance = 631;
             this.splitContainer1.TabIndex = 1;
             // 
             // tcTestExecutiveSuite
@@ -770,7 +776,7 @@
             this.tcTestExecutiveSuite.Location = new System.Drawing.Point(0, 0);
             this.tcTestExecutiveSuite.Name = "tcTestExecutiveSuite";
             this.tcTestExecutiveSuite.SelectedIndex = 0;
-            this.tcTestExecutiveSuite.Size = new System.Drawing.Size(1103, 599);
+            this.tcTestExecutiveSuite.Size = new System.Drawing.Size(1235, 631);
             this.tcTestExecutiveSuite.TabIndex = 1;
             // 
             // tabPage1
@@ -779,7 +785,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1095, 570);
+            this.tabPage1.Size = new System.Drawing.Size(1227, 602);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Test Executive Suite";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -797,8 +803,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tabControl2);
-            this.splitContainer2.Size = new System.Drawing.Size(1089, 564);
-            this.splitContainer2.SplitterDistance = 282;
+            this.splitContainer2.Size = new System.Drawing.Size(1221, 596);
+            this.splitContainer2.SplitterDistance = 316;
             this.splitContainer2.TabIndex = 0;
             // 
             // splitContainer4
@@ -816,8 +822,8 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.tcLineTester);
-            this.splitContainer4.Size = new System.Drawing.Size(282, 564);
-            this.splitContainer4.SplitterDistance = 33;
+            this.splitContainer4.Size = new System.Drawing.Size(316, 596);
+            this.splitContainer4.SplitterDistance = 34;
             this.splitContainer4.TabIndex = 1;
             // 
             // lblLineTester
@@ -838,7 +844,7 @@
             this.tcLineTester.Location = new System.Drawing.Point(0, 0);
             this.tcLineTester.Name = "tcLineTester";
             this.tcLineTester.SelectedIndex = 0;
-            this.tcLineTester.Size = new System.Drawing.Size(280, 525);
+            this.tcLineTester.Size = new System.Drawing.Size(314, 556);
             this.tcLineTester.TabIndex = 2;
             // 
             // tpEol
@@ -847,7 +853,7 @@
             this.tpEol.Location = new System.Drawing.Point(4, 25);
             this.tpEol.Name = "tpEol";
             this.tpEol.Padding = new System.Windows.Forms.Padding(3);
-            this.tpEol.Size = new System.Drawing.Size(272, 496);
+            this.tpEol.Size = new System.Drawing.Size(306, 527);
             this.tpEol.TabIndex = 0;
             this.tpEol.Text = "EOL";
             this.tpEol.UseVisualStyleBackColor = true;
@@ -859,39 +865,39 @@
             this.tvEol.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvEol.Location = new System.Drawing.Point(3, 3);
             this.tvEol.Name = "tvEol";
-            treeNode1.Name = "nodeModelNumber";
-            treeNode1.Text = "MODEL NO";
-            treeNode2.Name = "nodeSerialNumber";
-            treeNode2.Text = "SERIAL NO";
-            treeNode3.Name = "nodePowerSequence";
-            treeNode3.Text = "POWER";
-            treeNode4.ImageKey = "icons8-Administrative Tools-50.png";
-            treeNode4.Name = "nodePairingSequence";
-            treeNode4.SelectedImageKey = "icons8-Administrative Tools-50.png";
-            treeNode4.Text = "PAIRING";
-            treeNode5.Name = "nodePentairServer";
-            treeNode5.Text = "PENTAIR SERVER";
-            treeNode6.Name = "nodeFirmwareVersion";
-            treeNode6.Text = "FIRMWARE VERSION";
-            treeNode7.Name = "nodeMirrorCheck";
-            treeNode7.Text = "PROJECTOR MIRROR CHECK";
-            treeNode8.Name = "nodeBrightnessColor";
-            treeNode8.Text = "LED BRIGHTNESS / COLOR";
-            treeNode9.Name = "nodeBandwidthSequence";
-            treeNode9.Text = "BANDWIDTH";
-            treeNode10.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode10.Name = "nodeProjectorFocus";
-            treeNode10.Text = "PROJECTOR FOCUS";
-            treeNode11.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode11.Name = "nodeProjectorBrightness";
-            treeNode11.Text = "PROJECTOR BRIGHTNESS";
-            treeNode12.Name = "nodeTestCompletion";
-            treeNode12.Text = "TEST COMPLETION";
-            treeNode13.Name = "nodeEolTestSequence";
-            treeNode13.Text = "EOL Test Sequence";
+            treeNode24.Name = "nodeModelNumber";
+            treeNode24.Text = "MODEL NO";
+            treeNode25.Name = "nodeSerialNumber";
+            treeNode25.Text = "SERIAL NO";
+            treeNode26.Name = "nodePowerSequence";
+            treeNode26.Text = "POWER";
+            treeNode27.ImageKey = "icons8-Administrative Tools-50.png";
+            treeNode27.Name = "nodePairingSequence";
+            treeNode27.SelectedImageKey = "icons8-Administrative Tools-50.png";
+            treeNode27.Text = "PAIRING";
+            treeNode28.Name = "nodePentairServer";
+            treeNode28.Text = "PENTAIR SERVER";
+            treeNode29.Name = "nodeFirmwareVersion";
+            treeNode29.Text = "FIRMWARE VERSION";
+            treeNode30.Name = "nodeMirrorCheck";
+            treeNode30.Text = "PROJECTOR MIRROR CHECK";
+            treeNode31.Name = "nodeBrightnessColor";
+            treeNode31.Text = "LED BRIGHTNESS / COLOR";
+            treeNode32.Name = "nodeBandwidthSequence";
+            treeNode32.Text = "BANDWIDTH";
+            treeNode33.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode33.Name = "nodeProjectorFocus";
+            treeNode33.Text = "PROJECTOR FOCUS";
+            treeNode34.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode34.Name = "nodeProjectorBrightness";
+            treeNode34.Text = "PROJECTOR BRIGHTNESS";
+            treeNode35.Name = "nodeTestCompletion";
+            treeNode35.Text = "TEST COMPLETION";
+            treeNode36.Name = "nodeEolTestSequence";
+            treeNode36.Text = "EOL Test Sequence";
             this.tvEol.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode13});
-            this.tvEol.Size = new System.Drawing.Size(266, 490);
+            treeNode36});
+            this.tvEol.Size = new System.Drawing.Size(300, 521);
             this.tvEol.TabIndex = 0;
             this.tvEol.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.tvEol_AfterCheck);
             // 
@@ -916,7 +922,7 @@
             this.tpLightEngine.Location = new System.Drawing.Point(4, 25);
             this.tpLightEngine.Name = "tpLightEngine";
             this.tpLightEngine.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLightEngine.Size = new System.Drawing.Size(272, 496);
+            this.tpLightEngine.Size = new System.Drawing.Size(306, 527);
             this.tpLightEngine.TabIndex = 1;
             this.tpLightEngine.Text = "LIGHT ENGINE";
             this.tpLightEngine.UseVisualStyleBackColor = true;
@@ -928,31 +934,31 @@
             this.tvLightEngine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvLightEngine.Location = new System.Drawing.Point(3, 3);
             this.tvLightEngine.Name = "tvLightEngine";
-            treeNode14.Name = "nodeSerialNumber";
-            treeNode14.Text = "SERIAL NO";
-            treeNode15.Name = "nodePowerSequence";
-            treeNode15.Text = "POWER";
-            treeNode16.Name = "nodePentairServer";
-            treeNode16.Text = "PENTAIR SERVER";
-            treeNode17.Name = "nodeFirmwareVersion";
-            treeNode17.Text = "FIRMWARE VERSION";
-            treeNode18.Name = "nodeMirrorCheck";
-            treeNode18.Text = "PROJECTOR MIRROR CHECK";
-            treeNode19.Name = "nodeBrightnessColor";
-            treeNode19.Text = "LED BRIGHTNESS / COLOR";
-            treeNode20.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode20.Name = "nodeProjectorFocus";
-            treeNode20.Text = "PROJECTOR FOCUS";
-            treeNode21.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode21.Name = "nodeProjectorBrightness";
-            treeNode21.Text = "PROJECTOR BRIGHTNESS";
-            treeNode22.Name = "nodeTestCompletion";
-            treeNode22.Text = "TEST COMPLETION";
-            treeNode23.Name = "nodeLightEngineTestSequence";
-            treeNode23.Text = "LIGHT ENGINE Test Sequence";
+            treeNode1.Name = "nodeSerialNumber";
+            treeNode1.Text = "SERIAL NO";
+            treeNode2.Name = "nodePowerSequence";
+            treeNode2.Text = "POWER";
+            treeNode3.Name = "nodePentairServer";
+            treeNode3.Text = "PENTAIR SERVER";
+            treeNode4.Name = "nodeFirmwareVersion";
+            treeNode4.Text = "FIRMWARE VERSION";
+            treeNode5.Name = "nodeMirrorCheck";
+            treeNode5.Text = "PROJECTOR MIRROR CHECK";
+            treeNode6.Name = "nodeBrightnessColor";
+            treeNode6.Text = "LED BRIGHTNESS / COLOR";
+            treeNode7.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode7.Name = "nodeProjectorFocus";
+            treeNode7.Text = "PROJECTOR FOCUS";
+            treeNode8.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode8.Name = "nodeProjectorBrightness";
+            treeNode8.Text = "PROJECTOR BRIGHTNESS";
+            treeNode9.Name = "nodeTestCompletion";
+            treeNode9.Text = "TEST COMPLETION";
+            treeNode10.Name = "nodeLightEngineTestSequence";
+            treeNode10.Text = "LIGHT ENGINE Test Sequence";
             this.tvLightEngine.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode23});
-            this.tvLightEngine.Size = new System.Drawing.Size(266, 490);
+            treeNode10});
+            this.tvLightEngine.Size = new System.Drawing.Size(300, 521);
             this.tvLightEngine.TabIndex = 1;
             // 
             // tabControl2
@@ -968,7 +974,7 @@
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(803, 564);
+            this.tabControl2.Size = new System.Drawing.Size(901, 596);
             this.tabControl2.TabIndex = 2;
             this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.tabControl2_SelectedIndexChanged);
             this.tabControl2.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl2_Selecting);
@@ -984,7 +990,7 @@
             this.tpMain.Location = new System.Drawing.Point(4, 25);
             this.tpMain.Name = "tpMain";
             this.tpMain.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMain.Size = new System.Drawing.Size(795, 535);
+            this.tpMain.Size = new System.Drawing.Size(893, 567);
             this.tpMain.TabIndex = 0;
             this.tpMain.Text = "Main";
             this.tpMain.UseVisualStyleBackColor = true;
@@ -1248,7 +1254,7 @@
             this.tpTestSequence.Location = new System.Drawing.Point(4, 25);
             this.tpTestSequence.Name = "tpTestSequence";
             this.tpTestSequence.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTestSequence.Size = new System.Drawing.Size(795, 535);
+            this.tpTestSequence.Size = new System.Drawing.Size(893, 567);
             this.tpTestSequence.TabIndex = 6;
             this.tpTestSequence.Text = "Test Sequence";
             this.tpTestSequence.UseVisualStyleBackColor = true;
@@ -1271,8 +1277,8 @@
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.splitContainer6);
-            this.splitContainer5.Size = new System.Drawing.Size(789, 529);
-            this.splitContainer5.SplitterDistance = 88;
+            this.splitContainer5.Size = new System.Drawing.Size(887, 561);
+            this.splitContainer5.SplitterDistance = 93;
             this.splitContainer5.TabIndex = 33;
             // 
             // btnSaveLineTester
@@ -1343,8 +1349,8 @@
             // splitContainer6.Panel2
             // 
             this.splitContainer6.Panel2.Controls.Add(this.dgvLightEngine);
-            this.splitContainer6.Size = new System.Drawing.Size(789, 437);
-            this.splitContainer6.SplitterDistance = 391;
+            this.splitContainer6.Size = new System.Drawing.Size(887, 464);
+            this.splitContainer6.SplitterDistance = 439;
             this.splitContainer6.TabIndex = 0;
             // 
             // dgvEol
@@ -1354,7 +1360,7 @@
             this.dgvEol.Location = new System.Drawing.Point(0, 0);
             this.dgvEol.Name = "dgvEol";
             this.dgvEol.RowTemplate.Height = 24;
-            this.dgvEol.Size = new System.Drawing.Size(391, 437);
+            this.dgvEol.Size = new System.Drawing.Size(439, 464);
             this.dgvEol.TabIndex = 3;
             this.dgvEol.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEol_CellContentClick);
             this.dgvEol.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvEOL_DataBindingComplete);
@@ -1366,7 +1372,7 @@
             this.dgvLightEngine.Location = new System.Drawing.Point(0, 0);
             this.dgvLightEngine.Name = "dgvLightEngine";
             this.dgvLightEngine.RowTemplate.Height = 24;
-            this.dgvLightEngine.Size = new System.Drawing.Size(394, 437);
+            this.dgvLightEngine.Size = new System.Drawing.Size(444, 464);
             this.dgvLightEngine.TabIndex = 4;
             this.dgvLightEngine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLightEngine_CellContentClick);
             this.dgvLightEngine.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvLightEngine_DataBindingComplete);
@@ -1379,7 +1385,7 @@
             this.tpDiagnostics.Location = new System.Drawing.Point(4, 25);
             this.tpDiagnostics.Name = "tpDiagnostics";
             this.tpDiagnostics.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDiagnostics.Size = new System.Drawing.Size(795, 535);
+            this.tpDiagnostics.Size = new System.Drawing.Size(893, 567);
             this.tpDiagnostics.TabIndex = 1;
             this.tpDiagnostics.Text = "Diagnostics";
             this.tpDiagnostics.UseVisualStyleBackColor = true;
@@ -1888,7 +1894,7 @@
             this.tpProjectDiagnostics.Location = new System.Drawing.Point(4, 25);
             this.tpProjectDiagnostics.Name = "tpProjectDiagnostics";
             this.tpProjectDiagnostics.Padding = new System.Windows.Forms.Padding(3);
-            this.tpProjectDiagnostics.Size = new System.Drawing.Size(795, 535);
+            this.tpProjectDiagnostics.Size = new System.Drawing.Size(893, 567);
             this.tpProjectDiagnostics.TabIndex = 2;
             this.tpProjectDiagnostics.Text = "Project Diagnostics";
             this.tpProjectDiagnostics.UseVisualStyleBackColor = true;
@@ -2096,13 +2102,15 @@
             this.tpSettings.Controls.Add(this.groupBox10);
             this.tpSettings.Location = new System.Drawing.Point(4, 25);
             this.tpSettings.Name = "tpSettings";
-            this.tpSettings.Size = new System.Drawing.Size(795, 535);
+            this.tpSettings.Size = new System.Drawing.Size(893, 567);
             this.tpSettings.TabIndex = 3;
             this.tpSettings.Text = "Settings";
             this.tpSettings.UseVisualStyleBackColor = true;
             // 
             // groupBox31
             // 
+            this.groupBox31.Controls.Add(this.label82);
+            this.groupBox31.Controls.Add(this.txtFirmware);
             this.groupBox31.Controls.Add(this.label80);
             this.groupBox31.Controls.Add(this.txtBootSequenceTime);
             this.groupBox31.Controls.Add(this.label79);
@@ -2110,10 +2118,30 @@
             this.groupBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox31.Location = new System.Drawing.Point(236, 487);
             this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Size = new System.Drawing.Size(452, 45);
+            this.groupBox31.Size = new System.Drawing.Size(452, 76);
             this.groupBox31.TabIndex = 17;
             this.groupBox31.TabStop = false;
-            this.groupBox31.Text = "IP Address / Boot Sequence Information";
+            this.groupBox31.Text = "Additional Information";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(6, 51);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(65, 17);
+            this.label82.TabIndex = 30;
+            this.label82.Text = "Firmware";
+            // 
+            // txtFirmware
+            // 
+            this.txtFirmware.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirmware.Location = new System.Drawing.Point(110, 48);
+            this.txtFirmware.Multiline = true;
+            this.txtFirmware.Name = "txtFirmware";
+            this.txtFirmware.Size = new System.Drawing.Size(107, 22);
+            this.txtFirmware.TabIndex = 29;
+            this.txtFirmware.Text = "0";
+            this.txtFirmware.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label80
             // 
@@ -2140,9 +2168,9 @@
             this.label79.AutoSize = true;
             this.label79.Location = new System.Drawing.Point(6, 21);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(122, 17);
+            this.label79.Size = new System.Drawing.Size(100, 17);
             this.label79.TabIndex = 6;
-            this.label79.Text = "IP Address Range";
+            this.label79.Text = "IP Addr Range";
             // 
             // txtIPAddressRange
             // 
@@ -2462,7 +2490,7 @@
             this.btnSaveSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveSettings.Location = new System.Drawing.Point(7, 487);
             this.btnSaveSettings.Name = "btnSaveSettings";
-            this.btnSaveSettings.Size = new System.Drawing.Size(223, 45);
+            this.btnSaveSettings.Size = new System.Drawing.Size(223, 76);
             this.btnSaveSettings.TabIndex = 28;
             this.btnSaveSettings.Text = "Save Settings";
             this.btnSaveSettings.UseVisualStyleBackColor = true;
@@ -3330,7 +3358,7 @@
             this.tpImageSettings.Controls.Add(this.groupBox20);
             this.tpImageSettings.Location = new System.Drawing.Point(4, 25);
             this.tpImageSettings.Name = "tpImageSettings";
-            this.tpImageSettings.Size = new System.Drawing.Size(795, 535);
+            this.tpImageSettings.Size = new System.Drawing.Size(893, 567);
             this.tpImageSettings.TabIndex = 4;
             this.tpImageSettings.Text = "Image Settings";
             this.tpImageSettings.UseVisualStyleBackColor = true;
@@ -3993,7 +4021,7 @@
             this.tpCalibration.Controls.Add(this.splitContainer3);
             this.tpCalibration.Location = new System.Drawing.Point(4, 25);
             this.tpCalibration.Name = "tpCalibration";
-            this.tpCalibration.Size = new System.Drawing.Size(795, 535);
+            this.tpCalibration.Size = new System.Drawing.Size(893, 567);
             this.tpCalibration.TabIndex = 5;
             this.tpCalibration.Text = "Spectrometer";
             this.tpCalibration.UseVisualStyleBackColor = true;
@@ -4013,8 +4041,8 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.lvSpectrumData);
-            this.splitContainer3.Size = new System.Drawing.Size(795, 535);
-            this.splitContainer3.SplitterDistance = 210;
+            this.splitContainer3.Size = new System.Drawing.Size(893, 567);
+            this.splitContainer3.SplitterDistance = 213;
             this.splitContainer3.TabIndex = 25;
             // 
             // groupBox8
@@ -4234,7 +4262,7 @@
             this.lvSpectrumData.GridLines = true;
             this.lvSpectrumData.Location = new System.Drawing.Point(0, 0);
             this.lvSpectrumData.Name = "lvSpectrumData";
-            this.lvSpectrumData.Size = new System.Drawing.Size(581, 535);
+            this.lvSpectrumData.Size = new System.Drawing.Size(676, 567);
             this.lvSpectrumData.TabIndex = 0;
             this.lvSpectrumData.UseCompatibleStateImageBehavior = false;
             this.lvSpectrumData.View = System.Windows.Forms.View.Details;
@@ -4269,33 +4297,61 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.tsApplicationUserMode,
+            this.tsSpace2,
+            this.tsFirmwareLabel,
+            this.tsFirmwareVersion,
             this.tsSpace,
+            this.toolStripStatusLabel2,
             this.tsTime});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 236);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 204);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1103, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(1235, 25);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.Click += new System.EventHandler(this.statusStrip1_Click);
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(55, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(57, 20);
             this.toolStripStatusLabel1.Text = "Mode: ";
             // 
             // tsApplicationUserMode
             // 
+            this.tsApplicationUserMode.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tsApplicationUserMode.Name = "tsApplicationUserMode";
             this.tsApplicationUserMode.Size = new System.Drawing.Size(69, 20);
             this.tsApplicationUserMode.Text = "Operator";
             this.tsApplicationUserMode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // tsSpace2
+            // 
+            this.tsSpace2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tsSpace2.Margin = new System.Windows.Forms.Padding(0);
+            this.tsSpace2.Name = "tsSpace2";
+            this.tsSpace2.Size = new System.Drawing.Size(13, 25);
+            this.tsSpace2.Text = "|";
+            // 
+            // tsFirmwareLabel
+            // 
+            this.tsFirmwareLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.tsFirmwareLabel.Name = "tsFirmwareLabel";
+            this.tsFirmwareLabel.Size = new System.Drawing.Size(136, 20);
+            this.tsFirmwareLabel.Text = "Firmware Version:";
+            // 
+            // tsFirmwareVersion
+            // 
+            this.tsFirmwareVersion.Name = "tsFirmwareVersion";
+            this.tsFirmwareVersion.Size = new System.Drawing.Size(50, 20);
+            this.tsFirmwareVersion.Text = "0.0.0.0";
+            // 
             // tsSpace
             // 
-            this.tsSpace.Margin = new System.Windows.Forms.Padding(0, 0, 625, 0);
+            this.tsSpace.Margin = new System.Windows.Forms.Padding(0);
             this.tsSpace.Name = "tsSpace";
-            this.tsSpace.Size = new System.Drawing.Size(0, 0);
+            this.tsSpace.Size = new System.Drawing.Size(13, 25);
+            this.tsSpace.Text = "|";
             // 
             // tsTime
             // 
@@ -4315,7 +4371,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1103, 261);
+            this.tabControl1.Size = new System.Drawing.Size(1235, 261);
             this.tabControl1.TabIndex = 2;
             // 
             // contextMenuStrip1
@@ -4339,7 +4395,7 @@
             this.tpInformation.Location = new System.Drawing.Point(4, 25);
             this.tpInformation.Name = "tpInformation";
             this.tpInformation.Padding = new System.Windows.Forms.Padding(3);
-            this.tpInformation.Size = new System.Drawing.Size(1095, 232);
+            this.tpInformation.Size = new System.Drawing.Size(1227, 232);
             this.tpInformation.TabIndex = 0;
             this.tpInformation.Text = "Information";
             this.tpInformation.UseVisualStyleBackColor = true;
@@ -4351,7 +4407,7 @@
             this.txtInformation.Location = new System.Drawing.Point(3, 3);
             this.txtInformation.Name = "txtInformation";
             this.txtInformation.ReadOnly = true;
-            this.txtInformation.Size = new System.Drawing.Size(1089, 226);
+            this.txtInformation.Size = new System.Drawing.Size(1221, 226);
             this.txtInformation.TabIndex = 1;
             this.txtInformation.Text = "";
             this.txtInformation.TextChanged += new System.EventHandler(this.txtInformation_TextChanged);
@@ -4362,7 +4418,7 @@
             this.tpWarnings.Location = new System.Drawing.Point(4, 25);
             this.tpWarnings.Name = "tpWarnings";
             this.tpWarnings.Padding = new System.Windows.Forms.Padding(3);
-            this.tpWarnings.Size = new System.Drawing.Size(1095, 232);
+            this.tpWarnings.Size = new System.Drawing.Size(1227, 232);
             this.tpWarnings.TabIndex = 1;
             this.tpWarnings.Text = "Warnings";
             this.tpWarnings.UseVisualStyleBackColor = true;
@@ -4374,7 +4430,7 @@
             this.txtWarnings.Location = new System.Drawing.Point(3, 3);
             this.txtWarnings.Name = "txtWarnings";
             this.txtWarnings.ReadOnly = true;
-            this.txtWarnings.Size = new System.Drawing.Size(1089, 226);
+            this.txtWarnings.Size = new System.Drawing.Size(1221, 226);
             this.txtWarnings.TabIndex = 1;
             this.txtWarnings.Text = "";
             this.txtWarnings.TextChanged += new System.EventHandler(this.txtWarnings_TextChanged);
@@ -4385,7 +4441,7 @@
             this.tpErrors.Location = new System.Drawing.Point(4, 25);
             this.tpErrors.Name = "tpErrors";
             this.tpErrors.Padding = new System.Windows.Forms.Padding(3);
-            this.tpErrors.Size = new System.Drawing.Size(1095, 232);
+            this.tpErrors.Size = new System.Drawing.Size(1227, 232);
             this.tpErrors.TabIndex = 2;
             this.tpErrors.Text = "Errors";
             this.tpErrors.UseVisualStyleBackColor = true;
@@ -4397,7 +4453,7 @@
             this.txtErrors.Location = new System.Drawing.Point(3, 3);
             this.txtErrors.Name = "txtErrors";
             this.txtErrors.ReadOnly = true;
-            this.txtErrors.Size = new System.Drawing.Size(1089, 226);
+            this.txtErrors.Size = new System.Drawing.Size(1221, 226);
             this.txtErrors.TabIndex = 0;
             this.txtErrors.Text = "";
             this.txtErrors.TextChanged += new System.EventHandler(this.txtErrors_TextChanged);
@@ -4426,20 +4482,25 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(685, 20);
+            this.toolStripStatusLabel2.Spring = true;
+            // 
             // frmTestFixture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 892);
+            this.ClientSize = new System.Drawing.Size(1235, 892);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmTestFixture";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmTestFixture";
+            this.Text = "IllumaVision EOL Tester";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTestFixture_FormClosing);
             this.Load += new System.EventHandler(this.frmTestFixture_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -4925,5 +4986,11 @@
         private System.Windows.Forms.TabPage tpEol;
         private System.Windows.Forms.TabPage tpLightEngine;
         internal System.Windows.Forms.TreeView tvLightEngine;
+        private System.Windows.Forms.ToolStripStatusLabel tsSpace2;
+        internal System.Windows.Forms.ToolStripStatusLabel tsFirmwareLabel;
+        private System.Windows.Forms.ToolStripStatusLabel tsFirmwareVersion;
+        internal System.Windows.Forms.TextBox txtFirmware;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }

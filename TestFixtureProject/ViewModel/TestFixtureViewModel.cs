@@ -608,6 +608,23 @@ namespace TestFixtureProject.ViewModel
                 OnPropertyChanged("FTPOffMax");
             }
         }
+
+        public string FirmwareVersion
+        {
+            get { return Model.FirmwareVersion; }
+            set
+            {
+                if (value != null)
+                {
+                    Model.FirmwareVersion = value;
+                }
+                else
+                {
+                    //read default value
+                }
+                OnPropertyChanged("FirmwareVersion");
+            }
+        }
         #endregion
 
         [JsonProperty("_comportnumb")]
@@ -4596,6 +4613,16 @@ namespace TestFixtureProject.ViewModel
                         return flag;
                     }
 
+                    //Validate firmware version 
+                    flag = ValidateFirmwareVersion();
+                    if (!flag)
+                    {
+                        WriteTestResultLog();
+                        frmTestFixture.Instance.SetEolTreeViewTestSequenceCheckProperty("FIRMWARE VERSION", false);
+                        OverallTestResultPassFailStatus(false, "Incorrect Firmware Version: '" + FirmwareVersion + "'");
+                        return flag;
+                    }
+
                     frmTestFixture.Instance.SetEolTreeViewTestSequenceCheckProperty("FIRMWARE VERSION", true);
 
                     Increment();
@@ -5126,6 +5153,56 @@ namespace TestFixtureProject.ViewModel
             {
                 return false;
             }
+        }
+
+        private bool ValidateFirmwareVersion()
+        {
+            bool flag = false;
+            string message = string.Empty;
+
+            try
+            {
+                System.Version firmwareVersion = new System.Version(FirmwareVersion);
+                System.Version currentFirmwareVersion = new System.Version(frmTestFixture.Instance._FirmwareVersion); //TODO: Keith Dudley. Fixed Version
+
+                switch (firmwareVersion.CompareTo(currentFirmwareVersion))
+                {
+                    case 0: //version is the same
+
+                        message = string.Format("Current firmware version '{0}' the same as previous version '{1}'...", currentFirmwareVersion, firmwareVersion);
+                        frmTestFixture.Instance.WriteToLog(message, ApplicationConstants.TraceLogType.Information);
+                        flag = true;
+                        break;
+
+                    case 1: //version is greater than
+                        message = string.Format("Current firmware version '{0}' version is greater than previous version '{1}'...", currentFirmwareVersion, firmwareVersion);
+                        frmTestFixture.Instance.WriteToLog(message, ApplicationConstants.TraceLogType.Information);
+                        flag = true;
+                        break;
+
+                    case -1: //version is less than
+                        message = string.Format("Current firmware version '{0}' is earlier than previous version '{1}'...", currentFirmwareVersion, firmwareVersion);
+                        frmTestFixture.Instance.WriteToLog(message, ApplicationConstants.TraceLogType.Error);
+                        flag = false;
+                        break;
+
+                    default:
+                        frmTestFixture.Instance.WriteToLog("Invalid version state...", ApplicationConstants.TraceLogType.Error);
+                        flag = false;
+                        break;
+                }
+
+
+                frmTestFixture.Instance.WriteToLog("Current Version: " + currentFirmwareVersion, ApplicationConstants.TraceLogType.Information);
+                frmTestFixture.Instance.WriteToLog("Previous Version: " + firmwareVersion, ApplicationConstants.TraceLogType.Information);
+            }
+            catch(Exception e)
+            {
+                frmTestFixture.Instance.WriteToLog("ValidateFirmwareVersion Error: " + e.Message, ApplicationConstants.TraceLogType.Error);
+                flag = false;
+            }
+
+            return flag;
         }
 
         internal bool ExecuteFTPDataThroughputMainTest(ApplicationConstants.AmbientLedState ambientLedState)

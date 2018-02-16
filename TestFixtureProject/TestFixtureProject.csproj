@@ -138,6 +138,11 @@
     <Compile Include="Model\TestFixtureLineTesterConfigModel.cs" />
     <Compile Include="Model\TestFixtureEolTestSequenceModel.cs" />
     <Compile Include="Model\TestFixtureLightEngineTestSequenceModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\frmTestFixture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,17 +186,13 @@
     <Compile Include="View\UserControls\ucLogin.Designer.cs">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </Compile>
-    <Content Include="Images\LineTester.ico" />
+    <None Include="IllumaVision\Images\FolderLive.png" />
+    <Content Include="IllumaVision\Images\LineTester.ico" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="View\Forms\frmTestFixture.resx">
       <DependentUpon>frmTestFixture.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,26 +248,26 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BusinessLayer\" />
+    <Folder Include="IllumaVision\Images\bandwidth\" />
     <Folder Include="IllumaVision\Logger\" />
-    <Folder Include="Images\bandwidth\" />
     <Folder Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\icons8-Home-50.png" />
-    <None Include="Images\icons8-Administrative Tools-50.png" />
+    <None Include="IllumaVision\Images\icons8-Home-50.png" />
+    <None Include="IllumaVision\Images\icons8-Administrative Tools-50.png" />
     <Content Include="IllumaVision\Config\illumavision.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\icons8-Lock Filled-26 - B.png" />
-    <Content Include="Images\icons8-Lock Filled-26.png" />
-    <None Include="Images\icons8-Stack of Photos-50.png" />
-    <None Include="Images\icons8-Services-50.png" />
-    <Content Include="Images\icons8-User Credentials Filled-50.png" />
-    <Content Include="Images\icons8-User Group Man Man Filled-50 - B.png" />
-    <Content Include="Images\icons8-User Group Man Man Filled-50.png" />
-    <None Include="Images\PentairLogo.png" />
-    <None Include="Images\icons8-Web Design-50.png" />
-    <Content Include="Images\ImageShow\White--Dot.png">
+    <Content Include="IllumaVision\Images\icons8-Lock Filled-26 - B.png" />
+    <Content Include="IllumaVision\Images\icons8-Lock Filled-26.png" />
+    <None Include="IllumaVision\Images\icons8-Stack of Photos-50.png" />
+    <None Include="IllumaVision\Images\icons8-Services-50.png" />
+    <Content Include="IllumaVision\Images\icons8-User Credentials Filled-50.png" />
+    <Content Include="IllumaVision\Images\icons8-User Group Man Man Filled-50 - B.png" />
+    <Content Include="IllumaVision\Images\icons8-User Group Man Man Filled-50.png" />
+    <None Include="IllumaVision\Images\PentairLogo.png" />
+    <None Include="IllumaVision\Images\icons8-Web Design-50.png" />
+    <Content Include="IllumaVision\Images\ImageShow\White--Dot.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

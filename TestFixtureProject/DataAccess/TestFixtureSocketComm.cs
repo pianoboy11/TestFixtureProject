@@ -238,12 +238,17 @@ namespace TestFixtureProject.DataAccess
 
                                             if (firmwareVersion != "success")
                                             {
-                                                if (firmwareVersion == "1.1.106")
-                                                {
+                                                frmTestFixture.Instance._FirmwareVersion = firmwareVersion;
 
-                                                    LogStructureNew.FirmwareVersion = firmwareVersion;
-                                                    frmTestFixture.Instance.SetVersionNumberTextbox(firmwareVersion);
-                                                }
+                                                //if (firmwareVersion == "1.1.106")
+                                                //{
+                                                //    LogStructureNew.FirmwareVersion = frmTestFixture.Instance._FirmwareVersion = firmwareVersion;
+                                                //    frmTestFixture.Instance.SetVersionNumberTextbox(firmwareVersion);
+                                                //}
+                                            }
+                                            else
+                                            {
+                                                frmTestFixture.Instance._FirmwareVersion = "Not Found";
                                             }
                                         }
                                     }
