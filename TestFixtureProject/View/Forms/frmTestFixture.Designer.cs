@@ -30,19 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTestFixture));
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("MODEL NO");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("SERIAL NO");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("POWER");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("PAIRING");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("BANDWIDTH");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("EOL Test Sequence", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("MODEL NO");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("SERIAL NO");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("POWER");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("PAIRING");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("BANDWIDTH");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("EOL Test Sequence", new System.Windows.Forms.TreeNode[] {
+            treeNode21,
+            treeNode22,
+            treeNode23,
             treeNode24,
             treeNode25,
             treeNode26,
@@ -51,10 +54,7 @@
             treeNode29,
             treeNode30,
             treeNode31,
-            treeNode32,
-            treeNode33,
-            treeNode34,
-            treeNode35});
+            treeNode32});
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("SERIAL NO");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("POWER");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
@@ -432,6 +432,7 @@
             this.tsFirmwareLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsFirmwareVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsSpace = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -446,7 +447,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bgwFTPDataThroughput = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -865,38 +865,38 @@
             this.tvEol.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvEol.Location = new System.Drawing.Point(3, 3);
             this.tvEol.Name = "tvEol";
-            treeNode24.Name = "nodeModelNumber";
-            treeNode24.Text = "MODEL NO";
-            treeNode25.Name = "nodeSerialNumber";
-            treeNode25.Text = "SERIAL NO";
-            treeNode26.Name = "nodePowerSequence";
-            treeNode26.Text = "POWER";
-            treeNode27.ImageKey = "icons8-Administrative Tools-50.png";
-            treeNode27.Name = "nodePairingSequence";
-            treeNode27.SelectedImageKey = "icons8-Administrative Tools-50.png";
-            treeNode27.Text = "PAIRING";
-            treeNode28.Name = "nodePentairServer";
-            treeNode28.Text = "PENTAIR SERVER";
-            treeNode29.Name = "nodeFirmwareVersion";
-            treeNode29.Text = "FIRMWARE VERSION";
-            treeNode30.Name = "nodeMirrorCheck";
-            treeNode30.Text = "PROJECTOR MIRROR CHECK";
-            treeNode31.Name = "nodeBrightnessColor";
-            treeNode31.Text = "LED BRIGHTNESS / COLOR";
-            treeNode32.Name = "nodeBandwidthSequence";
-            treeNode32.Text = "BANDWIDTH";
-            treeNode33.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode33.Name = "nodeProjectorFocus";
-            treeNode33.Text = "PROJECTOR FOCUS";
-            treeNode34.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode34.Name = "nodeProjectorBrightness";
-            treeNode34.Text = "PROJECTOR BRIGHTNESS";
-            treeNode35.Name = "nodeTestCompletion";
-            treeNode35.Text = "TEST COMPLETION";
-            treeNode36.Name = "nodeEolTestSequence";
-            treeNode36.Text = "EOL Test Sequence";
+            treeNode21.Name = "nodeModelNumber";
+            treeNode21.Text = "MODEL NO";
+            treeNode22.Name = "nodeSerialNumber";
+            treeNode22.Text = "SERIAL NO";
+            treeNode23.Name = "nodePowerSequence";
+            treeNode23.Text = "POWER";
+            treeNode24.ImageKey = "icons8-Administrative Tools-50.png";
+            treeNode24.Name = "nodePairingSequence";
+            treeNode24.SelectedImageKey = "icons8-Administrative Tools-50.png";
+            treeNode24.Text = "PAIRING";
+            treeNode25.Name = "nodePentairServer";
+            treeNode25.Text = "PENTAIR SERVER";
+            treeNode26.Name = "nodeFirmwareVersion";
+            treeNode26.Text = "FIRMWARE VERSION";
+            treeNode27.Name = "nodeMirrorCheck";
+            treeNode27.Text = "PROJECTOR MIRROR CHECK";
+            treeNode28.Name = "nodeBrightnessColor";
+            treeNode28.Text = "LED BRIGHTNESS / COLOR";
+            treeNode29.Name = "nodeBandwidthSequence";
+            treeNode29.Text = "BANDWIDTH";
+            treeNode30.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode30.Name = "nodeProjectorFocus";
+            treeNode30.Text = "PROJECTOR FOCUS";
+            treeNode31.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode31.Name = "nodeProjectorBrightness";
+            treeNode31.Text = "PROJECTOR BRIGHTNESS";
+            treeNode32.Name = "nodeTestCompletion";
+            treeNode32.Text = "TEST COMPLETION";
+            treeNode33.Name = "nodeEolTestSequence";
+            treeNode33.Text = "EOL Test Sequence";
             this.tvEol.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode36});
+            treeNode33});
             this.tvEol.Size = new System.Drawing.Size(300, 521);
             this.tvEol.TabIndex = 0;
             this.tvEol.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.tvEol_AfterCheck);
@@ -1046,7 +1046,7 @@
             // 
             this.progressBar1.Location = new System.Drawing.Point(6, 483);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(783, 46);
+            this.progressBar1.Size = new System.Drawing.Size(783, 27);
             this.progressBar1.Step = 2;
             this.progressBar1.TabIndex = 13;
             // 
@@ -4353,6 +4353,13 @@
             this.tsSpace.Size = new System.Drawing.Size(13, 25);
             this.tsSpace.Text = "|";
             // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(724, 20);
+            this.toolStripStatusLabel2.Spring = true;
+            // 
             // tsTime
             // 
             this.tsTime.Name = "tsTime";
@@ -4367,11 +4374,11 @@
             this.tabControl1.Controls.Add(this.tpInformation);
             this.tabControl1.Controls.Add(this.tpWarnings);
             this.tabControl1.Controls.Add(this.tpErrors);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1235, 261);
+            this.tabControl1.Size = new System.Drawing.Size(1235, 229);
             this.tabControl1.TabIndex = 2;
             // 
             // contextMenuStrip1
@@ -4395,7 +4402,7 @@
             this.tpInformation.Location = new System.Drawing.Point(4, 25);
             this.tpInformation.Name = "tpInformation";
             this.tpInformation.Padding = new System.Windows.Forms.Padding(3);
-            this.tpInformation.Size = new System.Drawing.Size(1227, 232);
+            this.tpInformation.Size = new System.Drawing.Size(1227, 200);
             this.tpInformation.TabIndex = 0;
             this.tpInformation.Text = "Information";
             this.tpInformation.UseVisualStyleBackColor = true;
@@ -4407,7 +4414,7 @@
             this.txtInformation.Location = new System.Drawing.Point(3, 3);
             this.txtInformation.Name = "txtInformation";
             this.txtInformation.ReadOnly = true;
-            this.txtInformation.Size = new System.Drawing.Size(1221, 226);
+            this.txtInformation.Size = new System.Drawing.Size(1221, 194);
             this.txtInformation.TabIndex = 1;
             this.txtInformation.Text = "";
             this.txtInformation.TextChanged += new System.EventHandler(this.txtInformation_TextChanged);
@@ -4482,13 +4489,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(685, 20);
-            this.toolStripStatusLabel2.Spring = true;
-            // 
             // frmTestFixture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4496,7 +4496,6 @@
             this.ClientSize = new System.Drawing.Size(1235, 892);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmTestFixture";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IllumaVision EOL Tester";
