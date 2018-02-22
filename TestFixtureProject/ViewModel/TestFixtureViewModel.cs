@@ -625,6 +625,108 @@ namespace TestFixtureProject.ViewModel
                 OnPropertyChanged("FirmwareVersion");
             }
         }
+
+        public string MtfMax
+        {
+            get { return Model.MtfMax; }
+            set
+            {
+                if (value != null)
+                {
+                    Model.MtfMax = value;
+                }
+                else
+                {
+                    //read default value
+                }
+                OnPropertyChanged("MtfMax");
+            }
+        }
+
+        public string MtfMin
+        {
+            get { return Model.MtfMin; }
+            set
+            {
+                if (value != null)
+                {
+                    Model.MtfMin = value;
+                }
+                else
+                {
+                    //read default value
+                }
+                OnPropertyChanged("MtfMin");
+            }
+        }
+
+        public string MtfVectorFrequencies
+        {
+            get { return Model.MtfVectorFrequencies; }
+            set
+            {
+                if (value != null)
+                {
+                    Model.MtfVectorFrequencies = value;
+                }
+                else
+                {
+                    //read default value
+                }
+                OnPropertyChanged("MtfVectorFrequencies");
+            }
+        }
+
+        public string MtfPixelWidth
+        {
+            get { return Model.MtfPixelWidth; }
+            set
+            {
+                if (value != null)
+                {
+                    Model.MtfPixelWidth = value;
+                }
+                else
+                {
+                    //read default value
+                }
+                OnPropertyChanged("MtfPixelWidth");
+            }
+        }
+
+        public string GrabImageGain
+        {
+            get { return Model.GrabImageGain; }
+            set
+            {
+                if (value != null)
+                {
+                    Model.GrabImageGain = value;
+                }
+                else
+                {
+                    //read default value
+                }
+                OnPropertyChanged("GrabImageGain");
+            }
+        }
+
+        public string AlignProjectorGain
+        {
+            get { return Model.AlignProjectorGain; }
+            set
+            {
+                if (value != null)
+                {
+                    Model.AlignProjectorGain = value;
+                }
+                else
+                {
+                    //read default value
+                }
+                OnPropertyChanged("AlignProjectorGain");
+            }
+        }
         #endregion
 
         [JsonProperty("_comportnumb")]

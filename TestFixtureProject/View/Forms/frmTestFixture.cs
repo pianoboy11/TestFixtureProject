@@ -288,9 +288,6 @@ namespace TestFixtureProject
             try
             {
 
-             
-
-
                 if (TestFixtureConstants.CreateIllumaVisionRootDirectories())
                 {
                     vm = new TestFixtureMainWindowVM();
@@ -591,6 +588,7 @@ namespace TestFixtureProject
             ShowTabPages(tpCalibration);
             ShowTabPages(tpTestSequence);
             //ShowTabPages(tpSpectrumData);
+            ShowTabPages(tpMatLab);
 
             tabControl2.SelectedTab = tpMain;
 
@@ -605,6 +603,7 @@ namespace TestFixtureProject
             tpImageSettings.Hide();
             tpCalibration.Hide();
             tpTestSequence.Hide();
+            tpMatLab.Hide();
             //tpSpectrumData.Hide();
 
             tabControl2.TabPages.Remove(tpDiagnostics);
@@ -614,6 +613,7 @@ namespace TestFixtureProject
             tabControl2.TabPages.Remove(tpCalibration);
             tabControl2.TabPages.Remove(tpTestSequence);
             //tabControl2.TabPages.Remove(tpSpectrumData);
+            tabControl2.TabPages.Remove(tpMatLab);
 
             tabControl2.SelectedTab = tpMain;
 
@@ -1195,6 +1195,15 @@ namespace TestFixtureProject
 
                 //Firmware Version
                 txtFirmware.Text = pagevm.FirmwareVersion;
+
+                //Projector Focus Settings
+                //txtMtfMax.Text = pagevm.MtfMax;
+                //txtMtfMin.Text = pagevm.MtfMin;
+                //txtMtfVectorFrequencies.Text = pagevm.MtfVectorFrequencies;
+                //txtMtfPixelWidth.Text = pagevm.MtfPixelWidth;
+                //txtGrabImageGain.Text = pagevm.GrabImageGain;
+                //txtAlignProjectorGain.Text = pagevm.AlignProjectorGain;
+
             }
             catch (Exception e)
             {
@@ -1324,6 +1333,14 @@ namespace TestFixtureProject
 
                     //Firmware Version
                     TestFixtureViewModel.Instance.Model.FirmwareVersion = tsFirmwareVersion.Text =  txtFirmware.Text;
+
+                    ////Projector Focus
+                    //TestFixtureViewModel.Instance.Model.MtfMax = pagevm.MtfMax = txtMtfMax.Text ;
+                    //TestFixtureViewModel.Instance.Model.MtfMin  = pagevm.MtfMin = txtMtfMin.Text;
+                    //TestFixtureViewModel.Instance.Model.MtfVectorFrequencies = pagevm.MtfVectorFrequencies = txtMtfVectorFrequencies.Text;
+                    //TestFixtureViewModel.Instance.Model.MtfPixelWidth  = pagevm.MtfPixelWidth = txtMtfPixelWidth.Text;
+                    //TestFixtureViewModel.Instance.Model.GrabImageGain  = pagevm.GrabImageGain = txtGrabImageGain.Text;
+                    //TestFixtureViewModel.Instance.Model.AlignProjectorGain  = pagevm.AlignProjectorGain = txtAlignProjectorGain.Text;
                 }
                 else
                 {
@@ -4192,6 +4209,11 @@ namespace TestFixtureProject
 
                 //if (cbLineTesterType.SelectedItem != null)
                 //{
+                WriteToLog(pagevm._lineTestermodel.EOL.ToString(), ApplicationConstants.TraceLogType.Information);
+                WriteToLog(pagevm._lineTestermodel.LightEngine.ToString(), ApplicationConstants.TraceLogType.Information);
+                WriteToLog(pagevm._lineTestermodel.ToString(), ApplicationConstants.TraceLogType.Information);
+                WriteToLog(pagevm.ToString(), ApplicationConstants.TraceLogType.Information);
+
                 if (pagevm._lineTestermodel.EOL)
                 {
                     cbLineTesterType.SelectedIndex = 0;
@@ -4227,6 +4249,14 @@ namespace TestFixtureProject
 
                     ResetLightEngineTreeView();
                 }
+                else
+                {
+                    tcLineTester.Visible = false;
+                    btnStart.Enabled = false;
+                    btnStop.Enabled = false;
+                    WriteToLog("INVALID LINE TESTER...", ApplicationConstants.TraceLogType.Warning);
+                    return;
+                }
 
                 TestFixtureViewModel.Instance.SaveLineTesterDetailsToFile();
 
@@ -4239,6 +4269,10 @@ namespace TestFixtureProject
                 TestFixtureViewModel.Instance.SaveLightEngineDetailsToFile();
 
                 WriteToLog("Save 'LINE ENGINE' test sequence successfully...", ApplicationConstants.TraceLogType.Information);
+
+                tcLineTester.Visible = true;
+                btnStart.Enabled = true;
+                btnStop.Enabled = true;
                 //}
                 //else
                 //{
@@ -4269,6 +4303,11 @@ namespace TestFixtureProject
             dgvLightEngine.AutoResizeColumns();
             dgvLightEngine.AllowUserToResizeColumns = true;
             dgvLightEngine.AllowUserToOrderColumns = true;
+        }
+
+        private void btnMatLab_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

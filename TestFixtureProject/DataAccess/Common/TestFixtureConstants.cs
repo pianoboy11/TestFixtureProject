@@ -237,13 +237,23 @@ namespace TestFixtureProject.Common
                     // Copy the files and overwrite destination files if they already exist. 
                     foreach (string s in files)
                     {
+
                         // Use static Path methods to extract only the file name from the path.
                         fileName = System.IO.Path.GetFileName(s);
                         destFile = System.IO.Path.Combine(_ConfigDirectory, fileName);
-                        System.IO.File.Copy(s, destFile, true);
 
-                        frmTestFixture.Instance.WriteToLog("Config Files Installed: " + s, ApplicationConstants.TraceLogType.Information);
+                        FileInfo fileInfo = new FileInfo(destFile);
 
+                        if (!fileInfo.Exists)
+                        {
+                            System.IO.File.Copy(s, destFile, true);
+
+                            frmTestFixture.Instance.WriteToLog("Config File Installed: " + s, ApplicationConstants.TraceLogType.Information);
+                        }
+                        else
+                        {
+                            frmTestFixture.Instance.WriteToLog("Config File Exist: " + s, ApplicationConstants.TraceLogType.Information);
+                        }
                     }
                 }
                 else
@@ -286,13 +296,22 @@ namespace TestFixtureProject.Common
                     // Copy the files and overwrite destination files if they already exist. 
                     foreach (string s in files)
                     {
-                         // Use static Path methods to extract only the file name from the path.
+                        // Use static Path methods to extract only the file name from the path.
                         fileName = System.IO.Path.GetFileName(s);
                         destFile = System.IO.Path.Combine(_TestFixtureImageUpload, fileName);
-                        System.IO.File.Copy(s, destFile, true);
 
-                        frmTestFixture.Instance.WriteToLog("Image Show Files Installed: " + s, ApplicationConstants.TraceLogType.Information);
+                        FileInfo fileInfo = new FileInfo(destFile);
 
+                        if (!fileInfo.Exists)
+                        {
+                            System.IO.File.Copy(s, destFile, true);
+
+                            frmTestFixture.Instance.WriteToLog("Image Show File Installed: " + s, ApplicationConstants.TraceLogType.Information);
+                        }
+                        else
+                        {
+                            frmTestFixture.Instance.WriteToLog("Image Show File Exist: " + s, ApplicationConstants.TraceLogType.Information);
+                        }
                     }
                 }
                 else

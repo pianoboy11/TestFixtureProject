@@ -30,41 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTestFixture));
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("MODEL NO");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("SERIAL NO");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("POWER");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("PAIRING");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("BANDWIDTH");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("EOL Test Sequence", new System.Windows.Forms.TreeNode[] {
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25,
-            treeNode26,
-            treeNode27,
-            treeNode28,
-            treeNode29,
-            treeNode30,
-            treeNode31,
-            treeNode32});
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("SERIAL NO");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("POWER");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("LIGHT ENGINE Test Sequence", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("MODEL NO");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("SERIAL NO");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("POWER");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("PAIRING");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("BANDWIDTH");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("EOL Test Sequence", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
             treeNode3,
@@ -73,7 +51,29 @@
             treeNode6,
             treeNode7,
             treeNode8,
-            treeNode9});
+            treeNode9,
+            treeNode10,
+            treeNode11,
+            treeNode12});
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("SERIAL NO");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("POWER");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("PENTAIR SERVER");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("FIRMWARE VERSION");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("PROJECTOR MIRROR CHECK");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("LED BRIGHTNESS / COLOR");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("PROJECTOR FOCUS");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("PROJECTOR BRIGHTNESS");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("TEST COMPLETION");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("LIGHT ENGINE Test Sequence", new System.Windows.Forms.TreeNode[] {
+            treeNode14,
+            treeNode15,
+            treeNode16,
+            treeNode17,
+            treeNode18,
+            treeNode19,
+            treeNode20,
+            treeNode21,
+            treeNode22});
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -447,6 +447,10 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bgwFTPDataThroughput = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tpMatLab = new System.Windows.Forms.TabPage();
+            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMatLab = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -528,6 +532,12 @@
             this.tpInformation.SuspendLayout();
             this.tpWarnings.SuspendLayout();
             this.tpErrors.SuspendLayout();
+            this.tpMatLab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
+            this.splitContainer7.Panel1.SuspendLayout();
+            this.splitContainer7.Panel2.SuspendLayout();
+            this.splitContainer7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -865,38 +875,38 @@
             this.tvEol.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvEol.Location = new System.Drawing.Point(3, 3);
             this.tvEol.Name = "tvEol";
-            treeNode21.Name = "nodeModelNumber";
-            treeNode21.Text = "MODEL NO";
-            treeNode22.Name = "nodeSerialNumber";
-            treeNode22.Text = "SERIAL NO";
-            treeNode23.Name = "nodePowerSequence";
-            treeNode23.Text = "POWER";
-            treeNode24.ImageKey = "icons8-Administrative Tools-50.png";
-            treeNode24.Name = "nodePairingSequence";
-            treeNode24.SelectedImageKey = "icons8-Administrative Tools-50.png";
-            treeNode24.Text = "PAIRING";
-            treeNode25.Name = "nodePentairServer";
-            treeNode25.Text = "PENTAIR SERVER";
-            treeNode26.Name = "nodeFirmwareVersion";
-            treeNode26.Text = "FIRMWARE VERSION";
-            treeNode27.Name = "nodeMirrorCheck";
-            treeNode27.Text = "PROJECTOR MIRROR CHECK";
-            treeNode28.Name = "nodeBrightnessColor";
-            treeNode28.Text = "LED BRIGHTNESS / COLOR";
-            treeNode29.Name = "nodeBandwidthSequence";
-            treeNode29.Text = "BANDWIDTH";
-            treeNode30.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode30.Name = "nodeProjectorFocus";
-            treeNode30.Text = "PROJECTOR FOCUS";
-            treeNode31.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode31.Name = "nodeProjectorBrightness";
-            treeNode31.Text = "PROJECTOR BRIGHTNESS";
-            treeNode32.Name = "nodeTestCompletion";
-            treeNode32.Text = "TEST COMPLETION";
-            treeNode33.Name = "nodeEolTestSequence";
-            treeNode33.Text = "EOL Test Sequence";
+            treeNode1.Name = "nodeModelNumber";
+            treeNode1.Text = "MODEL NO";
+            treeNode2.Name = "nodeSerialNumber";
+            treeNode2.Text = "SERIAL NO";
+            treeNode3.Name = "nodePowerSequence";
+            treeNode3.Text = "POWER";
+            treeNode4.ImageKey = "icons8-Administrative Tools-50.png";
+            treeNode4.Name = "nodePairingSequence";
+            treeNode4.SelectedImageKey = "icons8-Administrative Tools-50.png";
+            treeNode4.Text = "PAIRING";
+            treeNode5.Name = "nodePentairServer";
+            treeNode5.Text = "PENTAIR SERVER";
+            treeNode6.Name = "nodeFirmwareVersion";
+            treeNode6.Text = "FIRMWARE VERSION";
+            treeNode7.Name = "nodeMirrorCheck";
+            treeNode7.Text = "PROJECTOR MIRROR CHECK";
+            treeNode8.Name = "nodeBrightnessColor";
+            treeNode8.Text = "LED BRIGHTNESS / COLOR";
+            treeNode9.Name = "nodeBandwidthSequence";
+            treeNode9.Text = "BANDWIDTH";
+            treeNode10.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode10.Name = "nodeProjectorFocus";
+            treeNode10.Text = "PROJECTOR FOCUS";
+            treeNode11.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode11.Name = "nodeProjectorBrightness";
+            treeNode11.Text = "PROJECTOR BRIGHTNESS";
+            treeNode12.Name = "nodeTestCompletion";
+            treeNode12.Text = "TEST COMPLETION";
+            treeNode13.Name = "nodeEolTestSequence";
+            treeNode13.Text = "EOL Test Sequence";
             this.tvEol.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode33});
+            treeNode13});
             this.tvEol.Size = new System.Drawing.Size(300, 521);
             this.tvEol.TabIndex = 0;
             this.tvEol.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.tvEol_AfterCheck);
@@ -934,30 +944,30 @@
             this.tvLightEngine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvLightEngine.Location = new System.Drawing.Point(3, 3);
             this.tvLightEngine.Name = "tvLightEngine";
-            treeNode1.Name = "nodeSerialNumber";
-            treeNode1.Text = "SERIAL NO";
-            treeNode2.Name = "nodePowerSequence";
-            treeNode2.Text = "POWER";
-            treeNode3.Name = "nodePentairServer";
-            treeNode3.Text = "PENTAIR SERVER";
-            treeNode4.Name = "nodeFirmwareVersion";
-            treeNode4.Text = "FIRMWARE VERSION";
-            treeNode5.Name = "nodeMirrorCheck";
-            treeNode5.Text = "PROJECTOR MIRROR CHECK";
-            treeNode6.Name = "nodeBrightnessColor";
-            treeNode6.Text = "LED BRIGHTNESS / COLOR";
-            treeNode7.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode7.Name = "nodeProjectorFocus";
-            treeNode7.Text = "PROJECTOR FOCUS";
-            treeNode8.ForeColor = System.Drawing.SystemColors.GrayText;
-            treeNode8.Name = "nodeProjectorBrightness";
-            treeNode8.Text = "PROJECTOR BRIGHTNESS";
-            treeNode9.Name = "nodeTestCompletion";
-            treeNode9.Text = "TEST COMPLETION";
-            treeNode10.Name = "nodeLightEngineTestSequence";
-            treeNode10.Text = "LIGHT ENGINE Test Sequence";
+            treeNode14.Name = "nodeSerialNumber";
+            treeNode14.Text = "SERIAL NO";
+            treeNode15.Name = "nodePowerSequence";
+            treeNode15.Text = "POWER";
+            treeNode16.Name = "nodePentairServer";
+            treeNode16.Text = "PENTAIR SERVER";
+            treeNode17.Name = "nodeFirmwareVersion";
+            treeNode17.Text = "FIRMWARE VERSION";
+            treeNode18.Name = "nodeMirrorCheck";
+            treeNode18.Text = "PROJECTOR MIRROR CHECK";
+            treeNode19.Name = "nodeBrightnessColor";
+            treeNode19.Text = "LED BRIGHTNESS / COLOR";
+            treeNode20.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode20.Name = "nodeProjectorFocus";
+            treeNode20.Text = "PROJECTOR FOCUS";
+            treeNode21.ForeColor = System.Drawing.SystemColors.GrayText;
+            treeNode21.Name = "nodeProjectorBrightness";
+            treeNode21.Text = "PROJECTOR BRIGHTNESS";
+            treeNode22.Name = "nodeTestCompletion";
+            treeNode22.Text = "TEST COMPLETION";
+            treeNode23.Name = "nodeLightEngineTestSequence";
+            treeNode23.Text = "LIGHT ENGINE Test Sequence";
             this.tvLightEngine.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode10});
+            treeNode23});
             this.tvLightEngine.Size = new System.Drawing.Size(300, 521);
             this.tvLightEngine.TabIndex = 1;
             // 
@@ -970,6 +980,7 @@
             this.tabControl2.Controls.Add(this.tpSettings);
             this.tabControl2.Controls.Add(this.tpImageSettings);
             this.tabControl2.Controls.Add(this.tpCalibration);
+            this.tabControl2.Controls.Add(this.tpMatLab);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
@@ -4489,6 +4500,53 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // tpMatLab
+            // 
+            this.tpMatLab.Controls.Add(this.splitContainer7);
+            this.tpMatLab.Location = new System.Drawing.Point(4, 25);
+            this.tpMatLab.Name = "tpMatLab";
+            this.tpMatLab.Padding = new System.Windows.Forms.Padding(3);
+            this.tpMatLab.Size = new System.Drawing.Size(893, 567);
+            this.tpMatLab.TabIndex = 7;
+            this.tpMatLab.Text = "MATLAB DEBUG";
+            this.tpMatLab.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer7
+            // 
+            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer7.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer7.Name = "splitContainer7";
+            // 
+            // splitContainer7.Panel1
+            // 
+            this.splitContainer7.Panel1.Controls.Add(this.btnMatLab);
+            // 
+            // splitContainer7.Panel2
+            // 
+            this.splitContainer7.Panel2.Controls.Add(this.pictureBox1);
+            this.splitContainer7.Size = new System.Drawing.Size(887, 561);
+            this.splitContainer7.SplitterDistance = 185;
+            this.splitContainer7.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(698, 561);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnMatLab
+            // 
+            this.btnMatLab.Location = new System.Drawing.Point(17, 11);
+            this.btnMatLab.Name = "btnMatLab";
+            this.btnMatLab.Size = new System.Drawing.Size(154, 26);
+            this.btnMatLab.TabIndex = 4;
+            this.btnMatLab.Text = "Execute MatLab";
+            this.btnMatLab.UseVisualStyleBackColor = true;
+            this.btnMatLab.Click += new System.EventHandler(this.btnMatLab_Click);
+            // 
             // frmTestFixture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4611,6 +4669,12 @@
             this.tpInformation.ResumeLayout(false);
             this.tpWarnings.ResumeLayout(false);
             this.tpErrors.ResumeLayout(false);
+            this.tpMatLab.ResumeLayout(false);
+            this.splitContainer7.Panel1.ResumeLayout(false);
+            this.splitContainer7.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
+            this.splitContainer7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4991,5 +5055,9 @@
         internal System.Windows.Forms.TextBox txtFirmware;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.TabPage tpMatLab;
+        private System.Windows.Forms.SplitContainer splitContainer7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnMatLab;
     }
 }

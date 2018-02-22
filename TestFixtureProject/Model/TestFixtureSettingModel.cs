@@ -1433,12 +1433,22 @@ namespace TestFixtureProject.Model
         #region Load saved setting details from file
         private void LoadSettingDetailsFromFile()
         {
-            string file_path = TestFixtureConstants.GetSettingsInfoFilePath();
-            if (!string.IsNullOrEmpty(file_path) && (File.Exists(file_path)))
+            try
             {
-                DeserializeAndSetProperties(file_path);
+                string file_path = TestFixtureConstants.GetSettingsInfoFilePath();
+               // MessageBox.Show("TestFixtureSettingModel Before:" + file_path);
+                if (!string.IsNullOrEmpty(file_path) && (File.Exists(file_path)))
+                {
+                   // MessageBox.Show("TestFixtureSettingModel After:" + file_path);
+                    DeserializeAndSetProperties(file_path);
+                }
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("TestFixtureSettingModel Error:" + e.Message);
             }
         }
+
 
         private void DeserializeAndSetProperties(string filepath)
         {
@@ -1735,6 +1745,86 @@ namespace TestFixtureProject.Model
             {
                 _mFirmwareVersion = value;
                 OnPropertyChanged("FirmwareVersion");
+            }
+
+        }
+        #endregion
+
+        #region Projector Focus
+        [JsonProperty("_mMtfMax")]
+        private string _mMtfMax = null;
+        public string MtfMax
+        {
+            get { return _mMtfMax; }
+            set
+            {
+                _mMtfMax = value;
+                OnPropertyChanged("MtfMax");
+            }
+
+        }
+
+        [JsonProperty("_mMtfMin")]
+        private string _mMtfMin = null;
+        public string MtfMin
+        {
+            get { return _mMtfMin; }
+            set
+            {
+                _mMtfMin = value;
+                OnPropertyChanged("MtfMin");
+            }
+
+        }
+
+        [JsonProperty("_mMtfVectorFrequencies")]
+        private string _mMtfVectorFrequencies = null;
+        public string MtfVectorFrequencies
+        {
+            get { return _mMtfVectorFrequencies; }
+            set
+            {
+                _mMtfVectorFrequencies = value;
+                OnPropertyChanged("MtfVectorFrequencies");
+            }
+
+        }
+
+        [JsonProperty("_mMtfPixelWidth")]
+        private string _mMtfPixelWidth = null;
+        public string MtfPixelWidth
+        {
+            get { return _mMtfPixelWidth; }
+            set
+            {
+                _mMtfPixelWidth = value;
+                OnPropertyChanged("MtfPixelWidth");
+            }
+
+        }
+
+        [JsonProperty("_mGrabImageGain")]
+        private string _mGrabImageGain = null;
+        public string GrabImageGain
+        {
+            get { return _mGrabImageGain; }
+            set
+            {
+                _mGrabImageGain = value;
+                OnPropertyChanged("GrabImageGain");
+            }
+
+        }
+
+        [JsonProperty("_mAlignProjectorGain")]
+        private string _mAlignProjectorGain = null;
+        public string AlignProjectorGain
+        {
+            get { return _mAlignProjectorGain; }
+            set
+            {
+                _mAlignProjectorGain = value;
+                OnPropertyChanged("AlignProjectorGain");
             }
 
         }

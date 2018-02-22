@@ -186,6 +186,9 @@
     <Compile Include="View\UserControls\ucLogin.Designer.cs">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </Compile>
+    <Content Include="IllumaVision\Config\ProjectorFocus_Config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="IllumaVision\Images\FolderLive.png" />
     <Content Include="IllumaVision\Images\LineTester.ico" />
     <EmbeddedResource Include="Properties\Resources.resx">
