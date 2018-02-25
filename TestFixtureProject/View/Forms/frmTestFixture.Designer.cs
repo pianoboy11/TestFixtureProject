@@ -398,7 +398,7 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
-            this.tpCalibration = new System.Windows.Forms.TabPage();
+            this.tpSpectrometer = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txtSetWattValue = new System.Windows.Forms.TextBox();
@@ -425,6 +425,7 @@
             this.wavelengths = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.spectrum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.calibration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tpProjectorFocus = new System.Windows.Forms.TabPage();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsApplicationUserMode = new System.Windows.Forms.ToolStripStatusLabel();
@@ -447,10 +448,18 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bgwFTPDataThroughput = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tpMatLab = new System.Windows.Forms.TabPage();
-            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnMatLab = new System.Windows.Forms.Button();
+            this.label86 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -518,7 +527,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGrayedImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOriginalImage)).BeginInit();
             this.groupBox20.SuspendLayout();
-            this.tpCalibration.SuspendLayout();
+            this.tpSpectrometer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
@@ -526,18 +535,13 @@
             this.groupBox8.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox26.SuspendLayout();
+            this.tpProjectorFocus.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.tpInformation.SuspendLayout();
             this.tpWarnings.SuspendLayout();
             this.tpErrors.SuspendLayout();
-            this.tpMatLab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
-            this.splitContainer7.Panel1.SuspendLayout();
-            this.splitContainer7.Panel2.SuspendLayout();
-            this.splitContainer7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -979,8 +983,8 @@
             this.tabControl2.Controls.Add(this.tpProjectDiagnostics);
             this.tabControl2.Controls.Add(this.tpSettings);
             this.tabControl2.Controls.Add(this.tpImageSettings);
-            this.tabControl2.Controls.Add(this.tpCalibration);
-            this.tabControl2.Controls.Add(this.tpMatLab);
+            this.tabControl2.Controls.Add(this.tpProjectorFocus);
+            this.tabControl2.Controls.Add(this.tpSpectrometer);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
@@ -4027,15 +4031,15 @@
             this.label63.TabIndex = 0;
             this.label63.Text = "Mean";
             // 
-            // tpCalibration
+            // tpSpectrometer
             // 
-            this.tpCalibration.Controls.Add(this.splitContainer3);
-            this.tpCalibration.Location = new System.Drawing.Point(4, 25);
-            this.tpCalibration.Name = "tpCalibration";
-            this.tpCalibration.Size = new System.Drawing.Size(893, 567);
-            this.tpCalibration.TabIndex = 5;
-            this.tpCalibration.Text = "Spectrometer";
-            this.tpCalibration.UseVisualStyleBackColor = true;
+            this.tpSpectrometer.Controls.Add(this.splitContainer3);
+            this.tpSpectrometer.Location = new System.Drawing.Point(4, 25);
+            this.tpSpectrometer.Name = "tpSpectrometer";
+            this.tpSpectrometer.Size = new System.Drawing.Size(893, 567);
+            this.tpSpectrometer.TabIndex = 5;
+            this.tpSpectrometer.Text = "Spectrometer";
+            this.tpSpectrometer.UseVisualStyleBackColor = true;
             // 
             // splitContainer3
             // 
@@ -4302,6 +4306,28 @@
             this.calibration.Text = "calibration";
             this.calibration.Width = 175;
             // 
+            // tpProjectorFocus
+            // 
+            this.tpProjectorFocus.Controls.Add(this.label86);
+            this.tpProjectorFocus.Controls.Add(this.textBox2);
+            this.tpProjectorFocus.Controls.Add(this.label85);
+            this.tpProjectorFocus.Controls.Add(this.textBox1);
+            this.tpProjectorFocus.Controls.Add(this.label97);
+            this.tpProjectorFocus.Controls.Add(this.textBox15);
+            this.tpProjectorFocus.Controls.Add(this.textBox18);
+            this.tpProjectorFocus.Controls.Add(this.textBox19);
+            this.tpProjectorFocus.Controls.Add(this.textBox21);
+            this.tpProjectorFocus.Controls.Add(this.label100);
+            this.tpProjectorFocus.Controls.Add(this.label101);
+            this.tpProjectorFocus.Controls.Add(this.label102);
+            this.tpProjectorFocus.Location = new System.Drawing.Point(4, 25);
+            this.tpProjectorFocus.Name = "tpProjectorFocus";
+            this.tpProjectorFocus.Padding = new System.Windows.Forms.Padding(3);
+            this.tpProjectorFocus.Size = new System.Drawing.Size(893, 567);
+            this.tpProjectorFocus.TabIndex = 7;
+            this.tpProjectorFocus.Text = "Projector Focus";
+            this.tpProjectorFocus.UseVisualStyleBackColor = true;
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -4436,7 +4462,7 @@
             this.tpWarnings.Location = new System.Drawing.Point(4, 25);
             this.tpWarnings.Name = "tpWarnings";
             this.tpWarnings.Padding = new System.Windows.Forms.Padding(3);
-            this.tpWarnings.Size = new System.Drawing.Size(1227, 232);
+            this.tpWarnings.Size = new System.Drawing.Size(1227, 200);
             this.tpWarnings.TabIndex = 1;
             this.tpWarnings.Text = "Warnings";
             this.tpWarnings.UseVisualStyleBackColor = true;
@@ -4448,7 +4474,7 @@
             this.txtWarnings.Location = new System.Drawing.Point(3, 3);
             this.txtWarnings.Name = "txtWarnings";
             this.txtWarnings.ReadOnly = true;
-            this.txtWarnings.Size = new System.Drawing.Size(1221, 226);
+            this.txtWarnings.Size = new System.Drawing.Size(1221, 194);
             this.txtWarnings.TabIndex = 1;
             this.txtWarnings.Text = "";
             this.txtWarnings.TextChanged += new System.EventHandler(this.txtWarnings_TextChanged);
@@ -4459,7 +4485,7 @@
             this.tpErrors.Location = new System.Drawing.Point(4, 25);
             this.tpErrors.Name = "tpErrors";
             this.tpErrors.Padding = new System.Windows.Forms.Padding(3);
-            this.tpErrors.Size = new System.Drawing.Size(1227, 232);
+            this.tpErrors.Size = new System.Drawing.Size(1227, 200);
             this.tpErrors.TabIndex = 2;
             this.tpErrors.Text = "Errors";
             this.tpErrors.UseVisualStyleBackColor = true;
@@ -4471,7 +4497,7 @@
             this.txtErrors.Location = new System.Drawing.Point(3, 3);
             this.txtErrors.Name = "txtErrors";
             this.txtErrors.ReadOnly = true;
-            this.txtErrors.Size = new System.Drawing.Size(1221, 226);
+            this.txtErrors.Size = new System.Drawing.Size(1221, 194);
             this.txtErrors.TabIndex = 0;
             this.txtErrors.Text = "";
             this.txtErrors.TextChanged += new System.EventHandler(this.txtErrors_TextChanged);
@@ -4500,52 +4526,115 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // tpMatLab
+            // label86
             // 
-            this.tpMatLab.Controls.Add(this.splitContainer7);
-            this.tpMatLab.Location = new System.Drawing.Point(4, 25);
-            this.tpMatLab.Name = "tpMatLab";
-            this.tpMatLab.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMatLab.Size = new System.Drawing.Size(893, 567);
-            this.tpMatLab.TabIndex = 7;
-            this.tpMatLab.Text = "MATLAB DEBUG";
-            this.tpMatLab.UseVisualStyleBackColor = true;
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(15, 231);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(134, 17);
+            this.label86.TabIndex = 49;
+            this.label86.Text = "Align Projector Gain";
             // 
-            // splitContainer7
+            // textBox2
             // 
-            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer7.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer7.Name = "splitContainer7";
+            this.textBox2.Location = new System.Drawing.Point(18, 251);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(164, 22);
+            this.textBox2.TabIndex = 48;
+            this.textBox2.Text = "0";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // splitContainer7.Panel1
+            // label85
             // 
-            this.splitContainer7.Panel1.Controls.Add(this.btnMatLab);
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(15, 176);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(116, 17);
+            this.label85.TabIndex = 47;
+            this.label85.Text = "Grab Image Gain";
             // 
-            // splitContainer7.Panel2
+            // textBox1
             // 
-            this.splitContainer7.Panel2.Controls.Add(this.pictureBox1);
-            this.splitContainer7.Size = new System.Drawing.Size(887, 561);
-            this.splitContainer7.SplitterDistance = 185;
-            this.splitContainer7.TabIndex = 0;
+            this.textBox1.Location = new System.Drawing.Point(18, 196);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(164, 22);
+            this.textBox1.TabIndex = 46;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox1
+            // label97
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(698, 561);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label97.AutoSize = true;
+            this.label97.Location = new System.Drawing.Point(15, 125);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(109, 17);
+            this.label97.TabIndex = 45;
+            this.label97.Text = "MTF Pixel Width";
             // 
-            // btnMatLab
+            // textBox15
             // 
-            this.btnMatLab.Location = new System.Drawing.Point(17, 11);
-            this.btnMatLab.Name = "btnMatLab";
-            this.btnMatLab.Size = new System.Drawing.Size(154, 26);
-            this.btnMatLab.TabIndex = 4;
-            this.btnMatLab.Text = "Execute MatLab";
-            this.btnMatLab.UseVisualStyleBackColor = true;
-            this.btnMatLab.Click += new System.EventHandler(this.btnMatLab_Click);
+            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(18, 89);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(164, 23);
+            this.textBox15.TabIndex = 44;
+            this.textBox15.Text = "0";
+            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(103, 35);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(79, 22);
+            this.textBox18.TabIndex = 43;
+            this.textBox18.Text = "0";
+            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(18, 145);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(164, 22);
+            this.textBox19.TabIndex = 42;
+            this.textBox19.Text = "0";
+            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(18, 35);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(79, 22);
+            this.textBox21.TabIndex = 41;
+            this.textBox21.Text = "0";
+            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(15, 69);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(163, 17);
+            this.label100.TabIndex = 40;
+            this.label100.Text = "MTF Vector Frequencies";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Location = new System.Drawing.Point(100, 14);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(65, 17);
+            this.label101.TabIndex = 39;
+            this.label101.Text = "MTF Max";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Location = new System.Drawing.Point(15, 14);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(62, 17);
+            this.label102.TabIndex = 38;
+            this.label102.Text = "MTF Min";
             // 
             // frmTestFixture
             // 
@@ -4652,7 +4741,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbOriginalImage)).EndInit();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            this.tpCalibration.ResumeLayout(false);
+            this.tpSpectrometer.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
@@ -4662,6 +4751,8 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox26.ResumeLayout(false);
+            this.tpProjectorFocus.ResumeLayout(false);
+            this.tpProjectorFocus.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -4669,12 +4760,6 @@
             this.tpInformation.ResumeLayout(false);
             this.tpWarnings.ResumeLayout(false);
             this.tpErrors.ResumeLayout(false);
-            this.tpMatLab.ResumeLayout(false);
-            this.splitContainer7.Panel1.ResumeLayout(false);
-            this.splitContainer7.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
-            this.splitContainer7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4705,7 +4790,7 @@
         private System.Windows.Forms.TabPage tpProjectDiagnostics;
         private System.Windows.Forms.TabPage tpSettings;
         private System.Windows.Forms.TabPage tpImageSettings;
-        private System.Windows.Forms.TabPage tpCalibration;
+        private System.Windows.Forms.TabPage tpSpectrometer;
         private System.Windows.Forms.ToolStripMenuItem projectDiagnosticsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imageSettingsToolStripMenuItem;
@@ -5055,9 +5140,18 @@
         internal System.Windows.Forms.TextBox txtFirmware;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.TabPage tpMatLab;
-        private System.Windows.Forms.SplitContainer splitContainer7;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnMatLab;
+        private System.Windows.Forms.TabPage tpProjectorFocus;
+        private System.Windows.Forms.Label label86;
+        internal System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label85;
+        internal System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label97;
+        internal System.Windows.Forms.TextBox textBox15;
+        internal System.Windows.Forms.TextBox textBox18;
+        internal System.Windows.Forms.TextBox textBox19;
+        internal System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label102;
     }
 }

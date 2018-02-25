@@ -496,7 +496,7 @@ namespace TestFixtureProject
 
         private void calibrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowTabPages(tpCalibration);
+            ShowTabPages(tpSpectrometer);
         }
 
         private void spectrumDataToolStripMenuItem_Click(object sender, EventArgs e)
@@ -585,10 +585,10 @@ namespace TestFixtureProject
             ShowTabPages(tpProjectDiagnostics);
             ShowTabPages(tpSettings);
             ShowTabPages(tpImageSettings);
-            ShowTabPages(tpCalibration);
+            ShowTabPages(tpSpectrometer);
             ShowTabPages(tpTestSequence);
             //ShowTabPages(tpSpectrumData);
-            ShowTabPages(tpMatLab);
+            ShowTabPages(tpProjectorFocus);
 
             tabControl2.SelectedTab = tpMain;
 
@@ -601,19 +601,19 @@ namespace TestFixtureProject
             tpProjectDiagnostics.Hide();
             tpSettings.Hide();
             tpImageSettings.Hide();
-            tpCalibration.Hide();
+            tpSpectrometer.Hide();
             tpTestSequence.Hide();
-            tpMatLab.Hide();
+            tpProjectorFocus.Hide();
             //tpSpectrumData.Hide();
 
             tabControl2.TabPages.Remove(tpDiagnostics);
             tabControl2.TabPages.Remove(tpProjectDiagnostics);
             tabControl2.TabPages.Remove(tpSettings);
             tabControl2.TabPages.Remove(tpImageSettings);
-            tabControl2.TabPages.Remove(tpCalibration);
+            tabControl2.TabPages.Remove(tpSpectrometer);
             tabControl2.TabPages.Remove(tpTestSequence);
             //tabControl2.TabPages.Remove(tpSpectrumData);
-            tabControl2.TabPages.Remove(tpMatLab);
+            tabControl2.TabPages.Remove(tpProjectorFocus);
 
             tabControl2.SelectedTab = tpMain;
 
@@ -4303,11 +4303,6 @@ namespace TestFixtureProject
             dgvLightEngine.AutoResizeColumns();
             dgvLightEngine.AllowUserToResizeColumns = true;
             dgvLightEngine.AllowUserToOrderColumns = true;
-        }
-
-        private void btnMatLab_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
